@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- usually accessed via the external sip profile listening on port 5080 -->
+
+<include>
+  <context name="public">
+
+    <extension name="universalinboundcalls">
+    	<condition field="destination_number" expression="^.*$">
+        <action application="set" data="sip_secure_media=true"/>
+        <action application="voicemail" data="default ${domain} 1105"/>
+        <action application="sleep" data="5000"/>
+        <action application="log" data="INFO ***** Playing wav file ***** "/>
+        <action application="answer"/>
+        <action application="playback" data="/home/ubuntu/PinkPanther30.wav"/>
+        <action application="sleep" data="5000"/>
+        <action application="hangup"/>
+       </condition>
+    </extension>
+  </context>
+
+  <!-- files in the public directory to get included-->
+  <X-PRE-PROCESS cmd="include" data="public/*.xml"/>
+
+</include>

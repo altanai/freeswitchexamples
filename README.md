@@ -1,5 +1,6 @@
 ## Freeswitch sample configuration for various usecases
 
+freeswitch internal archietture  ![freeswitch_internal_archietture](https://altanaitelecom.files.wordpress.com/2012/05/freeswitch.png?w=500)
 
 ### Sofia commands
 ```sh

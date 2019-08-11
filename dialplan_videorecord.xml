@@ -1,0 +1,6 @@
+<extension name="video_record">
+  <condition field="destination_number" expression="^9193$">
+    <action application="answer"/>
+    <action application="record_fsv" data="$${temp_dir}/testrecord.fsv"/>
+  </condition>
+</extension>

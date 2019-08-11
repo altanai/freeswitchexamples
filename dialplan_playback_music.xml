@@ -1,0 +1,13 @@
+<extension name="milliwatt">
+  <condition field="destination_number" expression="^9197$">
+    <action application="answer"/>
+    <action application="playback" data="{loops=-1}tone_stream://%(251,0,1004)"/>
+  </condition>
+</extension>
+
+<extension name="tone_stream">
+  <condition field="destination_number" expression="^9198$">
+    <action application="answer"/>
+    <action application="playback" data="{loops=10}tone_stream://path=${conf_dir}/tetris.ttml"/>
+  </condition>
+</extension>

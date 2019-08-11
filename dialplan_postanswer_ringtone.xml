@@ -1,0 +1,17 @@
+<!-- Answer the call and use music as the ringtone. (post answer) -->
+<extension name="ringback_post_answer_uk_ring">
+  <condition field="destination_number" expression="^9183$">
+    <action application="set" data="transfer_ringback=$${uk-ring}"/>
+    <action application="answer"/>
+    <action application="bridge" data="{ignore_early_media=true}loopback/wait"/>
+  </condition>
+</extension>
+
+<!-- Answer the call and use music as the ringtone. (post answer) -->
+<extension name="ringback_post_answer_music">
+  <condition field="destination_number" expression="^9184$">
+    <action application="set" data="transfer_ringback=$${hold_music}"/>
+    <action application="answer"/>
+    <action application="bridge" data="{ignore_early_media=true}loopback/wait"/>
+  </condition>
+</extension>

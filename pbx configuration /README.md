@@ -219,19 +219,21 @@ You will register your phones to the IP and not the hostname by default.
 
 ## debugging support 
 
-Issues 
-
-Error Creating SIP UA for profile: external-ipv6 (sip:mod_sofia@[fe80::15:a8ff:fec0:13bc]:5080;transport=udp,tcp) ATTEMPT 2 (RETRY IN 5 SEC)
+**Issue 1** : Error Creating SIP UA for profile: external-ipv6 (sip:mod_sofia@[fe80::15:a8ff:fec0:13bc]:5080;transport=udp,tcp) ATTEMPT 2 (RETRY IN 5 SEC)
 Error Creating SIP UA for profile: external (sip:mod_sofia@3.218.248.139:5080;transport=udp,tcp) ATTEMPT 2 (RETRY IN 5 SEC)
 Error Creating SIP UA for profile: internal-ipv6 (sip:mod_sofia@[fe80::15:a8ff:fec0:13bc]:5060;transport=udp,tcp) ATTEMPT 2 (RETRY IN 5 SEC)
 Error Creating SIP UA for profile: external-ipv6 (sip:mod_sofia@[fe80::15:a8ff:fec0:13bc]:5080;transport=udp,tcp) ATTEMPT 3 (RETRY IN 5 SEC)
 Error Creating SIP UA for profile: external-ipv6 (sip:mod_sofia@[fe80::15:a8ff:fec0:13bc]:5080;transport=udp,tcp)
-The likely causes for this are:
+
+**Solution** The likely causes for this are:
 1) Another application is already listening on the specified address.
 2) The IP the profile is attempting to bind to is not local to this system.
-2019-08-01 07:53:35.454366 [ERR] sofia.c:3228 Error Creating SIP UA for profile: external (sip:mod_sofia@3.218.248.139:5080;transport=udp,tcp) ATTEMPT 3 (RETRY IN 5 SEC)
-2019-08-01 07:53:35.454366 [ERR] sofia.c:3238 Error Creating SIP UA for profile: external (sip:mod_sofia@3.218.248.139:5080;transport=udp,tcp)
-The likely causes for this are:
+
+
+**Issue2** :[ERR] sofia.c:3228 Error Creating SIP UA for profile: external (sip:mod_sofia@3.218.248.139:5080;transport=udp,tcp) ATTEMPT 3 (RETRY IN 5 SEC)
+[ERR] sofia.c:3238 Error Creating SIP UA for profile: external (sip:mod_sofia@3.218.248.139:5080;transport=udp,tcp)
+
+**Solution** The likely causes for this are:
 1) Another application is already listening on the specified address.
 2) The IP the profile is attempting to bind to is not local to this system.
 2019-08-01 07:53:35.454366 [ERR] sofia.c:3228 Error Creating SIP UA for profile: internal-ipv6 (sip:mod_sofia@[fe80::15:a8ff:fec0:13bc]:5060;transport=udp,tcp) ATTEMPT 3 (RETRY IN 5 SEC)

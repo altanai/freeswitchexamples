@@ -1,5 +1,6 @@
 # Gateways in freeswitch 
 
+
 <gateway name="sipcall_41449999990">
     <param name="username" value="41449999990"/>
     <param name="proxy" value="business1.voipgateway.org"/>
@@ -16,3 +17,6 @@
     </variables>
 </gateway>
          
+
+**Isuee1** freeswitch hanging up, cause: INCOMPATIBLE_DESTINATION
+**Solution** most often the fault lies in codec list , check for matching codecs 

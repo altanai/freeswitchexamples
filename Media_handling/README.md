@@ -141,3 +141,5 @@ ie exchange of information before establishment of a connection
 Triggering early media
 On an inbound call you can execute pre_answer to trigger early media. After this you can do ringback, play a file or whatever.
 
+**ignoring early media** on dialplan 
+<action application="bridge" data="{ignore_early_media=true}sofia/internal/1001%${domain}"/>

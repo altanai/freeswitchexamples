@@ -1,7 +1,23 @@
 # Gateways in freeswitch 
 
-Define a gateway
 
+Gateways can be defined with inside profile or in directory 
+
+Barebone outbound call gateway with no usrename / pasword 
+```xml
+<include>
+   <gateway name="provider">
+     <param name="proxy" value="10.10.10.10"/>
+     <param name="register" value="false"/>
+     <param name="caller-id-in-from" value="true"/> <!--Most gateways seem to want this-->
+     <param name="username" value="not-used"/>
+     <param name="password" value="not-used"/>
+   </gateway>
+</include>
+```
+
+Define a gateway
+```xml
 <gateway name="sipcall_41449999990">
     <param name="username" value="41449999990"/>
     <param name="proxy" value="business1.voipgateway.org"/>
@@ -17,7 +33,7 @@ Define a gateway
         <variable name="target_context" value="int.example.net" direction="inbound"/>
     </variables>
 </gateway>
-         
+```         
 
 ## gateway status 
 

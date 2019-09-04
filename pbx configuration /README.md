@@ -41,7 +41,7 @@ only used for dialing. Can be an ip address, a dns name, or "auto".
 This determines an ip address available on this host to bind.
 If you are separating RTP and SIP traffic, you will want to have use different addresses where this variable appears.
 Used by: dingaling.conf.xml
-```
+```xml
 <X-PRE-PROCESS cmd="set" data="bind_server_ip=54.152.177.149"/>
 ```
 
@@ -54,7 +54,7 @@ Used by: dingaling.conf.xml
        a dynamic IP address, and uses a dynamic DNS updater.
        If unspecified, the bind_server_ip value is used.
        Used by: sofia.conf.xml dingaling.conf.xml
-```
+```xml
 <X-PRE-PROCESS cmd="set" data="external_rtp_ip=54.152.177.149"/>
 ```
 
@@ -76,7 +76,7 @@ Used by: dingaling.conf.xml
 TLS versions
 valid options: sslv2,sslv3,sslv23,tlsv1,tlsv1.1,tlsv1.2
 default: tlsv1,tlsv1.1,tlsv1.2
-```
+```xml
 <X-PRE-PROCESS cmd="set" data="sip_tls_version=tlsv1,tlsv1.1,tlsv1.2"/>
 ```
 TLS cipher suite 
@@ -84,12 +84,12 @@ default ALL:!ADH:!LOW:!EXP:!MD5:@STRENGTH
 The actual ciphers supported will change per platform.
 openssl ciphers -v 'ALL:!ADH:!LOW:!EXP:!MD5:@STRENGTH'
 Will show what is available in your verion of openssl.
-```
+```xml
 <X-PRE-PROCESS cmd="set" data="sip_tls_ciphers=ALL:!ADH:!LOW:!EXP:!MD5:@STRENGTH"/>
 ```
 
 **Internal SIP Profile variables**
-```
+```xml
 <X-PRE-PROCESS cmd="set" data="internal_auth_calls=true"/>
 <X-PRE-PROCESS cmd="set" data="internal_sip_port=5060"/>
 <X-PRE-PROCESS cmd="set" data="internal_tls_port=5061"/>
@@ -97,7 +97,7 @@ Will show what is available in your verion of openssl.
 ```
 
 **External SIP Profile varibles**
-```
+```xml
   <X-PRE-PROCESS cmd="set" data="external_auth_calls=false"/>
   <X-PRE-PROCESS cmd="set" data="external_sip_port=5080"/>
   <X-PRE-PROCESS cmd="set" data="external_tls_port=5081"/>
@@ -106,54 +106,49 @@ Will show what is available in your verion of openssl.
 
 **Video Settings**
 Setting the max bandwdith
-```
-  <X-PRE-PROCESS cmd="set" data="rtp_video_max_bandwidth_in=1mb"/>
-  <X-PRE-PROCESS cmd="set" data="rtp_video_max_bandwidth_out=1mb"/>
+```xml
+<X-PRE-PROCESS cmd="set" data="rtp_video_max_bandwidth_in=1mb"/>
+<X-PRE-PROCESS cmd="set" data="rtp_video_max_bandwidth_out=1mb"/>
 ```
 WebRTC Video 
 Suppress CNG for WebRTC Audio
-```
+```xml
 <X-PRE-PROCESS cmd="set" data="suppress_cng=true"/>
 ```
 Enable liberal DTMF
-```
+```xml
 <X-PRE-PROCESS cmd="set" data="rtp_liberal_dtmf=true"/>
 ```  
 Stock Video Avatars
-```
+```xml
 <X-PRE-PROCESS cmd="set" data="video_mute_png=$${images_dir}/default-mute.png"/>
 <X-PRE-PROCESS cmd="set" data="video_no_avatar_png=$${images_dir}/default-avatar.png"/>
 ```
 
-
 outbound_caller_id and outbound_caller_name
-       The caller ID telephone number we should use when calling out.
-       Used by: conference.conf.xml and user directory for default
-       outbound callerid name and number.
-
-  <X-PRE-PROCESS cmd="set" data="outbound_caller_name=FreeSWITCH"/>
-  <X-PRE-PROCESS cmd="set" data="outbound_caller_id=0000000000"/>
-
+The caller ID telephone number we should use when calling out.
+Used by: conference.conf.xml and user directory for default
+```xml
+<X-PRE-PROCESS cmd="set" data="outbound_caller_name=FreeSWITCH"/>
+<X-PRE-PROCESS cmd="set" data="outbound_caller_id=0000000000"/>
+```
 
 ## sip profile 
 
 Inject delay between dtmf digits on send to help some slow interpreters (also per channel with rtp_digit_delay var
-```
+```xml
  <param name="rtp-digit-delay" value="40"/>
 ```
 When calls are in no media this will bring them back to media when you press the hold button.
-```
+```xml
 <param name="media-option" value="resume-media-on-hold"/>
 ```
 
-allow a call after an attended transfer go back to
-        bypass media after an attended transfer.
+allow a call after an attended transfer go back to bypass media after an attended transfer.
+<param name="media-option" value="bypass-media-after-att-xfer"/>
 
-        <param name="media-option" value="bypass-media-after-att-xfer"/>
-
-         set to "_undef_" to remove the User-Agent header
-
-         <param name="user-agent-string" value="FreeSWITCH Rocks!"/>
+set to "_undef_" to remove the User-Agent header
+<param name="user-agent-string" value="FreeSWITCH Rocks!"/>
 
 ### watchdogs 
 
@@ -241,5 +236,3 @@ Error Creating SIP UA for profile: external-ipv6 (sip:mod_sofia@[fe80::15:a8ff:f
 The likely causes for this are:
 1) Another application is already listening on the specified address.
 2) The IP the profile is attempting to bind to is not local to this system.
-
-

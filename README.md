@@ -11,14 +11,6 @@ Mozilla Public License (MPL)
 sofia profile external rescan reloadxml
 ```
 
-gateway status 
-
-sofia profile external gwlist up
-sipcall_41449999990
-
-sofia profile external gwlist down
-52.152.177.149 voxbeam_outbound
-
 ### fs_cli
 Viewing preset freeswitch variables by fs_cli eval $${variable}.  Can view value of 
       hostname
@@ -56,18 +48,18 @@ Name              internal
 Domain Name       N/A
 Auto-NAT          false
 DBName            sofia_reg_internal
-Pres Hosts        10.130.74.15,10.130.74.15
+Pres Hosts        x.x.x.x,x.x.x.x
 Dialplan          XML
 Context           public
 Challenge Realm   auto_from
-RTP-IP            10.130.74.15
-Ext-RTP-IP        34.237.223.219
-SIP-IP            10.130.74.15
-Ext-SIP-IP        34.237.223.219
-URL               sip:mod_sofia@34.237.223.219:5060
-BIND-URL          sip:mod_sofia@34.237.223.219:5060;maddr=10.130.74.15;transport=udp,tcp
-WS-BIND-URL       sip:mod_sofia@10.130.74.15:5066;transport=ws
-WSS-BIND-URL      sips:mod_sofia@10.130.74.15:7443;transport=wss
+RTP-IP            x.x.x.x
+Ext-RTP-IP        y.y.y.y
+SIP-IP            x.x.x.x
+Ext-SIP-IP        y.y.y.y
+URL               sip:mod_sofia@y.y.y.y:5060
+BIND-URL          sip:mod_sofia@y.y.y.y:5060;maddr=x.x.x.x;transport=udp,tcp
+WS-BIND-URL       sip:mod_sofia@x.x.x.x:5066;transport=ws
+WSS-BIND-URL      sips:mod_sofia@x.x.x.x:7443;transport=wss
 HOLD-MUSIC        local_stream://moh
 OUTBOUND-PROXY    N/A
 CODECS IN         PCMU,PCMA

@@ -1,5 +1,6 @@
 # Gateways in freeswitch 
 
+Define a gateway
 
 <gateway name="sipcall_41449999990">
     <param name="username" value="41449999990"/>
@@ -18,5 +19,18 @@
 </gateway>
          
 
+## gateway status 
+
+sofia profile external gwlist up
+```sh
+sipcall_41449999990
+```
+sofia profile external gwlist down
+```sh
+x.x.x.x voxbeam_outbound
+```
+## debugging 
+
 **Isuee1** freeswitch hanging up, cause: INCOMPATIBLE_DESTINATION
 **Solution** most often the fault lies in codec list , check for matching codecs 
+

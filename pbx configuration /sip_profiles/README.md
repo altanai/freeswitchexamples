@@ -12,3 +12,4 @@ After making any change in sofia profile
 ```
 fs_cli> sofia profile external restart
 ```
+

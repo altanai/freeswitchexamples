@@ -2,15 +2,14 @@
 
 ## debugging help
 
-Issue 1 :  Sampling rate related issue such as 
-2019-07-31 07:16:59.361747 [NOTICE] mod_dptools.c:1357 Channel [sofia/external/3333333333@54.210.131.172:5080] has been answered
-2019-07-31 07:16:59.361747 [DEBUG] switch_channel.c:3781 (sofia/external/3333333333@54.210.131.172:5080) Callstate Change EARLY -> ACTIVE
-EXECUTE sofia/external/3333333333@54.210.131.172:5080 playback(/home/ubuntu/PinkPanther30.wav)
+**Issue 1** :  Sampling rate related issue such as 
+[NOTICE] mod_dptools.c:1357 Channel [sofia/external/3333333333@x.x.x.x:5080] has been answered
+[DEBUG] switch_channel.c:3781 (sofia/external/3333333333@x.x.x.x:5080) Callstate Change EARLY -> ACTIVE
+EXECUTE sofia/external/3333333333@x.x.x.x:5080 playback(/home/ubuntu/PinkPanther30.wav)
 2019-07-31 07:16:59.361747 [DEBUG] switch_core_file.c:358 File /home/ubuntu/PinkPanther30.wav sample rate 22050 doesn't match requested rate 16000
 2019-07-31 07:16:59.361747 [DEBUG] switch_ivr_play_say.c:1498 Codec Activated L16@16000hz 1 channels 20ms 
 
-Solution : find the sampling rate of the file u have 
-
+**Solution** : find the sampling rate of the file u have 
 file 
 ```
 file /home/ubuntu/PinkPanther30.wav 

@@ -4,3 +4,12 @@
     <action application="play_fsv" data="$${temp_dir}/testrecord.fsv"/>
   </condition>
 </extension>
+
+
+<!--
+playback is an application with format such as 
+<action application="playback" data="<sound-file-to-play>[@@seek-offset]"/>
+
+seek-offset — number of samples to seek into the file to begin playback. 
+Case when  file is a number of short prompts then to build a phrase from individual words or phonemes , one can use offsets .
+-->

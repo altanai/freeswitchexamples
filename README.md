@@ -1,4 +1,4 @@
-## Freeswitch sample configuration for various usecases
+# Freeswitch sample configuration for various usecases
 
 freeswitch internal archietture  ![freeswitch_internal_archietture](https://altanaitelecom.files.wordpress.com/2012/05/freeswitch.png?w=500)
 
@@ -6,39 +6,39 @@ Opensource SIP
 
 Mozilla Public License (MPL)
 
-### Sofia commands
+## Sofia commands
 ```sh
 sofia profile external rescan reloadxml
 ```
 
-### fs_cli
+## fs_cli
 Viewing preset freeswitch variables by fs_cli eval $${variable}.  Can view value of 
-      hostname
-      local_ip_v4
-      local_mask_v4
-      local_ip_v6
-      switch_serial
-      base_dir
-      recordings_dir
-      sound_prefix
-      sounds_dir
-      conf_dir
-      log_dir
-      run_dir
-      db_dir
-      mod_dir
-      htdocs_dir
-      script_dir
-      temp_dir
-      grammar_dir
-      certs_dir
-      storage_dir
-      cache_dir
-      core_uuid
-      zrtp_enabled
-      nat_public_addr
-      nat_private_addr
-      nat_type
+hostname
+local_ip_v4
+local_mask_v4
+local_ip_v6
+switch_serial
+base_dir
+recordings_dir
+sound_prefix
+sounds_dir
+conf_dir
+log_dir
+run_dir
+db_dir
+mod_dir
+htdocs_dir
+script_dir
+temp_dir
+grammar_dir
+certs_dir
+storage_dir
+cache_dir
+core_uuid
+zrtp_enabled
+nat_public_addr
+nat_private_addr
+nat_type
 
 ## sofis status
 ```
@@ -89,3 +89,39 @@ Turn sip trace on on selected profile or global
 Enabled sip debugging on internal
 ```
 
+**tcpdump**
+
+taking traffic dumps using tcpdump
+tcpdump -h
+tcpdump version 4.9.2
+libpcap version 1.5.3
+OpenSSL 1.0.1f 6 Jan 2014
+Usage: tcpdump [-aAbdDefhHIJKlLnNOpqStuUvxX#] 
+[ -B size ] 
+[ -c count ]
+[ -C file_size ] 
+[ -E algo:secret ] 
+[ -F file ] 
+[ -G seconds ]
+[ -i interface ] 
+[ -j tstamptype ] 
+[ -M secret ] 
+[ --number ]
+[ -Q in|out|inout ]
+[ -r file ] 
+[ -s snaplen ] 
+[ --time-stamp-precision precision ]
+[ --immediate-mode ] 
+[ -T type ] 
+[ --version ] 
+[ -V file ]
+[ -w file ] 
+[ -W filecount ] 
+[ -y datalinktype ] 
+[ -z postrotate-command ]
+[ -Z user ] 
+[ expression ]
+uauage 
+```sh
+tcpdump -s 0 udp port 5080 -w /home/ubuntu/fs_pbx1.pcap
+```

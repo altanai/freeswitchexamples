@@ -2,12 +2,17 @@
 
 <include>
   <context name="default">
-     <extension name="securecalls">
-        <condition field="destination_number" expression="^.*$">
-        <action application="export" data="nolocal:rtp_secure_media=true:AES_CM_128_HMAC_SHA1_80"/>
-        <action application="log" data="INFO ***** Forwarding calls  ***** "/>
-        <action application="bridge" data="sofia/gateway/gw-prod/$1"/>
-        </condition>
-     </extension>
+
+        <extension name="dialplansecure">
+            <condition field="destination_number" expression="^(\d+)$">
+                <action application="set" data="proxy_media=false"/>
+                <action application="set" data="bypass_media=false"/>
+                <action application="export" data="nolocal:rtp_secure_media=true:AES_CM_128_HMAC_SHA1_80"/>
+                <action application="set" data="dialed_number=$1"/>
+                <action application="log" data="INFO Processing for Secure destination ${dialed_number}"/>
+                <action application="transfer" data="sofia/gateway/securecalls/$1"/>
+            </condition>
+        </extension>
+
   </context>
 </include>

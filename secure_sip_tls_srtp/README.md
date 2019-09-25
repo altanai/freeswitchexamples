@@ -1,8 +1,41 @@
 # secure RTP / SRTP on TLS with Auth challenge 
 
+## 1. Gateway for Outbound calls 
 
-## Dialplan 
+create a gateway in external for outbound calls 
+```xml
+<include>
+  <gateway name="securecalls">
+    <param name="tls-version" value="tlsv1"/>
+    <param name="register-transport" value="tls"/>
+    <param name="username" value="altanai1001" />
+    <param name="password" value="12345678" />
+     <param name="caller-id-in-from" value="true"/>
+    <param name="proxy" value="127.0.0.1:5090"/>
+    <param name="register" value="false"/>
+  </gateway>
+</include>
+```
+Check gateway health after reload mod_sofia and reloadxml
+```sh
+ sofia status gateway
+    Profile::Gateway-Name                           Data        State   Ping Time   IB Calls(F/T)   OB Calls(F/T)
+=================================================================================================
+    external::altanai.com         sip:6666666666@altanai.com    NOREG     0.00  0/0 0/0
+    external::securecalls     sip:altanai1001@127.0.0.1:5090    NOREG     0.00  0/0 0/0
+=================================================================================================
+2 gateways: Inbound(Failed/Total): 0/0,Outbound(Failed/Total):0/0
+```
 
+since we are using th following UAS server at the same machine to receive the outgoing  calls , ass the doamin with ip to proxy 
+Also start sipp uas server on same machine 
+```sh
+sipp -sn uas -p 5090
+```
+
+## 2. Dialplan specifying rtp secure media
+
+create dialplan for routig thorugh securecalls gateway 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <include>
@@ -20,7 +53,7 @@
     </context>
 </include>
 ```
-##  Generate SSL Certificate
+## 3. Generating SSL Certificate
 
 To use TLS/SSL we need a root (CA) certificate and a certificate for every server. 
 
@@ -82,15 +115,66 @@ drwxr-x--- 2 root root 4096 Jan 24 06:54 CA
 -rw-r----- 1 root root 1172 Jan 24 06:52 cafile.pem
 
 
-## Enable TLS
+## 4. Enable TLS
 
 In /etc/freeswitch/vars.xml :
 ```xml
+<X-PRE-PROCESS cmd="set" data="external_tls_port=5081"/>
 <X-PRE-PROCESS cmd="set" data="external_ssl_enable=true"/>
+<X-PRE-PROCESS cmd="set" data="external_ssl_dir=/etc/freeswitch/tls"/>
 ```
 In /etc/freeswitch/sip_profiles/external.xml :
 ```xml
+<param name="tls" value="$${external_ssl_enable}"/>
+<param name="tls-only" value="false"/>
+<param name="tls-bind-params" value="transport=tls"/>
+<param name="tls-sip-port" value="$${external_tls_port}"/>
+<param name="tls-passphrase" value=""/>
+<param name="tls-verify-date" value="true"/>
+<param name="tls-verify-policy" value="none"/>
+<param name="tls-verify-depth" value="2"/>
+<param name="tls-verify-in-subjects" value=""/>
+<param name="tls-version" value="$${sip_tls_version}"/>
 <param name="tls-cert-dir" value="/etc/freeswitch/tls/"/>
+```
+
+## 5. Make call and check traces and logs
+
+orignate a call with syntax 
+originate <call_url> <exten>|&<application_name>(<app_args>) [<dialplan>] [<context>] [<cid_name>] [<cid_num>] [<timeout_sec>]
+such as 
+```sh
+ originate sofia/123456789    
+```
+
+```
+[INFO] mod_dptools.c:1787 Processing for Secure destination 123456789
+EXECUTE sofia/internal/altanai@x.x.x.x bridge(sofia/gateway/securecalls/123456789)
+[DEBUG] switch_channel.c:1250 sofia/internal/altanai@x.x.x.x EXPORTING[export_vars] [rtp_secure_media]=[true:AES_CM_128_HMAC_SHA1_80] to event
+[DEBUG] switch_ivr_originate.c:2159 Parsing global variables
+[NOTICE] switch_channel.c:1104 New Channel sofia/external/123456789 [4ce057ed-9800-444b-ac80-c5a50c205333]
+[DEBUG] mod_sofia.c:5026 (sofia/external/123456789) State Change CS_NEW -> CS_INIT
+[DEBUG] switch_core_state_machine.c:584 (sofia/external/123456789) Running State Change CS_INIT (Cur 2 Tot 33)
+[DEBUG] switch_core_state_machine.c:627 (sofia/external/123456789) State INIT
+[DEBUG] mod_sofia.c:93 sofia/external/123456789 SOFIA INIT
+[DEBUG] switch_core_media.c:1204 Set Local audio crypto Key [5 AES_CM_128_HMAC_SHA1_80 inline:wTBULfstsF7LBv3aTuxW7KxdTw3s/ONfjgEf6LOd]
+[DEBUG] switch_core_media.c:1204 Set Local video crypto Key [5 AES_CM_128_HMAC_SHA1_80 inline:cVyBFw0BFJEG8oRHuTixA74aktsYyoxgo6GipBVg]
+[DEBUG] switch_core_media.c:1204 Set Local text crypto Key [5 AES_CM_128_HMAC_SHA1_80 inline:b5jcDAtloDW7afqHBvqOUqGnNqtDp9zu2wQi3Knc]
+[DEBUG] sofia_glue.c:1299 sofia/external/123456789 sending invite version: 1.9.0 -742-8f1b7e0 64bit
+Local SDP:
+v=0
+o=FreeSWITCH 1569384062 1569384063 IN IP4 x.x.x.x
+s=FreeSWITCH
+c=IN IP4 x.x.x.x
+t=0 0
+m=audio 22178 RTP/SAVP 8 0 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-16
+a=crypto:5 AES_CM_128_HMAC_SHA1_80 inline:wTBULfstsF7LBv3aTuxW7KxdTw3s/ONfjgEf6LOd
+a=ptime:20
+a=sendrecv
 ```
 
 ## SRTP Crypto suites 

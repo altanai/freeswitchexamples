@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<include>
+  <context name="default">
+     <extension name="securecalls">
+        <condition field="destination_number" expression="^.*$">
+        <action application="export" data="nolocal:rtp_secure_media=true:AES_CM_128_HMAC_SHA1_80"/>
+        <action application="log" data="INFO ***** Forwarding calls  ***** "/>
+        <action application="bridge" data="sofia/gateway/gw-prod/$1"/>
+        </condition>
+     </extension>
+  </context>
+</include>

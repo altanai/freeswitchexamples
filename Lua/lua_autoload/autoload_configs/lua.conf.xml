@@ -1,0 +1,27 @@
+<configuration name="lua.conf" description="LUA Configuration">
+  <settings>
+    <!-- 
+    Specify local directories that will be searched for LUA modules
+    These entries will be pre-pended to the LUA_CPATH environment variable
+    -->
+    <!-- <param name="module-directory" value="/usr/lib/lua/5.1/?.so"/> -->
+
+    <!-- 
+    Specify local directories that will be searched for LUA scripts
+    These entries will be pre-pended to the LUA_PATH environment variable
+    -->
+    <param name="script-directory" value="$${script_dir}/?.lua"/>
+
+    <param name="xml-handler-script" value="/etc/freeswitch/helloworld.lua"/>
+    <param name="xml-handler-bindings" value="dialplan"/>-->
+
+    <!--
+        The following options identifies a lua script that is launched
+        at startup and may live forever in the background.
+        You can define multiple lines, one for each script you 
+        need to run.
+    -->
+    <param name="startup-script" value="/etc/freeswitch/arguments_pass.lua altanai bisht"/>
+    <!--<hook event="CUSTOM" subclass="conference::maintenance" script="catch-event.lua"/>-->
+  </settings>
+</configuration>

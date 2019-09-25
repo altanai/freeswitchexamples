@@ -1,0 +1,6 @@
+ <extension name="ivr_demo">
+    <condition field="destination_number" expression="5000">
+        <!--<action application="ivr" data="demo_ivr"/>-->
+        <action application="lua" data="/etc/freeswitch/dialplan/lua_session_answer_prompt_hangup.lua"/>
+    </condition>
+  </extension>

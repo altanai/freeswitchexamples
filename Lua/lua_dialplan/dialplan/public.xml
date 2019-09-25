@@ -1,6 +1,18 @@
- <extension name="ivr_demo">
-    <condition field="destination_number" expression="5000">
-        <!--<action application="ivr" data="demo_ivr"/>-->
-        <action application="lua" data="/etc/freeswitch/dialplan/lua_session_answer_prompt_hangup.lua"/>
-    </condition>
-  </extension>
+ <include>
+	<context name="public">
+
+		<extension name="lua1">
+	    	<condition field="destination_number" expression="5000">
+	        	<!--<action application="ivr" data="demo_ivr"/>-->
+	        	<action application="lua" data="/etc/freeswitch/dialplan/lua_session_answer_prompt_hangup.lua"/>
+	    	</condition>
+	    </extension>
+
+		<extension name="lua2">
+		    <condition field="destination_number" expression="5001">
+		        <action application="lua" data="/etc/freeswitch/dialplan/lua_session_leg_bridge.lua"/>
+		    </condition>
+		</extension>
+
+	</context>
+</include>

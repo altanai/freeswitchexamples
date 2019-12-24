@@ -1,6 +1,9 @@
 <!-- a sample IVR  -->
 <extension name="ivr_demo">
   <condition field="destination_number" expression="^5000$">
+  	<!-- anti action gets execited if conditions are not meet  -->
+  	<anti-action application="respond" data="407"/>
+  	<action application="log" data="INFO ****IVR ***** "/>
     <action application="answer"/>
     <action application="sleep" data="2000"/>
     <action application="ivr" data="demo_ivr"/>

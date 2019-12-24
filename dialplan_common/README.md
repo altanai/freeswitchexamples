@@ -124,6 +124,131 @@ httapi - Send call control to a Web server with the HTTAPI infrastructure
 
 ### info 
 Display Call Info.
+```
+
+```
+info outout
+EXECUTE sofia/external/6666666666@3.91.53.67 info()
+2019-09-05 10:26:54.718507 [INFO] mod_dptools.c:1806 CHANNEL_DATA:
+Channel-State: [CS_EXECUTE]
+Channel-Call-State: [RINGING]
+Channel-State-Number: [4]
+Channel-Name: [sofia/external/6666666666@3.91.53.67]
+Unique-ID: [4061d7a4-2a61-4ab2-a998-13d9425fe3c2]
+Call-Direction: [inbound]
+Presence-Call-Direction: [inbound]
+Channel-HIT-Dialplan: [true]
+Channel-Call-UUID: [4061d7a4-2a61-4ab2-a998-13d9425fe3c2]
+Answer-State: [ringing]
+Caller-Direction: [inbound]
+Caller-Logical-Direction: [inbound]
+Caller-Username: [6666666666]
+Caller-Dialplan: [XML]
+Caller-Caller-ID-Name: [6666666666]
+Caller-Caller-ID-Number: [6666666666]
+Caller-Orig-Caller-ID-Name: [6666666666]
+Caller-Orig-Caller-ID-Number: [6666666666]
+Caller-Network-Addr: [10.130.44.46]
+Caller-ANI: [6666666666]
+Caller-Destination-Number: [18552702852]
+Caller-Unique-ID: [4061d7a4-2a61-4ab2-a998-13d9425fe3c2]
+Caller-Source: [mod_sofia]
+Caller-Context: [public]
+Caller-Channel-Name: [sofia/external/6666666666@3.91.53.67]
+Caller-Profile-Index: [1]
+Caller-Profile-Created-Time: [1567679214718507]
+Caller-Channel-Created-Time: [1567679214718507]
+Caller-Channel-Answered-Time: [0]
+Caller-Channel-Progress-Time: [0]
+Caller-Channel-Progress-Media-Time: [0]
+Caller-Channel-Hangup-Time: [0]
+Caller-Channel-Transfer-Time: [0]
+Caller-Channel-Resurrect-Time: [0]
+Caller-Channel-Bridged-Time: [0]
+Caller-Channel-Last-Hold: [0]
+Caller-Channel-Hold-Accum: [0]
+Caller-Screen-Bit: [true]
+Caller-Privacy-Hide-Name: [false]
+Caller-Privacy-Hide-Number: [false]
+variable_direction: [inbound]
+variable_uuid: [4061d7a4-2a61-4ab2-a998-13d9425fe3c2]
+variable_session_id: [143]
+variable_sip_from_user: [6666666666]
+variable_sip_from_uri: [6666666666@3.91.53.67]
+variable_sip_from_host: [3.91.53.67]
+variable_video_media_flow: [disabled]
+variable_audio_media_flow: [disabled]
+variable_text_media_flow: [disabled]
+variable_channel_name: [sofia/external/6666666666@3.91.53.67]
+variable_sip_call_id: [99140NTQ4OWE1MGVlZjk0ZWU4YzI5NDAyMmIxYjdmNjdlOWQ]
+variable_sip_local_network_addr: [3.222.205.112]
+variable_sip_network_ip: [10.130.44.46]
+variable_sip_network_port: [5060]
+variable_sip_invite_stamp: [1567679214718507]
+variable_sip_received_ip: [10.130.44.46]
+variable_sip_received_port: [5060]
+variable_sip_via_protocol: [udp]
+variable_sip_authorized: [true]
+variable_Event-Name: [REQUEST_PARAMS]
+variable_Core-UUID: [11422524-b611-4ece-8042-c5716846e852]
+variable_FreeSWITCH-Hostname: [ip-10-130-74-15]
+variable_FreeSWITCH-Switchname: [ip-10-130-74-15]
+variable_FreeSWITCH-IPv4: [10.130.74.15]
+variable_FreeSWITCH-IPv6: [fe80::a9:33ff:feb3:2da0]
+variable_Event-Date-Local: [2019-09-05 10:26:54]
+variable_Event-Date-GMT: [Thu, 05 Sep 2019 10:26:54 GMT]
+variable_Event-Date-Timestamp: [1567679214718507]
+variable_Event-Calling-File: [sofia.c]
+variable_Event-Calling-Function: [sofia_handle_sip_i_invite]
+variable_Event-Calling-Line-Number: [10302]
+variable_Event-Sequence: [3174]
+variable_sip_number_alias: [2222222222]
+variable_sip_auth_username: [2222222222]
+variable_sip_auth_realm: [10.130.74.15]
+variable_number_alias: [2222222222]
+variable_requested_user_name: [2222222222]
+variable_requested_domain_name: [10.130.74.15]
+variable_user_name: [2222222222]
+variable_domain_name: [10.130.74.15]
+variable_sip_from_user_stripped: [6666666666]
+variable_sip_from_tag: [253cab72]
+variable_sofia_profile_name: [external]
+variable_sofia_profile_url: [sip:mod_sofia@3.222.205.112:5080]
+variable_recovery_profile_name: [external]
+variable_sip_full_via: [SIP/2.0/UDP 10.130.44.46:5060;branch=z9hG4bK6312.8f93f8fc5e3fcdcb1f3f52e73313710b.1.cs1]
+variable_sip_full_from: [<sip:6666666666@3.91.53.67>;tag=253cab72]
+variable_sip_full_to: [<sip:18552702852@10.130.74.15:5080>]
+variable_sip_allow: [INVITE, ACK, CANCEL, BYE, UPDATE]
+variable_sip_req_user: [18552702852]
+variable_sip_req_port: [5080]
+variable_sip_req_uri: [18552702852@10.130.74.15:5080]
+variable_sip_req_host: [10.130.74.15]
+variable_sip_to_user: [18552702852]
+variable_sip_to_port: [5080]
+variable_sip_to_uri: [18552702852@10.130.74.15:5080]
+variable_sip_to_host: [10.130.74.15]
+variable_sip_contact_user: [btpsh-5d70e294-570c-1]
+variable_sip_contact_uri: [btpsh-5d70e294-570c-1@10.130.44.46]
+variable_sip_contact_host: [10.130.44.46]
+variable_rtp_use_codec_string: [PCMU,PCMA]
+variable_sip_user_agent: [Zentrunk]
+variable_sip_via_host: [10.130.44.46]
+variable_sip_via_port: [5060]
+variable_max_forwards: [66]
+variable_switch_r_sdp: [v=0
+o=- 1567679214883751 1 IN IP4 3.92.94.37
+s=X-Lite release 5.6.1 stamp 99140
+c=IN IP4 3.92.94.37
+t=0 0
+m=audio 10026 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+]
+variable_ep_codec_string: [CORE_PCM_MODULE.PCMU@8000h@20i@64000b]
+variable_endpoint_disposition: [DELAYED NEGOTIATION]
+variable_call_uuid: [4061d7a4-2a61-4ab2-a998-13d9425fe3c2]
+variable_current_application: [info]
+
+
 
 intercept - Lets you pickup a call and take it over if you know the uuid.
 ivr - Run an IVR menu.[old wiki]
@@ -184,7 +309,7 @@ terminators = Digits used to end input if less than <min> digits have been press
 
 ### record 
 Record a file from the channel's input.
-> record,Record File,<path> [<time_limit_secs>] [<silence_thresh>] [<silence_hits>]
+- record,Record File,<path> [<time_limit_secs>] [<silence_thresh>] [<silence_hits>]
 time_limit_secs - (optional) is the maximum duration of the recording in seconds.
 silence_thresh - (optional) is the energy level below which is considered silence.
 silence_hits - (optional) is how many seconds of audio below silence_thresh will be tolerated before the recording stops. default is 3 seconds.
@@ -202,12 +327,60 @@ regex - Perform a regex.
 remove_bugs - Remove media bugs.
 rename - Rename file.
 respond - Send a respond message to a session.
-ring_ready - Indicate Ring_Ready on a channel.
+
+### ring_ready
+Indicate Ring_Ready on a channel by senidng an 180 Ringing to be sent to the originator.
+
+
 rxfax - Receive a fax as a tif file.
 
 ### say 
 Say time/date/ip_address/digits/etc. With pre-recorded prompts.
 can also spell out alpha-numeric text, including punctuation marks.
+- say <module_name>[:<lang>] <say_type> <say_method> [gender] <text>
+
+Say type is one of the following
+	NUMBER
+	ITEMS
+	PERSONS
+	MESSAGES
+	CURRENCY
+	TIME_MEASUREMENT
+	CURRENT_DATE
+	CURRENT_TIME
+	CURRENT_DATE_TIME
+	TELEPHONE_NUMBER
+	TELEPHONE_EXTENSION
+	URL
+	IP_ADDRESS
+	EMAIL_ADDRESS
+	POSTAL_ADDRESS
+	ACCOUNT_NUMBER
+	NAME_SPELLED
+	NAME_PHONETIC
+	SHORT_DATE_TIME
+Say method is one of the following (
+	pronounced 
+	iterated
+	counted
+Say gender
+	FEMININE
+	MASCULINE
+	NEUTER
+Examples:
+```xml
+<action application="say" data="en name_spelled iterated ${destination_number}"/>
+ 
+<action application="say" data="en number pronounced 12345"/>
+
+<action application="say" data="en ip_address pronounced 12.34.56.78"/>
+
+<action application="say" data="en CURRENCY PRONOUNCED -1.96"/>
+
+<action application="say" data="en short_date_time pronounced [timestamp]"/>
+```
+
+A transcript of the pre-recorded files - https://freeswitch.org/stash/projects/FS/repos/freeswitch/browse/docs/phrase/phrase_en.xml
 
 sched_broadcast - Enable Scheduled Broadcast.
 sched_cancel - Cancel a scheduled future broadcast/transfer.

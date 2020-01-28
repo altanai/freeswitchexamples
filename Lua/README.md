@@ -116,6 +116,9 @@ Before runing above script make sure to register an internal user altanai in dir
 </include>
 ```
 PS : we can use luarun for non blocking operation 
+```
+fs_cli -x "lua calls.lua"
+```
 
 When the Lua script is called from FreeSWITCH, we get the 'freeswitch' object which can be used to access session , logs , parms or do operatiosn like bridge , msleep etc
 ```c

@@ -1,17 +1,33 @@
 # Freeswitch sample configuration for various usecases
 
-freeswitch internal archietture  ![freeswitch_internal_archietture](https://altanaitelecom.files.wordpress.com/2012/05/freeswitch.png?w=500)
-
-Opensource SIP 
-
+freeswitch internal architecture  ![freeswitch_internal_archietture](https://altanaitelecom.files.wordpress.com/2012/05/freeswitch.png?w=500)
+Opensource SIP Server 
 Mozilla Public License (MPL)
 
-## Sofia commands
-```sh
-sofia profile external rescan reloadxml
+## Installation 
+
+Update the Package Manager.
+```
+apt-get update && apt-get install -y gnupg2 wget
 ```
 
-## fs_cli
+Add the Public Key of FreeSwitch package to local Package Manager.
+```
+wget -O - https://files.freeswitch.org/repo/deb/debian-release/fsstretch-archive-keyring.asc | apt-key add -
+```
+
+Add the FreeSwitch repository URL to the source list of local Package Manager.
+```
+echo "deb http://files.freeswitch.org/repo/deb/debian-release/ stretch main" > /etc/apt/sources.list.d/freeswitch.list
+echo "deb-src http://files.freeswitch.org/repo/deb/debian-release/ stretch main" >> /etc/apt/sources.list.d/freeswitch.list
+```
+
+Install the FreeSwitch package.
+```
+apt-get update && apt-get install -y freeswitch-meta-all 
+```
+
+## CommandLine cli - fs_cli
 Viewing preset freeswitch variables by fs_cli eval $${variable}.  Can view value of 
 hostname
 local_ip_v4
@@ -40,7 +56,20 @@ nat_public_addr
 nat_private_addr
 nat_type
 
-## sofis status
+## Sofia 
+Sofia is a SIP stack used by FreeSWITCH.
+
+Reload all xml
+```sh
+sofia profile external rescan reloadxml
+```
+
+recover calls that were up, after crashing (or other scenarios)
+```sh
+sofia recover
+```
+
+sofis status
 ```
 sofia status profile internal
 =================================================================================================

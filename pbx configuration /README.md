@@ -150,30 +150,31 @@ allow a call after an attended transfer go back to bypass media after an attende
 set to "_undef_" to remove the User-Agent header
 <param name="user-agent-string" value="FreeSWITCH Rocks!"/>
 
+Too see avaiable codecs
+```sh
+show codecs
+type,name,ikey
+codec,G.711 alaw,CORE_PCM_MODULE
+codec,G.711 ulaw,CORE_PCM_MODULE
+codec,PROXY PASS-THROUGH,CORE_PCM_MODULE
+codec,PROXY VIDEO PASS-THROUGH,CORE_PCM_MODULE
+codec,RAW Signed Linear (16 bit),CORE_PCM_MODULE
+codec,Speex,CORE_SPEEX_MODULE
+codec,VP8 Video,CORE_VPX_MODULE
+codec,VP9 Video,CORE_VPX_MODULE
+```
+
 ### watchdogs 
 
- Sometimes, in extremely rare edge cases, the Sofia SIP stack may stop
-        responding. These options allow you to enable and control a watchdog
-        on the Sofia SIP stack so that if it stops responding for the
-        specified number of milliseconds, it will cause FreeSWITCH to crash
-        immediately. This is useful if you run in an HA environment and
-        need to ensure automated recovery from such a condition. Note that if
-        your server is idle a lot, the watchdog may fire due to not receiving
-        any SIP messages. Thus, if you expect your system to be idle, you
-        should leave the watchdog disabled. It can be toggled on and off
-        through the FreeSWITCH CLI either on an individual profile basis or
-        globally for all profiles. So, if you run in an HA environment with a
-        master and slave, you should use the CLI to make sure the watchdog is
-        only enabled on the master.
-        If such crash occurs, FreeSWITCH will dump core if allowed. The
-        stacktrace will include function watchdog_triggered_abort().
+enable and control a watchdog on the Sofia SIP stack so that if it stops responding for the specified number of milliseconds, it will cause FreeSWITCH to crash immediately. 
+```xml
     <param name="watchdog-enabled" value="no"/>
     <param name="watchdog-step-timeout" value="30000"/>
     <param name="watchdog-event-timeout" value="30000"/>
-
+```
 ### TLS
 
-    <!-- TLS: disabled by default, set to "true" to enable -->
+TLS: disabled by default, set to "true" to enable
     <param name="tls" value="$${internal_ssl_enable}"/>
     <!-- Set to true to not bind on the normal sip-port but only on the TLS port -->
     <param name="tls-only" value="false"/>
@@ -181,23 +182,28 @@ set to "_undef_" to remove the User-Agent header
     <param name="tls-bind-params" value="transport=tls"/>
     <!-- Port to listen on for TLS requests. (5061 will be used if unspecified) -->
     <param name="tls-sip-port" value="$${internal_tls_port}"/>
-    <!-- Location of the agent.pem and cafile.pem ssl certificates (needed for TLS server) -->
+
+Location of the agent.pem and cafile.pem ssl certificates (needed for TLS server) -->
     <!--<param name="tls-cert-dir" value=""/>-->
     <!-- Optionally set the passphrase password used by openSSL to encrypt/decrypt TLS private key files -->
     <param name="tls-passphrase" value=""/>
     <!-- Verify the date on TLS certificates -->
     <param name="tls-verify-date" value="true"/>
-    <!-- TLS verify policy, when registering/inviting gateways with other servers (outbound) or handling inbound registration/invite requests how should we verify their certificate -->
-    <!-- set to 'in' to only verify incoming connections, 'out' to only verify outgoing connections, 'all' to verify all connections, also 'subjects_in', 'subjects_out' and 'subjects_all' for subject validation. Multiple policies can be split with a '|' pipe -->
+TLS verify policy, when registering/inviting gateways with other servers (outbound) or handling inbound registration/invite requests how should we verify their certificate 
+set to 'in' to only verify incoming connections, 'out' to only verify outgoing connections, 'all' to verify all connections, also 'subjects_in', 'subjects_out' and 'subjects_all' for subject validation. Multiple policies can be split with a '|' pipe
     <param name="tls-verify-policy" value="none"/>
-    <!-- Certificate max verify depth to use for validating peer TLS certificates when the verify policy is not none -->
+
+Certificate max verify depth to use for validating peer TLS certificates when the verify policy is not none
     <param name="tls-verify-depth" value="2"/>
-    <!-- If the tls-verify-policy is set to subjects_all or subjects_in this sets which subjects are allowed, multiple subjects can be split with a '|' pipe -->
+
+If the tls-verify-policy is set to subjects_all or subjects_in this sets which subjects are allowed, multiple subjects can be split with a pipe
+    ```xml
     <param name="tls-verify-in-subjects" value=""/>
-    <!-- TLS version default: tlsv1,tlsv1.1,tlsv1.2 -->
+    ```
+TLS version default: tlsv1,tlsv1.1,tlsv1.2
     <param name="tls-version" value="$${sip_tls_version}"/>
 
-    <!-- TLS ciphers default: ALL:!ADH:!LOW:!EXP:!MD5:@STRENGTH  -->
+TLS ciphers default: ALL:!ADH:!LOW:!EXP:!MD5:@STRENGTH
     <param name="tls-ciphers" value="$${sip_tls_ciphers}"/>
 
 ## directory.xml
@@ -207,32 +213,11 @@ When freeswitch gets a register packet it looks for the user in the directory ba
 Out of the box the default domain will be the IP address of the machine running FreeSWITCH.  This IP can be found by typing "sofia status" at the CLI.  
 
 You will register your phones to the IP and not the hostname by default.
-    If you wish to register using the domain please open vars.xml in the root conf
-    directory and set the default domain to the hostname you desire.  Then you would
-    use the domain name in the client instead of the IP address to register
-    with FreeSWITCH.
+If you wish to register using the domain please open vars.xml in the root conf   directory and set the default domain to the hostname you desire.  Then you would   use the domain name in the client instead of the IP address to register with FreeSWITCH.
+
+See users registrations 
+```sh
+show registrations
+```
 
 ## debugging support 
-
-**Issue 1** : Error Creating SIP UA for profile: external-ipv6 (sip:mod_sofia@[fe80::15:a8ff:fec0:13bc]:5080;transport=udp,tcp) ATTEMPT 2 (RETRY IN 5 SEC)
-Error Creating SIP UA for profile: external (sip:mod_sofia@3.218.248.139:5080;transport=udp,tcp) ATTEMPT 2 (RETRY IN 5 SEC)
-Error Creating SIP UA for profile: internal-ipv6 (sip:mod_sofia@[fe80::15:a8ff:fec0:13bc]:5060;transport=udp,tcp) ATTEMPT 2 (RETRY IN 5 SEC)
-Error Creating SIP UA for profile: external-ipv6 (sip:mod_sofia@[fe80::15:a8ff:fec0:13bc]:5080;transport=udp,tcp) ATTEMPT 3 (RETRY IN 5 SEC)
-Error Creating SIP UA for profile: external-ipv6 (sip:mod_sofia@[fe80::15:a8ff:fec0:13bc]:5080;transport=udp,tcp)
-
-**Solution** The likely causes for this are:
-1) Another application is already listening on the specified address.
-2) The IP the profile is attempting to bind to is not local to this system.
-
-
-**Issue2** :[ERR] sofia.c:3228 Error Creating SIP UA for profile: external (sip:mod_sofia@3.218.248.139:5080;transport=udp,tcp) ATTEMPT 3 (RETRY IN 5 SEC)
-[ERR] sofia.c:3238 Error Creating SIP UA for profile: external (sip:mod_sofia@3.218.248.139:5080;transport=udp,tcp)
-
-**Solution** The likely causes for this are:
-1) Another application is already listening on the specified address.
-2) The IP the profile is attempting to bind to is not local to this system.
-2019-08-01 07:53:35.454366 [ERR] sofia.c:3228 Error Creating SIP UA for profile: internal-ipv6 (sip:mod_sofia@[fe80::15:a8ff:fec0:13bc]:5060;transport=udp,tcp) ATTEMPT 3 (RETRY IN 5 SEC)
-2019-08-01 07:53:35.454366 [ERR] sofia.c:3238 Error Creating SIP UA for profile: internal-ipv6 (sip:mod_sofia@[fe80::15:a8ff:fec0:13bc]:5060;transport=udp,tcp)
-The likely causes for this are:
-1) Another application is already listening on the specified address.
-2) The IP the profile is attempting to bind to is not local to this system.

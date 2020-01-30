@@ -57,7 +57,7 @@ run configure
 ```
 ./configure
 ```
-configure screen for fresswitch ![configure_screen_for_fresswitch](https://altanaitelecom.files.wordpress.com/2012/05/freeswitch.png?w=500)
+configure screen for fresswitch ![configure_screen_for_fresswitch](screenshots/configure_freswitch.png)
 
 make text to soeech
 ```
@@ -68,13 +68,13 @@ compile
 ```
 make 
 ```
-make screen for fresswitch ![make_screen_for_fresswitch](https://altanaitelecom.files.wordpress.com/2012/05/freeswitch.png?w=500)
+make screen for fresswitch ![make_screen_for_fresswitch](screenshots/make_freswitch.png)
 
 install
 ```
 make install 
 ```
-install screen for fresswitch ![install_screen_for_fresswitch](https://altanaitelecom.files.wordpress.com/2012/05/freeswitch.png?w=500)
+install screen for fresswitch ![install_screen_for_fresswitch](screenshots/make_install_freswitch.png)
 
 ## Command Line cli - fs_cli
 Viewing preset freeswitch variables by fs_cli eval $${variable}.  Can view value of 

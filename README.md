@@ -51,13 +51,13 @@ run bootstrap
 ```
 ./bootstrap.sh
 ```
-bootrap screen for fresswitch ![bootrap_screen_for_fresswitch](screenshots/bootstarp_freswitch.png)
+bootrap screen for fresswitch ![bootrap_screen_for_fresswitch](screenshots/bootstarp_freeswitch.png)
 
 run configure
 ```
 ./configure
 ```
-configure screen for fresswitch ![configure_screen_for_fresswitch](screenshots/configure_freswitch.png)
+configure screen for fresswitch ![configure_screen_for_fresswitch](screenshots/configure_freeswitch.png)
 
 make text to soeech
 ```
@@ -68,13 +68,13 @@ compile
 ```
 make 
 ```
-make screen for fresswitch ![make_screen_for_fresswitch](screenshots/make_freswitch.png)
+make screen for fresswitch ![make_screen_for_fresswitch](screenshots/make_freeswitch.png)
 
 install
 ```
 make install 
 ```
-install screen for fresswitch ![install_screen_for_fresswitch](screenshots/make_install_freswitch.png)
+install screen for fresswitch ![install_screen_for_fresswitch](screenshots/make_install_freeswitch.png)
 
 ## Command Line cli - fs_cli
 Viewing preset freeswitch variables by fs_cli eval $${variable}.  Can view value of 

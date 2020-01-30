@@ -4,7 +4,7 @@ freeswitch internal architecture  ![freeswitch_internal_archietture](https://alt
 Opensource SIP Server 
 Mozilla Public License (MPL)
 
-## Installation 
+## Installation on debain / Ubuntu
 
 Update the Package Manager.
 ```
@@ -27,7 +27,56 @@ Install the FreeSwitch package.
 apt-get update && apt-get install -y freeswitch-meta-all 
 ```
 
-## CommandLine cli - fs_cli
+## Installation on mac os 
+
+make the folder structure 
+```
+cd /usr/local      
+sudo mkdir freeswitch src  
+sudo chown -R `id -u`:`id -g` freeswitch src
+```
+use home brew to install dependencies 
+```
+brew install autoconf automake curl ffmpeg jpeg ldns libpq libsndfile libtiff libtool lua openssl opus pcre pkg-config speex speexdsp sqlite yasm signalwire/homebrew-signalwire/flite signalwire/homebrew-signalwire/libks signalwire/homebrew-signalwire/signalwire-c
+```
+
+get the source code 
+```
+/usr/local/src
+FSfile=$(curl -s https://files.freeswitch.org/freeswitch-releases/ | grep -oE "freeswitch-[0-9]*\.[0-9]*\.[0-9]*\.-release\.tar\.bz2" | tail -n 1) && echo Downloading $FSfile && curl https://files.freeswitch.org/freeswitch-releases/$FSfile | tar -xj && mv ${FSfile/.tar.bz2//} freeswitch
+git clone https://stash.freeswitch.org/scm/fs/freeswitch.git
+```
+
+run bootstrap 
+```
+./bootstrap.sh
+```
+bootrap screen for fresswitch ![bootrap_screen_for_fresswitch](https://altanaitelecom.files.wordpress.com/2012/05/freeswitch.png?w=500)
+
+run configure
+```
+./configure
+```
+configure screen for fresswitch ![configure_screen_for_fresswitch](https://altanaitelecom.files.wordpress.com/2012/05/freeswitch.png?w=500)
+
+make text to soeech
+```
+perl -pi -e 's{#asr_tts/mod_flite}{asr_tts/mod_flite}' /usr/local/src/freeswitch/modules.conf
+```
+
+compile
+```
+make 
+```
+make screen for fresswitch ![make_screen_for_fresswitch](https://altanaitelecom.files.wordpress.com/2012/05/freeswitch.png?w=500)
+
+install
+```
+make install 
+```
+install screen for fresswitch ![install_screen_for_fresswitch](https://altanaitelecom.files.wordpress.com/2012/05/freeswitch.png?w=500)
+
+## Command Line cli - fs_cli
 Viewing preset freeswitch variables by fs_cli eval $${variable}.  Can view value of 
 hostname
 local_ip_v4

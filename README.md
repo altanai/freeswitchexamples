@@ -51,7 +51,7 @@ run bootstrap
 ```
 ./bootstrap.sh
 ```
-bootrap screen for fresswitch ![bootrap_screen_for_fresswitch](https://altanaitelecom.files.wordpress.com/2012/05/freeswitch.png?w=500)
+bootrap screen for fresswitch ![bootrap_screen_for_fresswitch](screenshots/bootstarp_freswitch.png)
 
 run configure
 ```

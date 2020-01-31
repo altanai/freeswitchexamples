@@ -1,7 +1,8 @@
 # Freeswitch sample configuration for various usecases
 
 freeswitch internal architecture  ![freeswitch_internal_archietture](https://altanaitelecom.files.wordpress.com/2012/05/freeswitch.png?w=500)
-Opensource SIP Server 
+
+Opensource SIP Application Server
 Mozilla Public License (MPL)
 
 ## Installation on debain / Ubuntu
@@ -76,7 +77,26 @@ make install
 ```
 install screen for fresswitch ![install_screen_for_fresswitch](screenshots/make_install_freeswitch.png)
 
+download and install sounds 
+```
+make cd-sounds-install cd-moh-install
+```
+
+remove tenporary files that are not required afetr make 
+```
+make clean
+```
+
+start freeswitch 
+```
+cd /usr/local/freeswitch/bin
+./freeswitch
+```
+run screen for fresswitch ![run_screen_for_fresswitch](screenshots/run_freeswitch.png)
+
+
 ## Command Line cli - fs_cli
+
 Viewing preset freeswitch variables by fs_cli eval $${variable}.  Can view value of 
 hostname
 local_ip_v4
@@ -203,3 +223,7 @@ uauage
 ```sh
 tcpdump -s 0 udp port 5080 -w /home/ubuntu/fs_pbx1.pcap
 ```
+
+**ref**
+- https://freeswitch.org/confluence/display/FREESWITCH/macOS+Manual+Installation
+- https://freeswitch.org/confluence/display/FREESWITCH/macOS+Testing+and+Diagnostics

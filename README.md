@@ -190,39 +190,45 @@ Enabled sip debugging on internal
 **tcpdump**
 
 taking traffic dumps using tcpdump
-tcpdump -h
-tcpdump version 4.9.2
-libpcap version 1.5.3
-OpenSSL 1.0.1f 6 Jan 2014
-Usage: tcpdump [-aAbdDefhHIJKlLnNOpqStuUvxX#] 
-[ -B size ] 
-[ -c count ]
-[ -C file_size ] 
-[ -E algo:secret ] 
-[ -F file ] 
-[ -G seconds ]
-[ -i interface ] 
-[ -j tstamptype ] 
-[ -M secret ] 
-[ --number ]
-[ -Q in|out|inout ]
-[ -r file ] 
-[ -s snaplen ] 
-[ --time-stamp-precision precision ]
-[ --immediate-mode ] 
-[ -T type ] 
-[ --version ] 
-[ -V file ]
-[ -w file ] 
-[ -W filecount ] 
-[ -y datalinktype ] 
-[ -z postrotate-command ]
-[ -Z user ] 
-[ expression ]
-uauage 
-```sh
-tcpdump -s 0 udp port 5080 -w /home/ubuntu/fs_pbx1.pcap
-```
+
+
+    > tcpdump -h
+    
+    tcpdump version 4.9.2
+    libpcap version 1.5.3
+    OpenSSL 1.0.1f 6 Jan 2014
+    Usage: tcpdump [-aAbdDefhHIJKlLnNOpqStuUvxX#] 
+    [ -B size ] 
+    [ -c count ]
+    [ -C file_size ] 
+    [ -E algo:secret ] 
+    [ -F file ] 
+    [ -G seconds ]
+    [ -i interface ] 
+    [ -j tstamptype ] 
+    [ -M secret ] 
+    [ --number ]
+    [ -Q in|out|inout ]
+    [ -r file ] 
+    [ -s snaplen ] 
+    [ --time-stamp-precision precision ]
+    [ --immediate-mode ] 
+    [ -T type ] 
+    [ --version ] 
+    [ -V file ]
+    [ -w file ] 
+    [ -W filecount ] 
+    [ -y datalinktype ] 
+    [ -z postrotate-command ]
+    [ -Z user ] 
+    [ expression ]
+
+
+usage 
+
+
+    tcpdump -s 0 udp port 5080 -w /home/ubuntu/fs_pbx1.pcap
+
 
 **ref**
 - https://freeswitch.org/confluence/display/FREESWITCH/macOS+Manual+Installation

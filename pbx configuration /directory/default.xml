@@ -1,0 +1,36 @@
+<!-- defines domains for user registerations as per their profiles -->
+<include>
+	
+<domain name="$${domain}">
+
+  <params>
+    <param name="dial-string" value="{^^:sip_invite_domain=${dialed_domain}:presence_id=${dialed_user}@${dialed_domain}}${sofia_contact(*/${dialed_user}@${dialed_domain})},${verto_contact(${dialed_user}@${dialed_domain})}"/>
+    <param name="jsonrpc-allowed-methods" value="verto"/>
+  </params>
+
+  <variables>
+    <variable name="record_stereo" value="true"/>
+    <variable name="default_gateway" value="$${default_provider}"/>
+    <variable name="default_areacode" value="$${default_areacode}"/>
+    <variable name="transfer_fallback_extension" value="operator"/>
+  </variables>
+
+  <groups>
+  
+    <group name="default">
+      <users>
+        <X-PRE-PROCESS cmd="include" data="default/*.xml"/>
+      </users>
+    </group>
+
+    <group name="clients">
+      <users>
+        <user id="1000" type="pointer"/>
+        <user id="1001" type="pointer"/>
+      </users>
+    </group>
+
+  </groups>
+
+</domain>
+</include>

@@ -1,0 +1,5 @@
+<extension name="transfer_to_default">
+  <condition>
+    <action application="transfer" data="${destination_number} XML default"/>
+  </condition>
+</extension>

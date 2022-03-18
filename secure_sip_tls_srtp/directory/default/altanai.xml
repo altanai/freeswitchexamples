@@ -1,0 +1,7 @@
+<domain name="$${sip_profile}">
+  <user id="altanai">
+    <params>
+      <param name="password" value="123456"/>
+    </params>
+  </user>
+</domain>

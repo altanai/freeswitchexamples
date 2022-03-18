@@ -1,0 +1,15 @@
+<!-- Send a 183 and send uk-ring as the ringtone. (early media) -->
+<extension name="ringback_183_uk_ring">
+  <condition field="destination_number" expression="^9181$">
+    <action application="set" data="ringback=$${uk-ring}"/>
+    <action application="bridge" data="{ignore_early_media=true}loopback/wait"/>
+  </condition>
+</extension>
+
+<!-- Send a 183 and use music as the ringtone. (early media) -->
+<extension name="ringback_183_music_ring">
+  <condition field="destination_number" expression="^9182$">
+    <action application="set" data="ringback=$${hold_music}"/>
+    <action application="bridge" data="{ignore_early_media=true}loopback/wait"/>
+  </condition>
+</extension>

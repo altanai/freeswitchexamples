@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<include>
+  <context name="default">
+
+        <extension name="dialplansecure">
+            <condition field="destination_number" expression="^(\d+)$">
+                <action application="set" data="proxy_media=false"/>
+                <action application="set" data="bypass_media=false"/>
+                <action application="export" data="nolocal:rtp_secure_media=true:AES_CM_128_HMAC_SHA1_80"/>
+                <action application="set" data="dialed_number=$1"/>
+                <action application="log" data="INFO Processing for Secure destination ${dialed_number}"/>
+                <action application="transfer" data="sofia/gateway/securecalls/$1"/>
+            </condition>
+        </extension>
+
+  </context>
+</include>

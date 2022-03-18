@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- usually accessed via authenticated callers on the sip profile on port 5060-->
+
+<include>
+  	<context name="default">
+
+		<extension name="500">
+		    <condition field="destination_number" expression="^500$">
+		        <action application="bridge" data="user/alt"/> 
+		    </condition>
+		</extension>
+
+    </context>
+</include>

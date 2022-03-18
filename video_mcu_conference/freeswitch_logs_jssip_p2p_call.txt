@@ -1,0 +1,2032 @@
+recv 7374 bytes from wss/[10.176.2.43]:38614 at 17:03:10.878022:
+------------------------------------------------------------------------
+INVITE sip:350000-screen@10.176.2.43:5061 SIP/2.0
+Via: SIP/2.0/WSS ntgslk4c72j0.invalid;branch=z9hG4bK7340957
+Max-Forwards: 69
+To: <sip:350000-screen@10.176.2.43:5061>
+From: "remoteclient" <sip:altanai@10.176.2.43:5061>;tag=av6o5qr6d0
+Call-ID: pheab2e6h7s1bkbepsf2
+CSeq: 4804 INVITE
+Contact: <sip:bbm07gso@ntgslk4c72j0.invalid;transport=ws;ob>
+Content-Type: application/sdp
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: ice,replaces,outbound
+User-Agent: JsSIP 3.9.0
+Content-Length: 6837
+
+v=0
+o=- 9071946232317710072 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE 0 1
+a=extmap-allow-mixed
+a=msid-semantic: WMS n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS
+m=audio 1031 UDP/TLS/RTP/SAVPF 111 63 103 104 9 0 8 106 105 13 110 112 113 126
+c=IN IP4 66.194.72.59
+a=rtcp:48413 IN IP4 66.194.72.59
+a=candidate:1427356461 1 udp 2122260223 10.176.2.43 39158 typ host generation 0 network-id 1 network-cost 10
+a=candidate:1427356461 2 udp 2122260222 10.176.2.43 50705 typ host generation 0 network-id 1 network-cost 10
+a=candidate:4232852728 1 udp 1686052607 66.194.72.59 1031 typ srflx raddr 10.176.2.43 rport 39158 generation 0 network-id 1 network-cost 10
+a=candidate:4232852728 2 udp 1686052606 66.194.72.59 48413 typ srflx raddr 10.176.2.43 rport 50705 generation 0 network-id 1 network-cost 10
+a=candidate:462440413 1 tcp 1518280447 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=candidate:462440413 2 tcp 1518280446 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=ice-ufrag:dRg8
+a=ice-pwd:F3hd1lvhcHxJspcyYw/lNGaD
+a=ice-options:trickle
+a=fingerprint:sha-256 5B:2E:D8:ED:57:E7:4B:B6:11:85:A8:B5:35:F4:6B:2B:8B:BF:33:EE:A6:AD:45:AA:C0:43:10:EB:C8:45:1C:D9
+a=setup:actpass
+a=mid:0
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=sendrecv
+a=msid:n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS 567b82fc-2792-4225-a14b-1241f7e41dd8
+a=rtcp-mux
+a=rtpmap:111 opus/48000/2
+a=rtcp-fb:111 transport-cc
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:63 red/48000/2
+a=fmtp:63 111/111
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+a=ssrc:1917696445 cname:s2F6eK8gjw3uzjz5
+a=ssrc:1917696445 msid:n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS 567b82fc-2792-4225-a14b-1241f7e41dd8
+a=ssrc:1917696445 mslabel:n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS
+a=ssrc:1917696445 label:567b82fc-2792-4225-a14b-1241f7e41dd8
+m=video 40918 UDP/TLS/RTP/SAVPF 96 97 98 99 100 101 102 122 127 121 125 107 108 109 35 36 120 119 124
+c=IN IP4 66.194.72.59
+a=rtcp:48615 IN IP4 66.194.72.59
+a=candidate:1427356461 1 udp 2122260223 10.176.2.43 35057 typ host generation 0 network-id 1 network-cost 10
+a=candidate:1427356461 2 udp 2122260222 10.176.2.43 60736 typ host generation 0 network-id 1 network-cost 10
+a=candidate:4232852728 1 udp 1686052607 66.194.72.59 40918 typ srflx raddr 10.176.2.43 rport 35057 generation 0 network-id 1 network-cost 10
+a=candidate:4232852728 2 udp 1686052606 66.194.72.59 48615 typ srflx raddr 10.176.2.43 rport 60736 generation 0 network-id 1 network-cost 10
+a=candidate:462440413 1 tcp 1518280447 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=candidate:462440413 2 tcp 1518280446 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=ice-ufrag:dRg8
+a=ice-pwd:F3hd1lvhcHxJspcyYw/lNGaD
+a=ice-options:trickle
+a=fingerprint:sha-256 5B:2E:D8:ED:57:E7:4B:B6:11:85:A8:B5:35:F4:6B:2B:8B:BF:33:EE:A6:AD:45:AA:C0:43:10:EB:C8:45:1C:D9
+a=setup:actpass
+a=mid:1
+a=extmap:14 urn:ietf:params:rtp-hdrext:toffset
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:13 urn:3gpp:video-orientation
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay
+a=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type
+a=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing
+a=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+a=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id
+a=sendrecv
+a=msid:n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS be5a1f41-4d64-4c3e-a958-b7cf8d490921
+a=rtcp-mux
+a=rtcp-rsize
+a=rtpmap:96 VP8/90000
+a=rtcp-fb:96 goog-remb
+a=rtcp-fb:96 transport-cc
+a=rtcp-fb:96 ccm fir
+a=rtcp-fb:96 nack
+a=rtcp-fb:96 nack pli
+a=rtpmap:97 rtx/90000
+a=fmtp:97 apt=96
+a=rtpmap:98 VP9/90000
+a=rtcp-fb:98 goog-remb
+a=rtcp-fb:98 transport-cc
+a=rtcp-fb:98 ccm fir
+a=rtcp-fb:98 nack
+a=rtcp-fb:98 nack pli
+a=fmtp:98 profile-id=0
+a=rtpmap:99 rtx/90000
+a=fmtp:99 apt=98
+a=rtpmap:100 VP9/90000
+a=rtcp-fb:100 goog-remb
+a=rtcp-fb:100 transport-cc
+a=rtcp-fb:100 ccm fir
+a=rtcp-fb:100 nack
+a=rtcp-fb:100 nack pli
+a=fmtp:100 profile-id=2
+a=rtpmap:101 rtx/90000
+a=fmtp:101 apt=100
+a=rtpmap:102 H264/90000
+a=rtcp-fb:102 goog-remb
+a=rtcp-fb:102 transport-cc
+a=rtcp-fb:102 ccm fir
+a=rtcp-fb:102 nack
+a=rtcp-fb:102 nack pli
+a=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f
+a=rtpmap:122 rtx/90000
+a=fmtp:122 apt=102
+a=rtpmap:127 H264/90000
+a=rtcp-fb:127 goog-remb
+a=rtcp-fb:127 transport-cc
+a=rtcp-fb:127 ccm fir
+a=rtcp-fb:127 nack
+a=rtcp-fb:127 nack pli
+a=fmtp:127 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42001f
+a=rtpmap:121 rtx/90000
+a=fmtp:121 apt=127
+a=rtpmap:125 H264/90000
+a=rtcp-fb:125 goog-remb
+a=rtcp-fb:125 transport-cc
+a=rtcp-fb:125 ccm fir
+a=rtcp-fb:125 nack
+a=rtcp-fb:125 nack pli
+a=fmtp:125 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f
+a=rtpmap:107 rtx/90000
+a=fmtp:107 apt=125
+a=rtpmap:108 H264/90000
+a=rtcp-fb:108 goog-remb
+a=rtcp-fb:108 transport-cc
+a=rtcp-fb:108 ccm fir
+a=rtcp-fb:108 nack
+a=rtcp-fb:108 nack pli
+a=fmtp:108 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42e01f
+a=rtpmap:109 rtx/90000
+a=fmtp:109 apt=108
+a=rtpmap:35 AV1/90000
+a=rtcp-fb:35 goog-remb
+a=rtcp-fb:35 transport-cc
+a=rtcp-fb:35 ccm fir
+a=rtcp-fb:35 nack
+a=rtcp-fb:35 nack pli
+a=rtpmap:36 rtx/90000
+a=fmtp:36 apt=35
+a=rtpmap:120 red/90000
+a=rtpmap:119 rtx/90000
+a=fmtp:119 apt=120
+a=rtpmap:124 ulpfec/90000
+a=ssrc-group:FID 2784340262 488427194
+a=ssrc:2784340262 cname:s2F6eK8gjw3uzjz5
+a=ssrc:2784340262 msid:n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS be5a1f41-4d64-4c3e-a958-b7cf8d490921
+a=ssrc:2784340262 mslabel:n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS
+a=ssrc:2784340262 label:be5a1f41-4d64-4c3e-a958-b7cf8d490921
+a=ssrc:488427194 cname:s2F6eK8gjw3uzjz5
+a=ssrc:488427194 msid:n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS be5a1f41-4d64-4c3e-a958-b7cf8d490921
+a=ssrc:488427194 mslabel:n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS
+a=ssrc:488427194 label:be5a1f41-4d64-4c3e-a958-b7cf8d490921
+2022-02-02 17:03:10.869056 [NOTICE] switch_channel.c:1118 New Channel sofia/internal/altanai@10.176.2.43:5061 [0e6b01bc-848d-11ec-b42f-fbd0ce10ee85]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_state_machine.c:585 (sofia/internal/altanai@10.176.2.43:5061) Running State Change CS_NEW (Cur 1 Tot 1)
+2022-02-02 17:03:10.869056 [DEBUG] sofia.c:10279 sofia/internal/altanai@10.176.2.43:5061 receiving invite from 10.176.2.43:38614 version: 1.10.4-dev git 91f5434 2020-05-18 17:22:05Z 64bit
+2022-02-02 17:03:10.869056 [DEBUG] sofia.c:11476 Setting NAT mode based on websockets
+2022-02-02 17:03:10.869056 [DEBUG] sofia.c:7325 Channel sofia/internal/altanai@10.176.2.43:5061 entering state [received][100]
+2022-02-02 17:03:10.869056 [DEBUG] sofia.c:7335 Remote SDP:
+v=0
+o=- 9071946232317710072 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE 0 1
+a=extmap-allow-mixed
+a=msid-semantic: WMS n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS
+m=audio 1031 UDP/TLS/RTP/SAVPF 111 63 103 104 9 0 8 106 105 13 110 112 113 126
+c=IN IP4 66.194.72.59
+a=rtpmap:111 opus/48000/2
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:63 red/48000/2
+a=fmtp:63 111/111
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+a=rtcp:48413 IN IP4 66.194.72.59
+a=candidate:1427356461 1 udp 2122260223 10.176.2.43 39158 typ host generation 0 network-id 1 network-cost 10
+a=candidate:1427356461 2 udp 2122260222 10.176.2.43 50705 typ host generation 0 network-id 1 network-cost 10
+a=candidate:4232852728 1 udp 1686052607 66.194.72.59 1031 typ srflx raddr 10.176.2.43 rport 39158 generation 0 network-id 1 network-cost 10
+a=candidate:4232852728 2 udp 1686052606 66.194.72.59 48413 typ srflx raddr 10.176.2.43 rport 50705 generation 0 network-id 1 network-cost 10
+a=candidate:462440413 1 tcp 1518280447 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=candidate:462440413 2 tcp 1518280446 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=ice-ufrag:dRg8
+a=ice-pwd:F3hd1lvhcHxJspcyYw/lNGaD
+a=ice-options:trickle
+a=fingerprint:sha-256 5B:2E:D8:ED:57:E7:4B:B6:11:85:A8:B5:35:F4:6B:2B:8B:BF:33:EE:A6:AD:45:AA:C0:43:10:EB:C8:45:1C:D9
+a=setup:actpass
+a=mid:0
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=msid:n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS 567b82fc-2792-4225-a14b-1241f7e41dd8
+a=rtcp-mux
+a=rtcp-fb:111 transport-cc
+a=ssrc:1917696445 cname:s2F6eK8gjw3uzjz5
+a=ssrc:1917696445 msid:n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS 567b82fc-2792-4225-a14b-1241f7e41dd8
+a=ssrc:1917696445 mslabel:n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS
+a=ssrc:1917696445 label:567b82fc-2792-4225-a14b-1241f7e41dd8
+m=video 40918 UDP/TLS/RTP/SAVPF 96 97 98 99 100 101 102 122 127 121 125 107 108 109 35 36 120 119 124
+c=IN IP4 66.194.72.59
+a=rtpmap:96 VP8/90000
+a=rtpmap:97 rtx/90000
+a=fmtp:97 apt=96
+a=rtpmap:98 VP9/90000
+a=fmtp:98 profile-id=0
+a=rtpmap:99 rtx/90000
+a=fmtp:99 apt=98
+a=rtpmap:100 VP9/90000
+a=fmtp:100 profile-id=2
+a=rtpmap:101 rtx/90000
+a=fmtp:101 apt=100
+a=rtpmap:102 H264/90000
+a=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f
+a=rtpmap:122 rtx/90000
+a=fmtp:122 apt=102
+a=rtpmap:127 H264/90000
+a=fmtp:127 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42001f
+a=rtpmap:121 rtx/90000
+a=fmtp:121 apt=127
+a=rtpmap:125 H264/90000
+a=fmtp:125 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f
+a=rtpmap:107 rtx/90000
+a=fmtp:107 apt=125
+a=rtpmap:108 H264/90000
+a=fmtp:108 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42e01f
+a=rtpmap:109 rtx/90000
+a=fmtp:109 apt=108
+a=rtpmap:35 AV1/90000
+a=rtpmap:36 rtx/90000
+a=fmtp:36 apt=35
+a=rtpmap:120 red/90000
+a=rtpmap:119 rtx/90000
+a=fmtp:119 apt=120
+a=rtpmap:124 ulpfec/90000
+a=rtcp:48615 IN IP4 66.194.72.59
+a=candidate:1427356461 1 udp 2122260223 10.176.2.43 35057 typ host generation 0 network-id 1 network-cost 10
+a=candidate:1427356461 2 udp 2122260222 10.176.2.43 60736 typ host generation 0 network-id 1 network-cost 10
+a=candidate:4232852728 1 udp 1686052607 66.194.72.59 40918 typ srflx raddr 10.176.2.43 rport 35057 generation 0 network-id 1 network-cost 10
+a=candidate:4232852728 2 udp 1686052606 66.194.72.59 48615 typ srflx raddr 10.176.2.43 rport 60736 generation 0 network-id 1 network-cost 10
+a=candidate:462440413 1 tcp 1518280447 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=candidate:462440413 2 tcp 1518280446 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=ice-ufrag:dRg8
+a=ice-pwd:F3hd1lvhcHxJspcyYw/lNGaD
+a=ice-options:trickle
+a=fingerprint:sha-256 5B:2E:D8:ED:57:E7:4B:B6:11:85:A8:B5:35:F4:6B:2B:8B:BF:33:EE:A6:AD:45:AA:C0:43:10:EB:C8:45:1C:D9
+a=setup:actpass
+a=mid:1
+a=extmap:14 urn:ietf:params:rtp-hdrext:toffset
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:13 urn:3gpp:video-orientation
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay
+a=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type
+a=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing
+a=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+a=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id
+a=msid:n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS be5a1f41-4d64-4c3e-a958-b7cf8d490921
+a=rtcp-mux
+a=rtcp-rsize
+a=rtcp-fb:96 goog-remb
+a=rtcp-fb:96 transport-cc
+a=rtcp-fb:96 ccm fir
+a=rtcp-fb:96 nack
+a=rtcp-fb:96 nack pli
+a=rtcp-fb:98 goog-remb
+a=rtcp-fb:98 transport-cc
+a=rtcp-fb:98 ccm fir
+a=rtcp-fb:98 nack
+a=rtcp-fb:98 nack pli
+a=rtcp-fb:100 goog-remb
+a=rtcp-fb:100 transport-cc
+a=rtcp-fb:100 ccm fir
+a=rtcp-fb:100 nack
+a=rtcp-fb:100 nack pli
+a=rtcp-fb:102 goog-remb
+a=rtcp-fb:102 transport-cc
+a=rtcp-fb:102 ccm fir
+a=rtcp-fb:102 nack
+a=rtcp-fb:102 nack pli
+a=rtcp-fb:127 goog-remb
+a=rtcp-fb:127 transport-cc
+a=rtcp-fb:127 ccm fir
+a=rtcp-fb:127 nack
+a=rtcp-fb:127 nack pli
+a=rtcp-fb:125 goog-remb
+a=rtcp-fb:125 transport-cc
+a=rtcp-fb:125 ccm fir
+a=rtcp-fb:125 nack
+a=rtcp-fb:125 nack pli
+a=rtcp-fb:108 goog-remb
+a=rtcp-fb:108 transport-cc
+a=rtcp-fb:108 ccm fir
+a=rtcp-fb:108 nack
+a=rtcp-fb:108 nack pli
+a=rtcp-fb:35 goog-remb
+a=rtcp-fb:35 transport-cc
+a=rtcp-fb:35 ccm fir
+a=rtcp-fb:35 nack
+a=rtcp-fb:35 nack pli
+a=ssrc-group:FID 2784340262 488427194
+a=ssrc:2784340262 cname:s2F6eK8gjw3uzjz5
+a=ssrc:2784340262 msid:n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS be5a1f41-4d64-4c3e-a958-b7cf8d490921
+a=ssrc:2784340262 mslabel:n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS
+a=ssrc:2784340262 label:be5a1f41-4d64-4c3e-a958-b7cf8d490921
+a=ssrc:488427194 cname:s2F6eK8gjw3uzjz5
+a=ssrc:488427194 msid:n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS be5a1f41-4d64-4c3e-a958-b7cf8d490921
+a=ssrc:488427194 mslabel:n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS
+a=ssrc:488427194 label:be5a1f41-4d64-4c3e-a958-b7cf8d490921
+
+2022-02-02 17:03:10.869056 [DEBUG] sofia.c:7738 (sofia/internal/altanai@10.176.2.43:5061) State Change CS_NEW -> CS_INIT
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_state_machine.c:604 (sofia/internal/altanai@10.176.2.43:5061) State NEW
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_state_machine.c:585 (sofia/internal/altanai@10.176.2.43:5061) Running State Change CS_INIT (Cur 1 Tot 1)
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_state_machine.c:628 (sofia/internal/altanai@10.176.2.43:5061) State INIT
+2022-02-02 17:03:10.869056 [DEBUG] mod_sofia.c:93 sofia/internal/altanai@10.176.2.43:5061 SOFIA INIT
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_state_machine.c:40 sofia/internal/altanai@10.176.2.43:5061 Standard INIT
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_state_machine.c:48 (sofia/internal/altanai@10.176.2.43:5061) State Change CS_INIT -> CS_ROUTING
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_state_machine.c:628 (sofia/internal/altanai@10.176.2.43:5061) State INIT going to sleep
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_state_machine.c:585 (sofia/internal/altanai@10.176.2.43:5061) Running State Change CS_ROUTING (Cur 1 Tot 1)
+2022-02-02 17:03:10.869056 [DEBUG] switch_channel.c:2332 (sofia/internal/altanai@10.176.2.43:5061) Callstate Change DOWN -> RINGING
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_state_machine.c:644 (sofia/internal/altanai@10.176.2.43:5061) State ROUTING
+2022-02-02 17:03:10.869056 [DEBUG] mod_sofia.c:154 sofia/internal/altanai@10.176.2.43:5061 SOFIA ROUTING
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_state_machine.c:236 sofia/internal/altanai@10.176.2.43:5061 Standard ROUTING
+2022-02-02 17:03:10.869056 [INFO] mod_dialplan_xml.c:637 Processing remoteclient <altanai>->350000-screen in context public
+send 378 bytes to wss/[10.176.2.43]:38614 at 17:03:10.882782:
+------------------------------------------------------------------------
+SIP/2.0 100 Trying
+Via: SIP/2.0/WSS ntgslk4c72j0.invalid;branch=z9hG4bK7340957;received=10.176.2.43;rport=38614
+From: "remoteclient" <sip:altanai@10.176.2.43:5061>;tag=av6o5qr6d0
+To: <sip:350000-screen@10.176.2.43:5061>
+Call-ID: pheab2e6h7s1bkbepsf2
+CSeq: 4804 INVITE
+User-Agent: FreeSWITCH-mod_sofia/1.10.4-dev+git~20200518T172205Z~91f54340ed~64bit
+Content-Length: 0
+
+Dialplan: sofia/internal/altanai@10.176.2.43:5061 parsing [public->cdquality_stereo_conferences] continue=false
+Dialplan: sofia/internal/altanai@10.176.2.43:5061 Regex (PASS) [cdquality_stereo_conferences] destination_number(350000-screen) =~ /^(35\d{2}).*?-screen$/ break=on-false
+Dialplan: sofia/internal/altanai@10.176.2.43:5061 Action info() 
+Dialplan: sofia/internal/altanai@10.176.2.43:5061 Action log(PUBLIC INFO *****  Auto answer followed by MCU bridge ***** ) 
+Dialplan: sofia/internal/altanai@10.176.2.43:5061 Action answer() 
+Dialplan: sofia/internal/altanai@10.176.2.43:5061 Action send_display(FreeSWITCH Conference|3500) 
+Dialplan: sofia/internal/altanai@10.176.2.43:5061 Action set(conference_member_flags=join-vid-floor) 
+Dialplan: sofia/internal/altanai@10.176.2.43:5061 Action conference(3500@video-mcu-stereo) 
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_state_machine.c:287 (sofia/internal/altanai@10.176.2.43:5061) State Change CS_ROUTING -> CS_EXECUTE
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_state_machine.c:644 (sofia/internal/altanai@10.176.2.43:5061) State ROUTING going to sleep
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_state_machine.c:585 (sofia/internal/altanai@10.176.2.43:5061) Running State Change CS_EXECUTE (Cur 1 Tot 1)
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_state_machine.c:651 (sofia/internal/altanai@10.176.2.43:5061) State EXECUTE
+2022-02-02 17:03:10.869056 [DEBUG] mod_sofia.c:209 sofia/internal/altanai@10.176.2.43:5061 SOFIA EXECUTE
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_state_machine.c:329 sofia/internal/altanai@10.176.2.43:5061 Standard EXECUTE
+EXECUTE [depth=0] sofia/internal/altanai@10.176.2.43:5061 info()
+2022-02-02 17:03:10.869056 [INFO] mod_dptools.c:1885 CHANNEL_DATA:
+Channel-State: [CS_EXECUTE]
+Channel-Call-State: [RINGING]
+Channel-State-Number: [4]
+Channel-Name: [sofia/internal/altanai@10.176.2.43:5061]
+Unique-ID: [0e6b01bc-848d-11ec-b42f-fbd0ce10ee85]
+Call-Direction: [inbound]
+Presence-Call-Direction: [inbound]
+Channel-HIT-Dialplan: [true]
+Channel-Presence-ID: [altanai@10.176.2.43]
+Channel-Call-UUID: [0e6b01bc-848d-11ec-b42f-fbd0ce10ee85]
+Answer-State: [ringing]
+Caller-Direction: [inbound]
+Caller-Logical-Direction: [inbound]
+Caller-Username: [altanai]
+Caller-Dialplan: [XML]
+Caller-Caller-ID-Name: [remoteclient]
+Caller-Caller-ID-Number: [altanai]
+Caller-Orig-Caller-ID-Name: [remoteclient]
+Caller-Orig-Caller-ID-Number: [altanai]
+Caller-Network-Addr: [10.176.2.43]
+Caller-ANI: [altanai]
+Caller-Destination-Number: [350000-screen]
+Caller-Unique-ID: [0e6b01bc-848d-11ec-b42f-fbd0ce10ee85]
+Caller-Source: [mod_sofia]
+Caller-Context: [public]
+Caller-Channel-Name: [sofia/internal/altanai@10.176.2.43:5061]
+Caller-Profile-Index: [1]
+Caller-Profile-Created-Time: [1643850190869056]
+Caller-Channel-Created-Time: [1643850190869056]
+Caller-Channel-Answered-Time: [0]
+Caller-Channel-Progress-Time: [0]
+Caller-Channel-Progress-Media-Time: [0]
+Caller-Channel-Hangup-Time: [0]
+Caller-Channel-Transfer-Time: [0]
+Caller-Channel-Resurrect-Time: [0]
+Caller-Channel-Bridged-Time: [0]
+Caller-Channel-Last-Hold: [0]
+Caller-Channel-Hold-Accum: [0]
+Caller-Screen-Bit: [true]
+Caller-Privacy-Hide-Name: [false]
+Caller-Privacy-Hide-Number: [false]
+variable_direction: [inbound]
+variable_uuid: [0e6b01bc-848d-11ec-b42f-fbd0ce10ee85]
+variable_session_id: [1]
+variable_sip_from_user: [altanai]
+variable_sip_from_port: [5061]
+variable_sip_from_uri: [altanai@10.176.2.43:5061]
+variable_sip_from_host: [10.176.2.43]
+variable_video_media_flow: [disabled]
+variable_audio_media_flow: [disabled]
+variable_text_media_flow: [disabled]
+variable_channel_name: [sofia/internal/altanai@10.176.2.43:5061]
+variable_sip_call_id: [pheab2e6h7s1bkbepsf2]
+variable_sip_local_network_addr: [10.176.2.43]
+variable_sip_network_ip: [10.176.2.43]
+variable_sip_network_port: [38614]
+variable_sip_invite_stamp: [1643850190869056]
+variable_sip_received_ip: [10.176.2.43]
+variable_sip_received_port: [38614]
+variable_sip_via_protocol: [wss]
+variable_sip_from_user_stripped: [altanai]
+variable_sip_from_tag: [av6o5qr6d0]
+variable_sofia_profile_name: [internal]
+variable_sofia_profile_url: [sip:mod_sofia@10.176.2.43:5060]
+variable_recovery_profile_name: [internal]
+variable_sip_full_via: [SIP/2.0/WSS ntgslk4c72j0.invalid;branch=z9hG4bK7340957;received=10.176.2.43;rport=38614]
+variable_sip_from_display: [remoteclient]
+variable_sip_full_from: ["remoteclient" <sip:altanai@10.176.2.43:5061>;tag=av6o5qr6d0]
+variable_sip_full_to: [<sip:350000-screen@10.176.2.43:5061>]
+variable_sip_allow: [INVITE, ACK, CANCEL, BYE, UPDATE, MESSAGE, OPTIONS, REFER, INFO, NOTIFY]
+variable_sip_req_user: [350000-screen]
+variable_sip_req_port: [5061]
+variable_sip_req_uri: [350000-screen@10.176.2.43:5061]
+variable_sip_req_host: [10.176.2.43]
+variable_sip_to_user: [350000-screen]
+variable_sip_to_port: [5061]
+variable_sip_to_uri: [350000-screen@10.176.2.43:5061]
+variable_sip_to_host: [10.176.2.43]
+variable_sip_contact_params: [transport=ws;ob]
+variable_sip_contact_user: [bbm07gso]
+variable_sip_contact_uri: [bbm07gso@ntgslk4c72j0.invalid]
+variable_sip_contact_host: [ntgslk4c72j0.invalid]
+variable_rtp_use_codec_string: [OPUS,G722,PCMU,PCMA,H264,VP8]
+variable_sip_user_agent: [JsSIP 3.9.0]
+variable_sip_via_host: [ntgslk4c72j0.invalid]
+variable_sip_via_rport: [38614]
+variable_max_forwards: [69]
+variable_presence_id: [altanai@10.176.2.43]
+variable_sip_nat_detected: [true]
+variable_switch_r_sdp: [v=0
+o=- 9071946232317710072 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE 0 1
+a=extmap-allow-mixed
+a=msid-semantic: WMS n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS
+m=audio 1031 UDP/TLS/RTP/SAVPF 111 63 103 104 9 0 8 106 105 13 110 112 113 126
+c=IN IP4 66.194.72.59
+a=rtpmap:111 opus/48000/2
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:63 red/48000/2
+a=fmtp:63 111/111
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+a=rtcp:48413 IN IP4 66.194.72.59
+a=candidate:1427356461 1 udp 2122260223 10.176.2.43 39158 typ host generation 0 network-id 1 network-cost 10
+a=candidate:1427356461 2 udp 2122260222 10.176.2.43 50705 typ host generation 0 network-id 1 network-cost 10
+a=candidate:4232852728 1 udp 1686052607 66.194.72.59 1031 typ srflx raddr 10.176.2.43 rport 39158 generation 0 network-id 1 network-cost 10
+a=candidate:4232852728 2 udp 1686052606 66.194.72.59 48413 typ srflx raddr 10.176.2.43 rport 50705 generation 0 network-id 1 network-cost 10
+a=candidate:462440413 1 tcp 1518280447 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=candidate:462440413 2 tcp 1518280446 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=ice-ufrag:dRg8
+a=ice-pwd:F3hd1lvhcHxJspcyYw/lNGaD
+a=ice-options:trickle
+a=fingerprint:sha-256 5B:2E:D8:ED:57:E7:4B:B6:11:85:A8:B5:35:F4:6B:2B:8B:BF:33:EE:A6:AD:45:AA:C0:43:10:EB:C8:45:1C:D9
+a=setup:actpass
+a=mid:0
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=msid:n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS 567b82fc-2792-4225-a14b-1241f7e41dd8
+a=rtcp-mux
+a=rtcp-fb:111 transport-cc
+a=ssrc:1917696445 cname:s2F6eK8gjw3uzjz5
+a=ssrc:1917696445 msid:n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS 567b82fc-2792-4225-a14b-1241f7e41dd8
+a=ssrc:1917696445 mslabel:n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS
+a=ssrc:1917696445 label:567b82fc-2792-4225-a14b-1241f7e41dd8
+m=video 40918 UDP/TLS/RTP/SAVPF 96 97 98 99 100 101 102 122 127 121 125 107 108 109 35 36 120 119 124
+c=IN IP4 66.194.72.59
+a=rtpmap:96 VP8/90000
+a=rtpmap:97 rtx/90000
+a=fmtp:97 apt=96
+a=rtpmap:98 VP9/90000
+a=fmtp:98 profile-id=0
+a=rtpmap:99 rtx/90000
+a=fmtp:99 apt=98
+a=rtpmap:100 VP9/90000
+a=fmtp:100 profile-id=2
+a=rtpmap:101 rtx/90000
+a=fmtp:101 apt=100
+a=rtpmap:102 H264/90000
+a=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f
+a=rtpmap:122 rtx/90000
+a=fmtp:122 apt=102
+a=rtpmap:127 H264/90000
+a=fmtp:127 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42001f
+a=rtpmap:121 rtx/90000
+a=fmtp:121 apt=127
+a=rtpmap:125 H264/90000
+a=fmtp:125 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f
+a=rtpmap:107 rtx/90000
+a=fmtp:107 apt=125
+a=rtpmap:108 H264/90000
+a=fmtp:108 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42e01f
+a=rtpmap:109 rtx/90000
+a=fmtp:109 apt=108
+a=rtpmap:35 AV1/90000
+a=rtpmap:36 rtx/90000
+a=fmtp:36 apt=35
+a=rtpmap:120 red/90000
+a=rtpmap:119 rtx/90000
+a=fmtp:119 apt=120
+a=rtpmap:124 ulpfec/90000
+a=rtcp:48615 IN IP4 66.194.72.59
+a=candidate:1427356461 1 udp 2122260223 10.176.2.43 35057 typ host generation 0 network-id 1 network-cost 10
+a=candidate:1427356461 2 udp 2122260222 10.176.2.43 60736 typ host generation 0 network-id 1 network-cost 10
+a=candidate:4232852728 1 udp 1686052607 66.194.72.59 40918 typ srflx raddr 10.176.2.43 rport 35057 generation 0 network-id 1 network-cost 10
+a=candidate:4232852728 2 udp 1686052606 66.194.72.59 48615 typ srflx raddr 10.176.2.43 rport 60736 generation 0 network-id 1 network-cost 10
+a=candidate:462440413 1 tcp 1518280447 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=candidate:462440413 2 tcp 1518280446 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=ice-ufrag:dRg8
+a=ice-pwd:F3hd1lvhcHxJspcyYw/lNGaD
+a=ice-options:trickle
+a=fingerprint:sha-256 5B:2E:D8:ED:57:E7:4B:B6:11:85:A8:B5:35:F4:6B:2B:8B:BF:33:EE:A6:AD:45:AA:C0:43:10:EB:C8:45:1C:D9
+a=setup:actpass
+a=mid:1
+a=extmap:14 urn:ietf:params:rtp-hdrext:toffset
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:13 urn:3gpp:video-orientation
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay
+a=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type
+a=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing
+a=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+a=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id
+a=msid:n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS be5a1f41-4d64-4c3e-a958-b7cf8d490921
+a=rtcp-mux
+a=rtcp-rsize
+a=rtcp-fb:96 goog-remb
+a=rtcp-fb:96 transport-cc
+a=rtcp-fb:96 ccm fir
+a=rtcp-fb:96 nack
+a=rtcp-fb:96 nack pli
+a=rtcp-fb:98 goog-remb
+a=rtcp-fb:98 transport-cc
+a=rtcp-fb:98 ccm fir
+a=rtcp-fb:98 nack
+a=rtcp-fb:98 nack pli
+a=rtcp-fb:100 goog-remb
+a=rtcp-fb:100 transport-cc
+a=rtcp-fb:100 ccm fir
+a=rtcp-fb:100 nack
+a=rtcp-fb:100 nack pli
+a=rtcp-fb:102 goog-remb
+a=rtcp-fb:102 transport-cc
+a=rtcp-fb:102 ccm fir
+a=rtcp-fb:102 nack
+a=rtcp-fb:102 nack pli
+a=rtcp-fb:127 goog-remb
+a=rtcp-fb:127 transport-cc
+a=rtcp-fb:127 ccm fir
+a=rtcp-fb:127 nack
+a=rtcp-fb:127 nack pli
+a=rtcp-fb:125 goog-remb
+a=rtcp-fb:125 transport-cc
+a=rtcp-fb:125 ccm fir
+a=rtcp-fb:125 nack
+a=rtcp-fb:125 nack pli
+a=rtcp-fb:108 goog-remb
+a=rtcp-fb:108 transport-cc
+a=rtcp-fb:108 ccm fir
+a=rtcp-fb:108 nack
+a=rtcp-fb:108 nack pli
+a=rtcp-fb:35 goog-remb
+a=rtcp-fb:35 transport-cc
+a=rtcp-fb:35 ccm fir
+a=rtcp-fb:35 nack
+a=rtcp-fb:35 nack pli
+a=ssrc-group:FID 2784340262 488427194
+a=ssrc:2784340262 cname:s2F6eK8gjw3uzjz5
+a=ssrc:2784340262 msid:n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS be5a1f41-4d64-4c3e-a958-b7cf8d490921
+a=ssrc:2784340262 mslabel:n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS
+a=ssrc:2784340262 label:be5a1f41-4d64-4c3e-a958-b7cf8d490921
+a=ssrc:488427194 cname:s2F6eK8gjw3uzjz5
+a=ssrc:488427194 msid:n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS be5a1f41-4d64-4c3e-a958-b7cf8d490921
+a=ssrc:488427194 mslabel:n0P2lx48EMyRIOFwNzXR8YTAu6cob1Oex5vS
+a=ssrc:488427194 label:be5a1f41-4d64-4c3e-a958-b7cf8d490921
+]
+variable_ep_codec_string: [mod_opus.opus@48000h@20i@2c,mod_spandsp.G722@8000h@20i@64000b,CORE_PCM_MODULE.PCMU@8000h@20i@64000b,CORE_PCM_MODULE.PCMA@8000h@20i@64000b,CORE_VPX_MODULE.VP8]
+variable_endpoint_disposition: [DELAYED NEGOTIATION]
+variable_DP_MATCH: [ARRAY::350000-screen|:3500]
+variable_call_uuid: [0e6b01bc-848d-11ec-b42f-fbd0ce10ee85]
+variable_current_application: [info]
+
+
+EXECUTE [depth=0] sofia/internal/altanai@10.176.2.43:5061 log(PUBLIC INFO *****  Auto answer followed by MCU bridge ***** )
+2022-02-02 17:03:10.869056 [DEBUG] mod_dptools.c:1866 INFO *****  Auto answer followed by MCU bridge ***** 
+EXECUTE [depth=0] sofia/internal/altanai@10.176.2.43:5061 answer()
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [opus:111:48000:20:0:1]/[opus:116:48000:20:0:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5647 Audio Codec Compare [opus:116:48000:20:0:1] ++++ is saved as a match
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [opus:111:48000:20:0:1]/[G722:9:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [opus:111:48000:20:0:1]/[PCMU:0:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [opus:111:48000:20:0:1]/[PCMA:8:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [red:63:48000:20:0:2]/[opus:116:48000:20:0:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [red:63:48000:20:0:2]/[G722:9:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [red:63:48000:20:0:2]/[PCMU:0:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [red:63:48000:20:0:2]/[PCMA:8:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [ISAC:103:16000:30:32000:1]/[opus:116:48000:20:0:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [ISAC:103:16000:30:32000:1]/[G722:9:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [ISAC:103:16000:30:32000:1]/[PCMU:0:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [ISAC:103:16000:30:32000:1]/[PCMA:8:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [ISAC:104:32000:30:32000:1]/[opus:116:48000:20:0:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [ISAC:104:32000:30:32000:1]/[G722:9:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [ISAC:104:32000:30:32000:1]/[PCMU:0:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [ISAC:104:32000:30:32000:1]/[PCMA:8:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [G722:9:8000:20:64000:1]/[opus:116:48000:20:0:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [G722:9:8000:20:64000:1]/[G722:9:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5647 Audio Codec Compare [G722:9:8000:20:64000:1] ++++ is saved as a match
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [G722:9:8000:20:64000:1]/[PCMU:0:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [G722:9:8000:20:64000:1]/[PCMA:8:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [PCMU:0:8000:20:64000:1]/[opus:116:48000:20:0:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [PCMU:0:8000:20:64000:1]/[G722:9:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [PCMU:0:8000:20:64000:1]/[PCMU:0:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5647 Audio Codec Compare [PCMU:0:8000:20:64000:1] ++++ is saved as a match
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [PCMU:0:8000:20:64000:1]/[PCMA:8:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [PCMA:8:8000:20:64000:1]/[opus:116:48000:20:0:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [PCMA:8:8000:20:64000:1]/[G722:9:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [PCMA:8:8000:20:64000:1]/[PCMU:0:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [PCMA:8:8000:20:64000:1]/[PCMA:8:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5647 Audio Codec Compare [PCMA:8:8000:20:64000:1] ++++ is saved as a match
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [CN:105:16000:20:0:1]/[opus:116:48000:20:0:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [CN:105:16000:20:0:1]/[G722:9:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [CN:105:16000:20:0:1]/[PCMU:0:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [CN:105:16000:20:0:1]/[PCMA:8:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [CN:13:8000:20:0:1]/[opus:116:48000:20:0:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [CN:13:8000:20:0:1]/[G722:9:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [CN:13:8000:20:0:1]/[PCMU:0:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [CN:13:8000:20:0:1]/[PCMA:8:8000:20:64000:1]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5508 Set telephone-event payload to 110@48000
+2022-02-02 17:03:10.869056 [DEBUG] mod_opus.c:613 Opus encoder: set bitrate to local settings [72000bps]
+2022-02-02 17:03:10.869056 [DEBUG] mod_opus.c:613 Opus encoder: set bitrate to local settings [72000bps]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:3837 Set Codec sofia/internal/altanai@10.176.2.43:5061 opus/48000 20 ms 960 samples 0 bits 1 channels
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_codec.c:111 sofia/internal/altanai@10.176.2.43:5061 Original read codec set to opus:116
+2022-02-02 17:03:10.869056 [WARNING] switch_core_media.c:4252 NO candidate ACL defined, Defaulting to wan.auto
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:4282 Save audio Candidate cid: 1 proto: udp type: host addr: 10.176.2.43:39158
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:4282 Save audio Candidate cid: 2 proto: udp type: host addr: 10.176.2.43:50705
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:4282 Save audio Candidate cid: 1 proto: udp type: srflx addr: 66.194.72.59:1031
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:4282 Save audio Candidate cid: 2 proto: udp type: srflx addr: 66.194.72.59:48413
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:4327 Searching for rtp candidate.
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:4336 Choose rtp candidate, index 1, 66.194.72.59:1031
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:4102 sofia/internal/altanai@10.176.2.43:5061 choosing family v4
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:4347 Choose same candidate, index 2, for rtcp based on rtcp-mux attribute 66.194.72.59:1031
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:4399 setting remote audio ice addr to index 1 66.194.72.59:1031 based on candidate
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:4434 Setting remote rtcp audio addr to 66.194.72.59:1031 based on candidate
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5851 Set telephone-event payload to 110@48000
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:5909 sofia/internal/altanai@10.176.2.43:5061 Set 2833 dtmf send payload to 110 recv payload to 110
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:6194 Video Codec Compare [VP8:96]/[VP8:99]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:6226 Video Codec Compare [VP8:96] +++ is saved as a match
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:97]/[VP8:99]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:6194 Video Codec Compare [VP9:98]/[VP8:99]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:99]/[VP8:99]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:6194 Video Codec Compare [VP9:100]/[VP8:99]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:101]/[VP8:99]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:6194 Video Codec Compare [H264:102]/[VP8:99]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:122]/[VP8:99]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:6194 Video Codec Compare [H264:127]/[VP8:99]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:121]/[VP8:99]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:6194 Video Codec Compare [H264:125]/[VP8:99]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:107]/[VP8:99]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:6194 Video Codec Compare [H264:108]/[VP8:99]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:109]/[VP8:99]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:6194 Video Codec Compare [AV1:35]/[VP8:99]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:36]/[VP8:99]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:6194 Video Codec Compare [red:120]/[VP8:99]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:119]/[VP8:99]
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:6194 Video Codec Compare [ulpfec:124]/[VP8:99]
+2022-02-02 17:03:10.869056 [DEBUG] switch_vpx.c:703 VPX VER:v1.8.1 VPX_IMAGE_ABI_VERSION:4 VPX_CODEC_ABI_VERSION:8
+2022-02-02 17:03:10.869056 [DEBUG] switch_vpx.c:703 VPX VER:v1.8.1 VPX_IMAGE_ABI_VERSION:4 VPX_CODEC_ABI_VERSION:8
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:3647 Set VIDEO Codec sofia/internal/altanai@10.176.2.43:5061 VP8/90000 0 ms
+2022-02-02 17:03:10.869056 [WARNING] switch_core_media.c:4252 NO candidate ACL defined, Defaulting to wan.auto
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:4282 Save video Candidate cid: 1 proto: udp type: host addr: 10.176.2.43:35057
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:4282 Save video Candidate cid: 2 proto: udp type: host addr: 10.176.2.43:60736
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:4282 Save video Candidate cid: 1 proto: udp type: srflx addr: 66.194.72.59:40918
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:4282 Save video Candidate cid: 2 proto: udp type: srflx addr: 66.194.72.59:48615
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:4327 Searching for rtp candidate.
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:4336 Choose rtp candidate, index 1, 66.194.72.59:40918
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:4102 sofia/internal/altanai@10.176.2.43:5061 choosing family v4
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:4347 Choose same candidate, index 2, for rtcp based on rtcp-mux attribute 66.194.72.59:40918
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:4399 setting remote video ice addr to index 1 66.194.72.59:40918 based on candidate
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:4434 Setting remote rtcp video addr to 66.194.72.59:40918 based on candidate
+2022-02-02 17:03:10.869056 [DEBUG] switch_core_media.c:8661 AUDIO RTP [sofia/internal/altanai@10.176.2.43:5061] 10.176.2.43 port 28980 -> 66.194.72.59 port 1031 codec: 111 ms: 20
+2022-02-02 17:03:10.869056 [DEBUG] switch_rtp.c:4413 Starting timer [soft] 960 bytes per 20ms
+2022-02-02 17:03:10.889055 [INFO] switch_core_media.c:8843 Activating Audio ICE
+2022-02-02 17:03:10.889055 [NOTICE] switch_rtp.c:4915 Activating RTP audio ICE: dRg8:jPjHpz41ThucRXgt 66.194.72.59:1031
+2022-02-02 17:03:10.889055 [DEBUG] switch_core_media.c:8883 Activating RTCP PORT 1031
+2022-02-02 17:03:10.889055 [DEBUG] switch_rtp.c:4811 RTCP send rate is: 1000 and packet rate is: 20000 Remote Port: 1031
+2022-02-02 17:03:10.889055 [INFO] switch_core_media.c:8894 Skipping RTCP ICE (Same as RTP)
+2022-02-02 17:03:10.889055 [INFO] switch_rtp.c:3741 Activate RTP/RTCP audio DTLS client
+2022-02-02 17:03:10.889055 [INFO] switch_rtp.c:3908 Changing audio DTLS state from OFF to HANDSHAKE
+2022-02-02 17:03:10.889055 [DEBUG] switch_core_media.c:8975 sofia/internal/altanai@10.176.2.43:5061 Set 2833 dtmf send payload to 110
+2022-02-02 17:03:10.889055 [DEBUG] switch_core_media.c:8982 sofia/internal/altanai@10.176.2.43:5061 Set 2833 dtmf receive payload to 110
+2022-02-02 17:03:10.889055 [DEBUG] switch_core_media.c:9005 sofia/internal/altanai@10.176.2.43:5061 Set rtp dtmf delay to 40
+2022-02-02 17:03:10.889055 [DEBUG] switch_rtp.c:4428 Starting video timer.
+2022-02-02 17:03:10.889055 [DEBUG] switch_core_media.c:9493 VIDEO RTP [sofia/internal/altanai@10.176.2.43:5061] 10.176.2.43:22738->66.194.72.59:40918 codec: 96 ms: 0 [SUCCESS]
+2022-02-02 17:03:10.889055 [DEBUG] switch_core_media.c:7628 sofia/internal/altanai@10.176.2.43:5061 Starting Video thread
+2022-02-02 17:03:10.889055 [DEBUG] switch_core_media.c:7494 sofia/internal/altanai@10.176.2.43:5061 Video thread started. Echo is off
+2022-02-02 17:03:10.889055 [INFO] switch_core_media.c:9537 Activating Video ICE
+2022-02-02 17:03:10.889055 [NOTICE] switch_rtp.c:4915 Activating RTP video ICE: dRg8:HrCcW4LZIREEjOjI 66.194.72.59:40918
+2022-02-02 17:03:10.889055 [INFO] switch_core_media.c:9574 Activating VIDEO RTCP PORT 40918 interval 1000 mux 1
+2022-02-02 17:03:10.889055 [DEBUG] switch_rtp.c:4811 RTCP send rate is: 1000 and packet rate is: 90000 Remote Port: 40918
+2022-02-02 17:03:10.889055 [INFO] switch_core_media.c:9587 Skipping VIDEO RTCP ICE (Same as VIDEO RTP)
+2022-02-02 17:03:10.889055 [INFO] switch_rtp.c:3741 Activate RTP/RTCP video DTLS client
+2022-02-02 17:03:10.889055 [INFO] switch_rtp.c:3908 Changing video DTLS state from OFF to HANDSHAKE
+2022-02-02 17:03:10.889055 [NOTICE] sofia_media.c:92 Pre-Answer sofia/internal/altanai@10.176.2.43:5061!
+2022-02-02 17:03:10.889055 [DEBUG] switch_channel.c:3565 (sofia/internal/altanai@10.176.2.43:5061) Callstate Change RINGING -> EARLY
+2022-02-02 17:03:10.889055 [DEBUG] switch_core_media.c:8643 Audio params are unchanged for sofia/internal/altanai@10.176.2.43:5061.
+2022-02-02 17:03:10.889055 [DEBUG] switch_core_media.c:9357 Video params are unchanged for sofia/internal/altanai@10.176.2.43:5061.
+2022-02-02 17:03:10.889055 [DEBUG] mod_sofia.c:898 Local SDP sofia/internal/altanai@10.176.2.43:5061:
+v=0
+o=FreeSWITCH 1643821210 1643821211 IN IP4 10.176.2.43
+s=FreeSWITCH
+c=IN IP4 10.176.2.43
+t=0 0
+a=msid-semantic: WMS VdDOu8qYH9oRc8tcYPLxxJqxLtnDsJCd
+m=audio 28980 UDP/TLS/RTP/SAVPF 111 110
+a=rtpmap:111 opus/48000/2
+a=fmtp:111 useinbandfec=1; minptime=10
+a=rtpmap:110 telephone-event/48000
+a=ptime:20
+a=sendrecv
+a=fingerprint:sha-256 EE:81:EE:85:1A:0D:4A:97:FE:12:59:17:00:5F:FB:85:8C:09:EA:16:DA:A1:01:E6:42:A6:5A:E8:76:48:84:27
+a=setup:active
+a=rtcp-mux
+a=rtcp:28980 IN IP4 10.176.2.43
+a=ice-ufrag:jPjHpz41ThucRXgt
+a=ice-pwd:UYqPXbiVbsW9W0V6G4DWuxNe
+a=candidate:4530755160 1 udp 659136 10.176.2.43 28980 typ host generation 0
+a=end-of-candidates
+a=ssrc:3523186774 cname:M6S658VC89kb7EdW
+a=ssrc:3523186774 msid:VdDOu8qYH9oRc8tcYPLxxJqxLtnDsJCd a0
+a=ssrc:3523186774 mslabel:VdDOu8qYH9oRc8tcYPLxxJqxLtnDsJCd
+a=ssrc:3523186774 label:VdDOu8qYH9oRc8tcYPLxxJqxLtnDsJCda0
+m=video 22738 UDP/TLS/RTP/SAVPF 96
+b=AS:512000
+a=rtpmap:96 VP8/90000
+a=sendrecv
+a=fingerprint:sha-256 EE:81:EE:85:1A:0D:4A:97:FE:12:59:17:00:5F:FB:85:8C:09:EA:16:DA:A1:01:E6:42:A6:5A:E8:76:48:84:27
+a=setup:active
+a=rtcp-mux
+a=rtcp:22738 IN IP4 10.176.2.43
+a=rtcp-fb:96 ccm fir
+a=rtcp-fb:96 nack
+a=rtcp-fb:96 nack pli
+a=ssrc:2701283063 cname:M6S658VC89kb7EdW
+a=ssrc:2701283063 msid:VdDOu8qYH9oRc8tcYPLxxJqxLtnDsJCd v0
+a=ssrc:2701283063 mslabel:VdDOu8qYH9oRc8tcYPLxxJqxLtnDsJCd
+a=ssrc:2701283063 label:VdDOu8qYH9oRc8tcYPLxxJqxLtnDsJCdv0
+a=ice-ufrag:HrCcW4LZIREEjOjI
+a=ice-pwd:z2X39HOqlDueCfe9xHckCN9b
+a=candidate:4397473090 1 udp 659136 10.176.2.43 22738 typ host generation 0
+a=end-of-candidates
+
+send 2541 bytes to wss/[10.176.2.43]:38614 at 17:03:10.897402:
+------------------------------------------------------------------------
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS ntgslk4c72j0.invalid;branch=z9hG4bK7340957;received=10.176.2.43;rport=38614
+From: "remoteclient" <sip:altanai@10.176.2.43:5061>;tag=av6o5qr6d0
+To: <sip:350000-screen@10.176.2.43:5061>;tag=B7vHUDgKe3g9r
+Call-ID: pheab2e6h7s1bkbepsf2
+CSeq: 4804 INVITE
+Contact: <sip:350000-screen@10.176.2.43:5060;transport=udp>
+User-Agent: FreeSWITCH-mod_sofia/1.10.4-dev+git~20200518T172205Z~91f54340ed~64bit
+Accept: application/sdp
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, presence, as-feature-event, dialog, line-seize, call-info, sla, include-session-description, presence.winfo, message-summary, refer
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 1582
+Remote-Party-ID: "350000-screen" <sip:350000-screen@10.176.2.43>;party=calling;privacy=off;screen=no
+
+v=0
+o=FreeSWITCH 1643821210 1643821211 IN IP4 10.176.2.43
+s=FreeSWITCH
+c=IN IP4 10.176.2.43
+t=0 0
+a=msid-semantic: WMS VdDOu8qYH9oRc8tcYPLxxJqxLtnDsJCd
+m=audio 28980 UDP/TLS/RTP/SAVPF 111 110
+a=rtpmap:111 opus/48000/2
+a=fmtp:111 useinbandfec=1; minptime=10
+a=rtpmap:110 telephone-event/48000
+a=ptime:20
+a=fingerprint:sha-256 EE:81:EE:85:1A:0D:4A:97:FE:12:59:17:00:5F:FB:85:8C:09:EA:16:DA:A1:01:E6:42:A6:5A:E8:76:48:84:27
+a=setup:active
+a=rtcp-mux
+a=rtcp:28980 IN IP4 10.176.2.43
+a=ice-ufrag:jPjHpz41ThucRXgt
+a=ice-pwd:UYqPXbiVbsW9W0V6G4DWuxNe
+a=candidate:4530755160 1 udp 659136 10.176.2.43 28980 typ host generation 0
+a=end-of-candidates
+a=ssrc:3523186774 cname:M6S658VC89kb7EdW
+a=ssrc:3523186774 msid:VdDOu8qYH9oRc8tcYPLxxJqxLtnDsJCd a0
+a=ssrc:3523186774 mslabel:VdDOu8qYH9oRc8tcYPLxxJqxLtnDsJCd
+a=ssrc:3523186774 label:VdDOu8qYH9oRc8tcYPLxxJqxLtnDsJCda0
+m=video 22738 UDP/TLS/RTP/SAVPF 96
+b=AS:512000
+a=rtpmap:96 VP8/90000
+a=fingerprint:sha-256 EE:81:EE:85:1A:0D:4A:97:FE:12:59:17:00:5F:FB:85:8C:09:EA:16:DA:A1:01:E6:42:A6:5A:E8:76:48:84:27
+a=setup:active
+a=rtcp-mux
+a=rtcp:22738 IN IP4 10.176.2.43
+a=rtcp-fb:96 ccm fir
+a=rtcp-fb:96 nack
+a=rtcp-fb:96 nack pli
+a=ssrc:2701283063 cname:M6S658VC89kb7EdW
+a=ssrc:2701283063 msid:VdDOu8qYH9oRc8tcYPLxxJqxLtnDsJCd v0
+a=ssrc:2701283063 mslabel:VdDOu8qYH9oRc8tcYPLxxJqxLtnDsJCd
+a=ssrc:2701283063 label:VdDOu8qYH9oRc8tcYPLxxJqxLtnDsJCdv0
+a=ice-ufrag:HrCcW4LZIREEjOjI
+a=ice-pwd:z2X39HOqlDueCfe9xHckCN9b
+a=candidate:4397473090 1 udp 659136 10.176.2.43 22738 typ host generation 0
+a=end-of-candidates
+2022-02-02 17:03:10.889055 [DEBUG] sofia.c:7325 Channel sofia/internal/altanai@10.176.2.43:5061 entering state [completed][200]
+2022-02-02 17:03:10.889055 [INFO] switch_vpx.c:564 config: vp8
+2022-02-02 17:03:10.889055 [WARNING] switch_vpx.c:595 REQUESTED BITRATE TRUNCATED FROM 512000 TO 43545
+2022-02-02 17:03:10.889055 [NOTICE] switch_vpx.c:599 VPX encoder reset (WxH/BW) from 0x0/0 to 352x288/43545
+recv 454 bytes from wss/[10.176.2.43]:38614 at 17:03:10.939436:
+------------------------------------------------------------------------
+ACK sip:350000-screen@10.176.2.43:5060;transport=udp SIP/2.0
+Via: SIP/2.0/WSS ntgslk4c72j0.invalid;branch=z9hG4bK3821534
+Max-Forwards: 69
+To: <sip:350000-screen@10.176.2.43:5061>;tag=B7vHUDgKe3g9r
+From: "remoteclient" <sip:altanai@10.176.2.43:5061>;tag=av6o5qr6d0
+Call-ID: pheab2e6h7s1bkbepsf2
+CSeq: 4804 ACK
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: outbound
+User-Agent: JsSIP 3.9.0
+Content-Length: 0
+
+2022-02-02 17:03:10.929009 [DEBUG] sofia.c:7325 Channel sofia/internal/altanai@10.176.2.43:5061 entering state [ready][200]
+2022-02-02 17:03:12.049013 [NOTICE] switch_rtp.c:1298 Auto Changing video stun/rtp/dtls port from 66.194.72.59:40918 to 10.176.2.43:35057 idx:0
+2022-02-02 17:03:12.049013 [NOTICE] switch_rtp.c:1298 Auto Changing audio stun/rtp/dtls port from 66.194.72.59:1031 to 10.176.2.43:39158 idx:0
+2022-02-02 17:03:12.069007 [INFO] switch_rtp.c:3278 Changing video DTLS state from HANDSHAKE to SETUP
+2022-02-02 17:03:12.109005 [INFO] switch_rtp.c:3185 video Fingerprint Verified.
+2022-02-02 17:03:12.109005 [INFO] switch_rtp.c:4217 Activating video Secure RTP SEND
+2022-02-02 17:03:12.109005 [DEBUG] switch_core_sqldb.c:2836 Secure Type: srtp:dtls:AES_CM_128_HMAC_SHA1_80
+2022-02-02 17:03:12.109005 [INFO] switch_rtp.c:4195 Activating video Secure RTP RECV
+2022-02-02 17:03:12.109005 [INFO] switch_rtp.c:3227 Changing video DTLS state from SETUP to READY
+2022-02-02 17:03:12.109005 [DEBUG] switch_core_sqldb.c:2836 Secure Type: srtp:dtls:AES_CM_128_HMAC_SHA1_80
+2022-02-02 17:03:12.129048 [DEBUG] switch_rtp.c:1917 rtcp_stats_init: video ssrc[2784340262] base_seq[10421]
+2022-02-02 17:03:13.949005 [INFO] switch_rtp.c:3278 Changing audio DTLS state from HANDSHAKE to SETUP
+2022-02-02 17:03:13.969045 [INFO] switch_rtp.c:3185 audio Fingerprint Verified.
+2022-02-02 17:03:13.969045 [INFO] switch_rtp.c:4217 Activating audio Secure RTP SEND
+2022-02-02 17:03:13.969045 [DEBUG] switch_core_sqldb.c:2836 Secure Type: srtp:dtls:AES_CM_128_HMAC_SHA1_80
+2022-02-02 17:03:13.969045 [INFO] switch_rtp.c:4195 Activating audio Secure RTP RECV
+2022-02-02 17:03:13.969045 [INFO] switch_rtp.c:3227 Changing audio DTLS state from SETUP to READY
+2022-02-02 17:03:13.969045 [DEBUG] switch_core_sqldb.c:2836 Secure Type: srtp:dtls:AES_CM_128_HMAC_SHA1_80
+2022-02-02 17:03:13.969045 [NOTICE] mod_dptools.c:1406 Channel [sofia/internal/altanai@10.176.2.43:5061] has been answered
+2022-02-02 17:03:13.969045 [DEBUG] switch_channel.c:3865 (sofia/internal/altanai@10.176.2.43:5061) Callstate Change EARLY -> ACTIVE
+EXECUTE [depth=0] sofia/internal/altanai@10.176.2.43:5061 send_display(FreeSWITCH Conference|3500)
+EXECUTE [depth=0] sofia/internal/altanai@10.176.2.43:5061 set(conference_member_flags=join-vid-floor)
+2022-02-02 17:03:13.969045 [DEBUG] mod_dptools.c:1672 SET sofia/internal/altanai@10.176.2.43:5061 [conference_member_flags]=[join-vid-floor]
+EXECUTE [depth=0] sofia/internal/altanai@10.176.2.43:5061 conference(3500@video-mcu-stereo)
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:304 Adding layout group grid
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:313 Adding node 1x1 to layout group grid
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:313 Adding node 2x1 to layout group grid
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:313 Adding node 1x1+2x1 to layout group grid
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:313 Adding node 2x2 to layout group grid
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:313 Adding node 3x3 to layout group grid
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:313 Adding node 4x4 to layout group grid
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:313 Adding node 5x5 to layout group grid
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:313 Adding node 6x6 to layout group grid
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:313 Adding node 8x8 to layout group grid
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:304 Adding layout group grid-zoom
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:313 Adding node 1x1 to layout group grid-zoom
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:313 Adding node 2x1-zoom to layout group grid-zoom
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:313 Adding node 3x1-zoom to layout group grid-zoom
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:313 Adding node 2x2 to layout group grid-zoom
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:313 Adding node 5-grid-zoom to layout group grid-zoom
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:313 Adding node 3x2-zoom to layout group grid-zoom
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:313 Adding node 7-grid-zoom to layout group grid-zoom
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:313 Adding node 4x2-zoom to layout group grid-zoom
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:313 Adding node 3x3 to layout group grid-zoom
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:304 Adding layout group 1up_top_left_plus
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:313 Adding node 1up_top_left+5 to layout group 1up_top_left_plus
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:313 Adding node 1up_top_left+7 to layout group 1up_top_left_plus
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:313 Adding node 1up_top_left+9 to layout group 1up_top_left_plus
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:304 Adding layout group 3up_plus
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:313 Adding node 3up+4 to layout group 3up_plus
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:313 Adding node 3up+9 to layout group 3up_plus
+2022-02-02 17:03:13.969045 [DEBUG] mod_conference.c:3414 using channel sound prefix: /usr/local/freeswitch/sounds/en/us/callie
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:1695 Canvas position 1 applied layout 1x1
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:1816 Layout set to 1x1
+2022-02-02 17:03:13.969045 [DEBUG] conference_video.c:1776 Canvas attached to position 0
+2022-02-02 17:03:13.969045 [DEBUG] mod_conference.c:228 Setup timer success interval: 20  samples: 960
+2022-02-02 17:03:13.969045 [DEBUG] conference_member.c:1764 Raw Codec Activation Success L16@48000hz 1 channel 20ms
+2022-02-02 17:03:13.969045 [DEBUG] conference_member.c:1811 Raw Codec Activation Success L16@48000hz 2 channel 20ms
+2022-02-02 17:03:13.969045 [DEBUG] switch_core_codec.c:223 sofia/internal/altanai@10.176.2.43:5061 Push codec L16:100
+2022-02-02 17:03:13.969045 [ERR] switch_core_video.c:3044 This function is not available, libpng not installed
+2022-02-02 17:03:13.969045 [ERR] switch_core_file.c:307 Invalid file format [wav] for [/usr/local/freeswitch/sounds/en/us/callie/conference/conf-alone.wav]!
+2022-02-02 17:03:13.969045 [DEBUG] conference_member.c:106 sofia/internal/altanai@10.176.2.43:5061 binding '0' to 'mute'
+2022-02-02 17:03:13.969045 [INFO] switch_ivr_async.c:219 Digit parser mod_conference: Setting realm to 'conf'
+2022-02-02 17:03:13.969045 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 0/conf/0 callback: 0x7f3e66a0698d data: 0x7f3e200f4aa8
+2022-02-02 17:03:13.969045 [DEBUG] conference_member.c:106 sofia/internal/altanai@10.176.2.43:5061 binding '*' to 'deaf mute'
+2022-02-02 17:03:13.969045 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding */conf/0 callback: 0x7f3e66a0698d data: 0x7f3e200f4ad8
+2022-02-02 17:03:13.969045 [DEBUG] conference_member.c:106 sofia/internal/altanai@10.176.2.43:5061 binding '9' to 'energy up'
+2022-02-02 17:03:13.969045 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 9/conf/0 callback: 0x7f3e66a0698d data: 0x7f3e200f4b08
+2022-02-02 17:03:13.969045 [DEBUG] conference_member.c:106 sofia/internal/altanai@10.176.2.43:5061 binding '8' to 'energy equ'
+2022-02-02 17:03:13.969045 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 8/conf/0 callback: 0x7f3e66a0698d data: 0x7f3e200f4b38
+2022-02-02 17:03:13.969045 [DEBUG] conference_member.c:106 sofia/internal/altanai@10.176.2.43:5061 binding '7' to 'energy dn'
+2022-02-02 17:03:13.969045 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 7/conf/0 callback: 0x7f3e66a0698d data: 0x7f3e200f4b68
+2022-02-02 17:03:13.969045 [DEBUG] conference_member.c:106 sofia/internal/altanai@10.176.2.43:5061 binding '3' to 'vol talk up'
+2022-02-02 17:03:13.969045 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 3/conf/0 callback: 0x7f3e66a0698d data: 0x7f3e200f4b98
+2022-02-02 17:03:13.969045 [DEBUG] conference_member.c:106 sofia/internal/altanai@10.176.2.43:5061 binding '2' to 'vol talk zero'
+2022-02-02 17:03:13.969045 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 2/conf/0 callback: 0x7f3e66a0698d data: 0x7f3e200f4bc8
+2022-02-02 17:03:13.969045 [DEBUG] conference_member.c:106 sofia/internal/altanai@10.176.2.43:5061 binding '1' to 'vol talk dn'
+2022-02-02 17:03:13.969045 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 1/conf/0 callback: 0x7f3e66a0698d data: 0x7f3e200f4bf8
+2022-02-02 17:03:13.969045 [DEBUG] conference_member.c:106 sofia/internal/altanai@10.176.2.43:5061 binding '6' to 'vol listen up'
+2022-02-02 17:03:13.969045 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 6/conf/0 callback: 0x7f3e66a0698d data: 0x7f3e200f4c28
+2022-02-02 17:03:13.969045 [DEBUG] conference_member.c:106 sofia/internal/altanai@10.176.2.43:5061 binding '5' to 'vol listen zero'
+2022-02-02 17:03:13.969045 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 5/conf/0 callback: 0x7f3e66a0698d data: 0x7f3e200f4c58
+2022-02-02 17:03:13.969045 [DEBUG] conference_member.c:106 sofia/internal/altanai@10.176.2.43:5061 binding '4' to 'vol listen dn'
+2022-02-02 17:03:13.969045 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 4/conf/0 callback: 0x7f3e66a0698d data: 0x7f3e200f4c88
+2022-02-02 17:03:13.969045 [DEBUG] conference_member.c:106 sofia/internal/altanai@10.176.2.43:5061 binding '#' to 'hangup'
+2022-02-02 17:03:13.969045 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding #/conf/0 callback: 0x7f3e66a0698d data: 0x7f3e200f4cb8
+2022-02-02 17:03:13.969045 [INFO] conference_member.c:1066 conference 3500 OK video floor 1 sofia/internal/altanai@10.176.2.43:5061
+2022-02-02 17:03:13.969045 [DEBUG] conference_loop.c:1338 Setup timer soft success interval: 20  samples: 960 from codec opus
+2022-02-02 17:03:13.969045 [INFO] switch_vpx.c:564 config: vp8
+2022-02-02 17:03:13.969045 [NOTICE] switch_vpx.c:599 VPX encoder reset (WxH/BW) from 352x288/43545 to 352x288/3072
+2022-02-02 17:03:13.969045 [WARNING] mod_local_stream.c:872 Unknown source moh, trying 'default'
+2022-02-02 17:03:13.969045 [ERR] mod_local_stream.c:880 Unknown source default
+2022-02-02 17:03:13.969045 [DEBUG] switch_rtp.c:1917 rtcp_stats_init: audio ssrc[1917696445] base_seq[3811]
+2022-02-02 17:03:14.009007 [DEBUG] switch_vpx.c:703 VPX VER:v1.8.1 VPX_IMAGE_ABI_VERSION:4 VPX_CODEC_ABI_VERSION:8
+2022-02-02 17:03:14.009007 [DEBUG] conference_video.c:3380 Setting up video write codec VP8 at slot 0 group _none_
+2022-02-02 17:03:14.049098 [INFO] switch_vpx.c:564 config: vp8
+2022-02-02 17:03:14.049098 [NOTICE] switch_vpx.c:599 VPX encoder reset (WxH/BW) from 0x0/0 to 1920x1080/3072
+2022-02-02 17:03:16.009046 [WARNING] mod_local_stream.c:872 Unknown source moh, trying 'default'
+2022-02-02 17:03:16.009046 [ERR] mod_local_stream.c:880 Unknown source default
+2022-02-02 17:03:18.029013 [WARNING] mod_local_stream.c:872 Unknown source moh, trying 'default'
+2022-02-02 17:03:18.029013 [ERR] mod_local_stream.c:880 Unknown source default
+2022-02-02 17:03:20.049085 [WARNING] mod_local_stream.c:872 Unknown source moh, trying 'default'
+2022-02-02 17:03:20.049085 [ERR] mod_local_stream.c:880 Unknown source default
+2022-02-02 17:03:22.069009 [WARNING] mod_local_stream.c:872 Unknown source moh, trying 'default'
+2022-02-02 17:03:22.069009 [ERR] mod_local_stream.c:880 Unknown source default
+2022-02-02 17:03:24.069032 [WARNING] mod_local_stream.c:872 Unknown source moh, trying 'default'
+2022-02-02 17:03:24.069032 [ERR] mod_local_stream.c:880 Unknown source default
+2022-02-02 17:03:26.109015 [WARNING] mod_local_stream.c:872 Unknown source moh, trying 'default'
+2022-02-02 17:03:26.109015 [ERR] mod_local_stream.c:880 Unknown source default
+recv 7929 bytes from wss/[10.176.2.43]:38560 at 17:03:26.142043:
+------------------------------------------------------------------------
+INVITE sip:350000-screen@10.176.2.43:5061 SIP/2.0
+Via: SIP/2.0/WSS 2eiobkc9ka3k.invalid;branch=z9hG4bK7403623
+Max-Forwards: 69
+To: <sip:350000-screen@10.176.2.43:5061>
+From: "webclient" <sip:webrtcclient@10.176.2.43:5061>;tag=9gtms5lh3a
+Call-ID: bj4fmoma8lh8o7hlbh28
+CSeq: 1647 INVITE
+Contact: <sip:3gc49gam@2eiobkc9ka3k.invalid;transport=ws;ob>
+Content-Type: application/sdp
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: ice,replaces,outbound
+User-Agent: JsSIP 3.9.0
+Content-Length: 7390
+
+v=0
+o=- 7744690725131752308 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE 0 1
+a=extmap-allow-mixed
+a=msid-semantic: WMS E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y
+m=audio 45419 UDP/TLS/RTP/SAVPF 111 63 103 104 9 0 8 106 105 13 110 112 113 126
+c=IN IP4 66.194.72.59
+a=rtcp:9194 IN IP4 66.194.72.59
+a=candidate:462440413 1 tcp 1518280447 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=candidate:462440413 2 tcp 1518280446 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=candidate:1427356461 1 udp 2122260223 10.176.2.43 42544 typ host generation 0 network-id 1 network-cost 10
+a=candidate:1427356461 2 udp 2122260222 10.176.2.43 54814 typ host generation 0 network-id 1 network-cost 10
+a=candidate:4232852728 1 udp 1686052607 66.194.72.59 45419 typ srflx raddr 10.176.2.43 rport 42544 generation 0 network-id 1 network-cost 10
+a=candidate:4232852728 2 udp 1686052606 66.194.72.59 9194 typ srflx raddr 10.176.2.43 rport 54814 generation 0 network-id 1 network-cost 10
+a=ice-ufrag:cu8t
+a=ice-pwd:pfptM2T2SaYAlLD3oY8OmAcF
+a=ice-options:trickle
+a=fingerprint:sha-256 78:A7:A1:A2:C1:54:15:65:92:8F:DB:45:60:12:E6:B5:FF:92:92:F5:83:FD:B3:16:F7:4D:82:C5:A5:59:C6:1D
+a=setup:actpass
+a=mid:0
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=sendrecv
+a=msid:E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y d5774c51-39d9-4e33-9f89-7ab71ea393e4
+a=rtcp-mux
+a=rtpmap:111 opus/48000/2
+a=rtcp-fb:111 transport-cc
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:63 red/48000/2
+a=fmtp:63 111/111
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+a=ssrc:1675020489 cname:pkftsO/iSokmisVP
+a=ssrc:1675020489 msid:E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y d5774c51-39d9-4e33-9f89-7ab71ea393e4
+a=ssrc:1675020489 mslabel:E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y
+a=ssrc:1675020489 label:d5774c51-39d9-4e33-9f89-7ab71ea393e4
+m=video 3253 UDP/TLS/RTP/SAVPF 96 97 98 99 100 101 102 121 127 120 125 107 108 109 124 119 123 118 35 36 114 115 116
+c=IN IP4 66.194.72.59
+a=rtcp:40209 IN IP4 66.194.72.59
+a=candidate:462440413 1 tcp 1518280447 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=candidate:462440413 2 tcp 1518280446 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=candidate:1427356461 1 udp 2122260223 10.176.2.43 37637 typ host generation 0 network-id 1 network-cost 10
+a=candidate:1427356461 2 udp 2122260222 10.176.2.43 60022 typ host generation 0 network-id 1 network-cost 10
+a=candidate:4232852728 2 udp 1686052606 66.194.72.59 40209 typ srflx raddr 10.176.2.43 rport 60022 generation 0 network-id 1 network-cost 10
+a=candidate:4232852728 1 udp 1686052607 66.194.72.59 3253 typ srflx raddr 10.176.2.43 rport 37637 generation 0 network-id 1 network-cost 10
+a=ice-ufrag:cu8t
+a=ice-pwd:pfptM2T2SaYAlLD3oY8OmAcF
+a=ice-options:trickle
+a=fingerprint:sha-256 78:A7:A1:A2:C1:54:15:65:92:8F:DB:45:60:12:E6:B5:FF:92:92:F5:83:FD:B3:16:F7:4D:82:C5:A5:59:C6:1D
+a=setup:actpass
+a=mid:1
+a=extmap:14 urn:ietf:params:rtp-hdrext:toffset
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:13 urn:3gpp:video-orientation
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay
+a=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type
+a=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing
+a=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+a=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id
+a=sendrecv
+a=msid:E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y 6fc85f19-6f0d-4ca0-8c8a-2b4e8a201316
+a=rtcp-mux
+a=rtcp-rsize
+a=rtpmap:96 VP8/90000
+a=rtcp-fb:96 goog-remb
+a=rtcp-fb:96 transport-cc
+a=rtcp-fb:96 ccm fir
+a=rtcp-fb:96 nack
+a=rtcp-fb:96 nack pli
+a=rtpmap:97 rtx/90000
+a=fmtp:97 apt=96
+a=rtpmap:98 VP9/90000
+a=rtcp-fb:98 goog-remb
+a=rtcp-fb:98 transport-cc
+a=rtcp-fb:98 ccm fir
+a=rtcp-fb:98 nack
+a=rtcp-fb:98 nack pli
+a=fmtp:98 profile-id=0
+a=rtpmap:99 rtx/90000
+a=fmtp:99 apt=98
+a=rtpmap:100 VP9/90000
+a=rtcp-fb:100 goog-remb
+a=rtcp-fb:100 transport-cc
+a=rtcp-fb:100 ccm fir
+a=rtcp-fb:100 nack
+a=rtcp-fb:100 nack pli
+a=fmtp:100 profile-id=2
+a=rtpmap:101 rtx/90000
+a=fmtp:101 apt=100
+a=rtpmap:102 H264/90000
+a=rtcp-fb:102 goog-remb
+a=rtcp-fb:102 transport-cc
+a=rtcp-fb:102 ccm fir
+a=rtcp-fb:102 nack
+a=rtcp-fb:102 nack pli
+a=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f
+a=rtpmap:121 rtx/90000
+a=fmtp:121 apt=102
+a=rtpmap:127 H264/90000
+a=rtcp-fb:127 goog-remb
+a=rtcp-fb:127 transport-cc
+a=rtcp-fb:127 ccm fir
+a=rtcp-fb:127 nack
+a=rtcp-fb:127 nack pli
+a=fmtp:127 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42001f
+a=rtpmap:120 rtx/90000
+a=fmtp:120 apt=127
+a=rtpmap:125 H264/90000
+a=rtcp-fb:125 goog-remb
+a=rtcp-fb:125 transport-cc
+a=rtcp-fb:125 ccm fir
+a=rtcp-fb:125 nack
+a=rtcp-fb:125 nack pli
+a=fmtp:125 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f
+a=rtpmap:107 rtx/90000
+a=fmtp:107 apt=125
+a=rtpmap:108 H264/90000
+a=rtcp-fb:108 goog-remb
+a=rtcp-fb:108 transport-cc
+a=rtcp-fb:108 ccm fir
+a=rtcp-fb:108 nack
+a=rtcp-fb:108 nack pli
+a=fmtp:108 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42e01f
+a=rtpmap:109 rtx/90000
+a=fmtp:109 apt=108
+a=rtpmap:124 H264/90000
+a=rtcp-fb:124 goog-remb
+a=rtcp-fb:124 transport-cc
+a=rtcp-fb:124 ccm fir
+a=rtcp-fb:124 nack
+a=rtcp-fb:124 nack pli
+a=fmtp:124 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f
+a=rtpmap:119 rtx/90000
+a=fmtp:119 apt=124
+a=rtpmap:123 H264/90000
+a=rtcp-fb:123 goog-remb
+a=rtcp-fb:123 transport-cc
+a=rtcp-fb:123 ccm fir
+a=rtcp-fb:123 nack
+a=rtcp-fb:123 nack pli
+a=fmtp:123 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=4d001f
+a=rtpmap:118 rtx/90000
+a=fmtp:118 apt=123
+a=rtpmap:35 AV1/90000
+a=rtcp-fb:35 goog-remb
+a=rtcp-fb:35 transport-cc
+a=rtcp-fb:35 ccm fir
+a=rtcp-fb:35 nack
+a=rtcp-fb:35 nack pli
+a=rtpmap:36 rtx/90000
+a=fmtp:36 apt=35
+a=rtpmap:114 red/90000
+a=rtpmap:115 rtx/90000
+a=fmtp:115 apt=114
+a=rtpmap:116 ulpfec/90000
+a=ssrc-group:FID 71704643 3741973833
+a=ssrc:71704643 cname:pkftsO/iSokmisVP
+a=ssrc:71704643 msid:E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y 6fc85f19-6f0d-4ca0-8c8a-2b4e8a201316
+a=ssrc:71704643 mslabel:E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y
+a=ssrc:71704643 label:6fc85f19-6f0d-4ca0-8c8a-2b4e8a201316
+a=ssrc:3741973833 cname:pkftsO/iSokmisVP
+a=ssrc:3741973833 msid:E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y 6fc85f19-6f0d-4ca0-8c8a-2b4e8a201316
+a=ssrc:3741973833 mslabel:E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y
+a=ssrc:3741973833 label:6fc85f19-6f0d-4ca0-8c8a-2b4e8a201316
+2022-02-02 17:03:26.129016 [NOTICE] switch_channel.c:1118 New Channel sofia/internal/webrtcclient@10.176.2.43:5061 [17842134-848d-11ec-b439-fbd0ce10ee85]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_state_machine.c:585 (sofia/internal/webrtcclient@10.176.2.43:5061) Running State Change CS_NEW (Cur 2 Tot 2)
+2022-02-02 17:03:26.129016 [DEBUG] sofia.c:10279 sofia/internal/webrtcclient@10.176.2.43:5061 receiving invite from 10.176.2.43:38560 version: 1.10.4-dev git 91f5434 2020-05-18 17:22:05Z 64bit
+2022-02-02 17:03:26.129016 [DEBUG] sofia.c:11476 Setting NAT mode based on websockets
+2022-02-02 17:03:26.129016 [DEBUG] sofia.c:7325 Channel sofia/internal/webrtcclient@10.176.2.43:5061 entering state [received][100]
+2022-02-02 17:03:26.129016 [DEBUG] sofia.c:7335 Remote SDP:
+v=0
+o=- 7744690725131752308 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE 0 1
+a=extmap-allow-mixed
+a=msid-semantic: WMS E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y
+m=audio 45419 UDP/TLS/RTP/SAVPF 111 63 103 104 9 0 8 106 105 13 110 112 113 126
+c=IN IP4 66.194.72.59
+a=rtpmap:111 opus/48000/2
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:63 red/48000/2
+a=fmtp:63 111/111
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+a=rtcp:9194 IN IP4 66.194.72.59
+a=candidate:462440413 1 tcp 1518280447 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=candidate:462440413 2 tcp 1518280446 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=candidate:1427356461 1 udp 2122260223 10.176.2.43 42544 typ host generation 0 network-id 1 network-cost 10
+a=candidate:1427356461 2 udp 2122260222 10.176.2.43 54814 typ host generation 0 network-id 1 network-cost 10
+a=candidate:4232852728 1 udp 1686052607 66.194.72.59 45419 typ srflx raddr 10.176.2.43 rport 42544 generation 0 network-id 1 network-cost 10
+a=candidate:4232852728 2 udp 1686052606 66.194.72.59 9194 typ srflx raddr 10.176.2.43 rport 54814 generation 0 network-id 1 network-cost 10
+a=ice-ufrag:cu8t
+a=ice-pwd:pfptM2T2SaYAlLD3oY8OmAcF
+a=ice-options:trickle
+a=fingerprint:sha-256 78:A7:A1:A2:C1:54:15:65:92:8F:DB:45:60:12:E6:B5:FF:92:92:F5:83:FD:B3:16:F7:4D:82:C5:A5:59:C6:1D
+a=setup:actpass
+a=mid:0
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=msid:E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y d5774c51-39d9-4e33-9f89-7ab71ea393e4
+a=rtcp-mux
+a=rtcp-fb:111 transport-cc
+a=ssrc:1675020489 cname:pkftsO/iSokmisVP
+a=ssrc:1675020489 msid:E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y d5774c51-39d9-4e33-9f89-7ab71ea393e4
+a=ssrc:1675020489 mslabel:E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y
+a=ssrc:1675020489 label:d5774c51-39d9-4e33-9f89-7ab71ea393e4
+m=video 3253 UDP/TLS/RTP/SAVPF 96 97 98 99 100 101 102 121 127 120 125 107 108 109 124 119 123 118 35 36 114 115 116
+c=IN IP4 66.194.72.59
+a=rtpmap:96 VP8/90000
+a=rtpmap:97 rtx/90000
+a=fmtp:97 apt=96
+a=rtpmap:98 VP9/90000
+a=fmtp:98 profile-id=0
+a=rtpmap:99 rtx/90000
+a=fmtp:99 apt=98
+a=rtpmap:100 VP9/90000
+a=fmtp:100 profile-id=2
+a=rtpmap:101 rtx/90000
+a=fmtp:101 apt=100
+a=rtpmap:102 H264/90000
+a=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f
+a=rtpmap:121 rtx/90000
+a=fmtp:121 apt=102
+a=rtpmap:127 H264/90000
+a=fmtp:127 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42001f
+a=rtpmap:120 rtx/90000
+a=fmtp:120 apt=127
+a=rtpmap:125 H264/90000
+a=fmtp:125 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f
+a=rtpmap:107 rtx/90000
+a=fmtp:107 apt=125
+a=rtpmap:108 H264/90000
+a=fmtp:108 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42e01f
+a=rtpmap:109 rtx/90000
+a=fmtp:109 apt=108
+a=rtpmap:124 H264/90000
+a=fmtp:124 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f
+a=rtpmap:119 rtx/90000
+a=fmtp:119 apt=124
+a=rtpmap:123 H264/90000
+a=fmtp:123 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=4d001f
+a=rtpmap:118 rtx/90000
+a=fmtp:118 apt=123
+a=rtpmap:35 AV1/90000
+a=rtpmap:36 rtx/90000
+a=fmtp:36 apt=35
+a=rtpmap:114 red/90000
+a=rtpmap:115 rtx/90000
+a=fmtp:115 apt=114
+a=rtpmap:116 ulpfec/90000
+a=rtcp:40209 IN IP4 66.194.72.59
+a=candidate:462440413 1 tcp 1518280447 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=candidate:462440413 2 tcp 1518280446 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=candidate:1427356461 1 udp 2122260223 10.176.2.43 37637 typ host generation 0 network-id 1 network-cost 10
+a=candidate:1427356461 2 udp 2122260222 10.176.2.43 60022 typ host generation 0 network-id 1 network-cost 10
+a=candidate:4232852728 2 udp 1686052606 66.194.72.59 40209 typ srflx raddr 10.176.2.43 rport 60022 generation 0 network-id 1 network-cost 10
+a=candidate:4232852728 1 udp 1686052607 66.194.72.59 3253 typ srflx raddr 10.176.2.43 rport 37637 generation 0 network-id 1 network-cost 10
+a=ice-ufrag:cu8t
+a=ice-pwd:pfptM2T2SaYAlLD3oY8OmAcF
+a=ice-options:trickle
+a=fingerprint:sha-256 78:A7:A1:A2:C1:54:15:65:92:8F:DB:45:60:12:E6:B5:FF:92:92:F5:83:FD:B3:16:F7:4D:82:C5:A5:59:C6:1D
+a=setup:actpass
+a=mid:1
+a=extmap:14 urn:ietf:params:rtp-hdrext:toffset
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:13 urn:3gpp:video-orientation
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay
+a=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type
+a=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing
+a=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+a=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id
+a=msid:E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y 6fc85f19-6f0d-4ca0-8c8a-2b4e8a201316
+a=rtcp-mux
+a=rtcp-rsize
+a=rtcp-fb:96 goog-remb
+a=rtcp-fb:96 transport-cc
+a=rtcp-fb:96 ccm fir
+a=rtcp-fb:96 nack
+a=rtcp-fb:96 nack pli
+a=rtcp-fb:98 goog-remb
+a=rtcp-fb:98 transport-cc
+a=rtcp-fb:98 ccm fir
+a=rtcp-fb:98 nack
+a=rtcp-fb:98 nack pli
+a=rtcp-fb:100 goog-remb
+a=rtcp-fb:100 transport-cc
+a=rtcp-fb:100 ccm fir
+a=rtcp-fb:100 nack
+a=rtcp-fb:100 nack pli
+a=rtcp-fb:102 goog-remb
+a=rtcp-fb:102 transport-cc
+a=rtcp-fb:102 ccm fir
+a=rtcp-fb:102 nack
+a=rtcp-fb:102 nack pli
+a=rtcp-fb:127 goog-remb
+a=rtcp-fb:127 transport-cc
+a=rtcp-fb:127 ccm fir
+a=rtcp-fb:127 nack
+a=rtcp-fb:127 nack pli
+a=rtcp-fb:125 goog-remb
+a=rtcp-fb:125 transport-cc
+a=rtcp-fb:125 ccm fir
+a=rtcp-fb:125 nack
+a=rtcp-fb:125 nack pli
+a=rtcp-fb:108 goog-remb
+a=rtcp-fb:108 transport-cc
+a=rtcp-fb:108 ccm fir
+a=rtcp-fb:108 nack
+a=rtcp-fb:108 nack pli
+a=rtcp-fb:124 goog-remb
+a=rtcp-fb:124 transport-cc
+a=rtcp-fb:124 ccm fir
+a=rtcp-fb:124 nack
+a=rtcp-fb:124 nack pli
+a=rtcp-fb:123 goog-remb
+a=rtcp-fb:123 transport-cc
+a=rtcp-fb:123 ccm fir
+a=rtcp-fb:123 nack
+a=rtcp-fb:123 nack pli
+a=rtcp-fb:35 goog-remb
+a=rtcp-fb:35 transport-cc
+a=rtcp-fb:35 ccm fir
+a=rtcp-fb:35 nack
+a=rtcp-fb:35 nack pli
+a=ssrc-group:FID 71704643 3741973833
+a=ssrc:71704643 cname:pkftsO/iSokmisVP
+a=ssrc:71704643 msid:E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y 6fc85f19-6f0d-4ca0-8c8a-2b4e8a201316
+a=ssrc:71704643 mslabel:E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y
+a=ssrc:71704643 label:6fc85f19-6f0d-4ca0-8c8a-2b4e8a201316
+a=ssrc:3741973833 cname:pkftsO/iSokmisVP
+a=ssrc:3741973833 msid:E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y 6fc85f19-6f0d-4ca0-8c8a-2b4e8a201316
+a=ssrc:3741973833 mslabel:E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y
+a=ssrc:3741973833 label:6fc85f19-6f0d-4ca0-8c8a-2b4e8a201316
+
+2022-02-02 17:03:26.129016 [DEBUG] sofia.c:7738 (sofia/internal/webrtcclient@10.176.2.43:5061) State Change CS_NEW -> CS_INIT
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_state_machine.c:604 (sofia/internal/webrtcclient@10.176.2.43:5061) State NEW
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_state_machine.c:585 (sofia/internal/webrtcclient@10.176.2.43:5061) Running State Change CS_INIT (Cur 2 Tot 2)
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_state_machine.c:628 (sofia/internal/webrtcclient@10.176.2.43:5061) State INIT
+2022-02-02 17:03:26.129016 [DEBUG] mod_sofia.c:93 sofia/internal/webrtcclient@10.176.2.43:5061 SOFIA INIT
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_state_machine.c:40 sofia/internal/webrtcclient@10.176.2.43:5061 Standard INIT
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_state_machine.c:48 (sofia/internal/webrtcclient@10.176.2.43:5061) State Change CS_INIT -> CS_ROUTING
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_state_machine.c:628 (sofia/internal/webrtcclient@10.176.2.43:5061) State INIT going to sleep
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_state_machine.c:585 (sofia/internal/webrtcclient@10.176.2.43:5061) Running State Change CS_ROUTING (Cur 2 Tot 2)
+2022-02-02 17:03:26.129016 [DEBUG] switch_channel.c:2332 (sofia/internal/webrtcclient@10.176.2.43:5061) Callstate Change DOWN -> RINGING
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_state_machine.c:644 (sofia/internal/webrtcclient@10.176.2.43:5061) State ROUTING
+2022-02-02 17:03:26.129016 [DEBUG] mod_sofia.c:154 sofia/internal/webrtcclient@10.176.2.43:5061 SOFIA ROUTING
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_state_machine.c:236 sofia/internal/webrtcclient@10.176.2.43:5061 Standard ROUTING
+2022-02-02 17:03:26.129016 [INFO] mod_dialplan_xml.c:637 Processing webclient <webrtcclient>->350000-screen in context public
+Dialplan: sofia/internal/webrtcclient@10.176.2.43:5061 parsing [public->cdquality_stereo_conferences] continue=false
+Dialplan: sofia/internal/webrtcclient@10.176.2.43:5061 Regex (PASS) [cdquality_stereo_conferences] destination_number(350000-screen) =~ /^(35\d{2}).*?-screen$/ break=on-false
+send 380 bytes to wss/[10.176.2.43]:38560 at 17:03:26.146478:
+------------------------------------------------------------------------
+SIP/2.0 100 Trying
+Via: SIP/2.0/WSS 2eiobkc9ka3k.invalid;branch=z9hG4bK7403623;received=10.176.2.43;rport=38560
+From: "webclient" <sip:webrtcclient@10.176.2.43:5061>;tag=9gtms5lh3a
+To: <sip:350000-screen@10.176.2.43:5061>
+Call-ID: bj4fmoma8lh8o7hlbh28
+CSeq: 1647 INVITE
+User-Agent: FreeSWITCH-mod_sofia/1.10.4-dev+git~20200518T172205Z~91f54340ed~64bit
+Content-Length: 0
+
+Dialplan: sofia/internal/webrtcclient@10.176.2.43:5061 Action info() 
+Dialplan: sofia/internal/webrtcclient@10.176.2.43:5061 Action log(PUBLIC INFO *****  Auto answer followed by MCU bridge ***** ) 
+Dialplan: sofia/internal/webrtcclient@10.176.2.43:5061 Action answer() 
+Dialplan: sofia/internal/webrtcclient@10.176.2.43:5061 Action send_display(FreeSWITCH Conference|3500) 
+Dialplan: sofia/internal/webrtcclient@10.176.2.43:5061 Action set(conference_member_flags=join-vid-floor) 
+Dialplan: sofia/internal/webrtcclient@10.176.2.43:5061 Action conference(3500@video-mcu-stereo) 
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_state_machine.c:287 (sofia/internal/webrtcclient@10.176.2.43:5061) State Change CS_ROUTING -> CS_EXECUTE
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_state_machine.c:644 (sofia/internal/webrtcclient@10.176.2.43:5061) State ROUTING going to sleep
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_state_machine.c:585 (sofia/internal/webrtcclient@10.176.2.43:5061) Running State Change CS_EXECUTE (Cur 2 Tot 2)
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_state_machine.c:651 (sofia/internal/webrtcclient@10.176.2.43:5061) State EXECUTE
+2022-02-02 17:03:26.129016 [DEBUG] mod_sofia.c:209 sofia/internal/webrtcclient@10.176.2.43:5061 SOFIA EXECUTE
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_state_machine.c:329 sofia/internal/webrtcclient@10.176.2.43:5061 Standard EXECUTE
+EXECUTE [depth=0] sofia/internal/webrtcclient@10.176.2.43:5061 info()
+2022-02-02 17:03:26.129016 [INFO] mod_dptools.c:1885 CHANNEL_DATA:
+Channel-State: [CS_EXECUTE]
+Channel-Call-State: [RINGING]
+Channel-State-Number: [4]
+Channel-Name: [sofia/internal/webrtcclient@10.176.2.43:5061]
+Unique-ID: [17842134-848d-11ec-b439-fbd0ce10ee85]
+Call-Direction: [inbound]
+Presence-Call-Direction: [inbound]
+Channel-HIT-Dialplan: [true]
+Channel-Presence-ID: [webrtcclient@10.176.2.43]
+Channel-Call-UUID: [17842134-848d-11ec-b439-fbd0ce10ee85]
+Answer-State: [ringing]
+Caller-Direction: [inbound]
+Caller-Logical-Direction: [inbound]
+Caller-Username: [webrtcclient]
+Caller-Dialplan: [XML]
+Caller-Caller-ID-Name: [webclient]
+Caller-Caller-ID-Number: [webrtcclient]
+Caller-Orig-Caller-ID-Name: [webclient]
+Caller-Orig-Caller-ID-Number: [webrtcclient]
+Caller-Network-Addr: [10.176.2.43]
+Caller-ANI: [webrtcclient]
+Caller-Destination-Number: [350000-screen]
+Caller-Unique-ID: [17842134-848d-11ec-b439-fbd0ce10ee85]
+Caller-Source: [mod_sofia]
+Caller-Context: [public]
+Caller-Channel-Name: [sofia/internal/webrtcclient@10.176.2.43:5061]
+Caller-Profile-Index: [1]
+Caller-Profile-Created-Time: [1643850206129016]
+Caller-Channel-Created-Time: [1643850206129016]
+Caller-Channel-Answered-Time: [0]
+Caller-Channel-Progress-Time: [0]
+Caller-Channel-Progress-Media-Time: [0]
+Caller-Channel-Hangup-Time: [0]
+Caller-Channel-Transfer-Time: [0]
+Caller-Channel-Resurrect-Time: [0]
+Caller-Channel-Bridged-Time: [0]
+Caller-Channel-Last-Hold: [0]
+Caller-Channel-Hold-Accum: [0]
+Caller-Screen-Bit: [true]
+Caller-Privacy-Hide-Name: [false]
+Caller-Privacy-Hide-Number: [false]
+variable_direction: [inbound]
+variable_uuid: [17842134-848d-11ec-b439-fbd0ce10ee85]
+variable_session_id: [2]
+variable_sip_from_user: [webrtcclient]
+variable_sip_from_port: [5061]
+variable_sip_from_uri: [webrtcclient@10.176.2.43:5061]
+variable_sip_from_host: [10.176.2.43]
+variable_video_media_flow: [disabled]
+variable_audio_media_flow: [disabled]
+variable_text_media_flow: [disabled]
+variable_channel_name: [sofia/internal/webrtcclient@10.176.2.43:5061]
+variable_sip_call_id: [bj4fmoma8lh8o7hlbh28]
+variable_sip_local_network_addr: [10.176.2.43]
+variable_sip_network_ip: [10.176.2.43]
+variable_sip_network_port: [38560]
+variable_sip_invite_stamp: [1643850206129016]
+variable_sip_received_ip: [10.176.2.43]
+variable_sip_received_port: [38560]
+variable_sip_via_protocol: [wss]
+variable_sip_from_user_stripped: [webrtcclient]
+variable_sip_from_tag: [9gtms5lh3a]
+variable_sofia_profile_name: [internal]
+variable_sofia_profile_url: [sip:mod_sofia@10.176.2.43:5060]
+variable_recovery_profile_name: [internal]
+variable_sip_full_via: [SIP/2.0/WSS 2eiobkc9ka3k.invalid;branch=z9hG4bK7403623;received=10.176.2.43;rport=38560]
+variable_sip_from_display: [webclient]
+variable_sip_full_from: ["webclient" <sip:webrtcclient@10.176.2.43:5061>;tag=9gtms5lh3a]
+variable_sip_full_to: [<sip:350000-screen@10.176.2.43:5061>]
+variable_sip_allow: [INVITE, ACK, CANCEL, BYE, UPDATE, MESSAGE, OPTIONS, REFER, INFO, NOTIFY]
+variable_sip_req_user: [350000-screen]
+variable_sip_req_port: [5061]
+variable_sip_req_uri: [350000-screen@10.176.2.43:5061]
+variable_sip_req_host: [10.176.2.43]
+variable_sip_to_user: [350000-screen]
+variable_sip_to_port: [5061]
+variable_sip_to_uri: [350000-screen@10.176.2.43:5061]
+variable_sip_to_host: [10.176.2.43]
+variable_sip_contact_params: [transport=ws;ob]
+variable_sip_contact_user: [3gc49gam]
+variable_sip_contact_uri: [3gc49gam@2eiobkc9ka3k.invalid]
+variable_sip_contact_host: [2eiobkc9ka3k.invalid]
+variable_rtp_use_codec_string: [OPUS,G722,PCMU,PCMA,H264,VP8]
+variable_sip_user_agent: [JsSIP 3.9.0]
+variable_sip_via_host: [2eiobkc9ka3k.invalid]
+variable_sip_via_rport: [38560]
+variable_max_forwards: [69]
+variable_presence_id: [webrtcclient@10.176.2.43]
+variable_sip_nat_detected: [true]
+variable_switch_r_sdp: [v=0
+o=- 7744690725131752308 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE 0 1
+a=extmap-allow-mixed
+a=msid-semantic: WMS E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y
+m=audio 45419 UDP/TLS/RTP/SAVPF 111 63 103 104 9 0 8 106 105 13 110 112 113 126
+c=IN IP4 66.194.72.59
+a=rtpmap:111 opus/48000/2
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:63 red/48000/2
+a=fmtp:63 111/111
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+a=rtcp:9194 IN IP4 66.194.72.59
+a=candidate:462440413 1 tcp 1518280447 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=candidate:462440413 2 tcp 1518280446 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=candidate:1427356461 1 udp 2122260223 10.176.2.43 42544 typ host generation 0 network-id 1 network-cost 10
+a=candidate:1427356461 2 udp 2122260222 10.176.2.43 54814 typ host generation 0 network-id 1 network-cost 10
+a=candidate:4232852728 1 udp 1686052607 66.194.72.59 45419 typ srflx raddr 10.176.2.43 rport 42544 generation 0 network-id 1 network-cost 10
+a=candidate:4232852728 2 udp 1686052606 66.194.72.59 9194 typ srflx raddr 10.176.2.43 rport 54814 generation 0 network-id 1 network-cost 10
+a=ice-ufrag:cu8t
+a=ice-pwd:pfptM2T2SaYAlLD3oY8OmAcF
+a=ice-options:trickle
+a=fingerprint:sha-256 78:A7:A1:A2:C1:54:15:65:92:8F:DB:45:60:12:E6:B5:FF:92:92:F5:83:FD:B3:16:F7:4D:82:C5:A5:59:C6:1D
+a=setup:actpass
+a=mid:0
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=msid:E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y d5774c51-39d9-4e33-9f89-7ab71ea393e4
+a=rtcp-mux
+a=rtcp-fb:111 transport-cc
+a=ssrc:1675020489 cname:pkftsO/iSokmisVP
+a=ssrc:1675020489 msid:E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y d5774c51-39d9-4e33-9f89-7ab71ea393e4
+a=ssrc:1675020489 mslabel:E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y
+a=ssrc:1675020489 label:d5774c51-39d9-4e33-9f89-7ab71ea393e4
+m=video 3253 UDP/TLS/RTP/SAVPF 96 97 98 99 100 101 102 121 127 120 125 107 108 109 124 119 123 118 35 36 114 115 116
+c=IN IP4 66.194.72.59
+a=rtpmap:96 VP8/90000
+a=rtpmap:97 rtx/90000
+a=fmtp:97 apt=96
+a=rtpmap:98 VP9/90000
+a=fmtp:98 profile-id=0
+a=rtpmap:99 rtx/90000
+a=fmtp:99 apt=98
+a=rtpmap:100 VP9/90000
+a=fmtp:100 profile-id=2
+a=rtpmap:101 rtx/90000
+a=fmtp:101 apt=100
+a=rtpmap:102 H264/90000
+a=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f
+a=rtpmap:121 rtx/90000
+a=fmtp:121 apt=102
+a=rtpmap:127 H264/90000
+a=fmtp:127 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42001f
+a=rtpmap:120 rtx/90000
+a=fmtp:120 apt=127
+a=rtpmap:125 H264/90000
+a=fmtp:125 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f
+a=rtpmap:107 rtx/90000
+a=fmtp:107 apt=125
+a=rtpmap:108 H264/90000
+a=fmtp:108 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42e01f
+a=rtpmap:109 rtx/90000
+a=fmtp:109 apt=108
+a=rtpmap:124 H264/90000
+a=fmtp:124 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f
+a=rtpmap:119 rtx/90000
+a=fmtp:119 apt=124
+a=rtpmap:123 H264/90000
+a=fmtp:123 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=4d001f
+a=rtpmap:118 rtx/90000
+a=fmtp:118 apt=123
+a=rtpmap:35 AV1/90000
+a=rtpmap:36 rtx/90000
+a=fmtp:36 apt=35
+a=rtpmap:114 red/90000
+a=rtpmap:115 rtx/90000
+a=fmtp:115 apt=114
+a=rtpmap:116 ulpfec/90000
+a=rtcp:40209 IN IP4 66.194.72.59
+a=candidate:462440413 1 tcp 1518280447 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=candidate:462440413 2 tcp 1518280446 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=candidate:1427356461 1 udp 2122260223 10.176.2.43 37637 typ host generation 0 network-id 1 network-cost 10
+a=candidate:1427356461 2 udp 2122260222 10.176.2.43 60022 typ host generation 0 network-id 1 network-cost 10
+a=candidate:4232852728 2 udp 1686052606 66.194.72.59 40209 typ srflx raddr 10.176.2.43 rport 60022 generation 0 network-id 1 network-cost 10
+a=candidate:4232852728 1 udp 1686052607 66.194.72.59 3253 typ srflx raddr 10.176.2.43 rport 37637 generation 0 network-id 1 network-cost 10
+a=ice-ufrag:cu8t
+a=ice-pwd:pfptM2T2SaYAlLD3oY8OmAcF
+a=ice-options:trickle
+a=fingerprint:sha-256 78:A7:A1:A2:C1:54:15:65:92:8F:DB:45:60:12:E6:B5:FF:92:92:F5:83:FD:B3:16:F7:4D:82:C5:A5:59:C6:1D
+a=setup:actpass
+a=mid:1
+a=extmap:14 urn:ietf:params:rtp-hdrext:toffset
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:13 urn:3gpp:video-orientation
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay
+a=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type
+a=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing
+a=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+a=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id
+a=msid:E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y 6fc85f19-6f0d-4ca0-8c8a-2b4e8a201316
+a=rtcp-mux
+a=rtcp-rsize
+a=rtcp-fb:96 goog-remb
+a=rtcp-fb:96 transport-cc
+a=rtcp-fb:96 ccm fir
+a=rtcp-fb:96 nack
+a=rtcp-fb:96 nack pli
+a=rtcp-fb:98 goog-remb
+a=rtcp-fb:98 transport-cc
+a=rtcp-fb:98 ccm fir
+a=rtcp-fb:98 nack
+a=rtcp-fb:98 nack pli
+a=rtcp-fb:100 goog-remb
+a=rtcp-fb:100 transport-cc
+a=rtcp-fb:100 ccm fir
+a=rtcp-fb:100 nack
+a=rtcp-fb:100 nack pli
+a=rtcp-fb:102 goog-remb
+a=rtcp-fb:102 transport-cc
+a=rtcp-fb:102 ccm fir
+a=rtcp-fb:102 nack
+a=rtcp-fb:102 nack pli
+a=rtcp-fb:127 goog-remb
+a=rtcp-fb:127 transport-cc
+a=rtcp-fb:127 ccm fir
+a=rtcp-fb:127 nack
+a=rtcp-fb:127 nack pli
+a=rtcp-fb:125 goog-remb
+a=rtcp-fb:125 transport-cc
+a=rtcp-fb:125 ccm fir
+a=rtcp-fb:125 nack
+a=rtcp-fb:125 nack pli
+a=rtcp-fb:108 goog-remb
+a=rtcp-fb:108 transport-cc
+a=rtcp-fb:108 ccm fir
+a=rtcp-fb:108 nack
+a=rtcp-fb:108 nack pli
+a=rtcp-fb:124 goog-remb
+a=rtcp-fb:124 transport-cc
+a=rtcp-fb:124 ccm fir
+a=rtcp-fb:124 nack
+a=rtcp-fb:124 nack pli
+a=rtcp-fb:123 goog-remb
+a=rtcp-fb:123 transport-cc
+a=rtcp-fb:123 ccm fir
+a=rtcp-fb:123 nack
+a=rtcp-fb:123 nack pli
+a=rtcp-fb:35 goog-remb
+a=rtcp-fb:35 transport-cc
+a=rtcp-fb:35 ccm fir
+a=rtcp-fb:35 nack
+a=rtcp-fb:35 nack pli
+a=ssrc-group:FID 71704643 3741973833
+a=ssrc:71704643 cname:pkftsO/iSokmisVP
+a=ssrc:71704643 msid:E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y 6fc85f19-6f0d-4ca0-8c8a-2b4e8a201316
+a=ssrc:71704643 mslabel:E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y
+a=ssrc:71704643 label:6fc85f19-6f0d-4ca0-8c8a-2b4e8a201316
+a=ssrc:3741973833 cname:pkftsO/iSokmisVP
+a=ssrc:3741973833 msid:E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y 6fc85f19-6f0d-4ca0-8c8a-2b4e8a201316
+a=ssrc:3741973833 mslabel:E6EnAZRWh305x5bqLWDnZJB21WC5G3n3eD7Y
+a=ssrc:3741973833 label:6fc85f19-6f0d-4ca0-8c8a-2b4e8a201316
+]
+variable_ep_codec_string: [mod_opus.opus@48000h@20i@2c,mod_spandsp.G722@8000h@20i@64000b,CORE_PCM_MODULE.PCMU@8000h@20i@64000b,CORE_PCM_MODULE.PCMA@8000h@20i@64000b,CORE_VPX_MODULE.VP8]
+variable_endpoint_disposition: [DELAYED NEGOTIATION]
+variable_DP_MATCH: [ARRAY::350000-screen|:3500]
+variable_call_uuid: [17842134-848d-11ec-b439-fbd0ce10ee85]
+variable_current_application: [info]
+
+
+EXECUTE [depth=0] sofia/internal/webrtcclient@10.176.2.43:5061 log(PUBLIC INFO *****  Auto answer followed by MCU bridge ***** )
+2022-02-02 17:03:26.129016 [DEBUG] mod_dptools.c:1866 INFO *****  Auto answer followed by MCU bridge ***** 
+EXECUTE [depth=0] sofia/internal/webrtcclient@10.176.2.43:5061 answer()
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [opus:111:48000:20:0:1]/[opus:116:48000:20:0:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5647 Audio Codec Compare [opus:116:48000:20:0:1] ++++ is saved as a match
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [opus:111:48000:20:0:1]/[G722:9:8000:20:64000:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [opus:111:48000:20:0:1]/[PCMU:0:8000:20:64000:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [opus:111:48000:20:0:1]/[PCMA:8:8000:20:64000:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [red:63:48000:20:0:2]/[opus:116:48000:20:0:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [red:63:48000:20:0:2]/[G722:9:8000:20:64000:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [red:63:48000:20:0:2]/[PCMU:0:8000:20:64000:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [red:63:48000:20:0:2]/[PCMA:8:8000:20:64000:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [ISAC:103:16000:30:32000:1]/[opus:116:48000:20:0:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [ISAC:103:16000:30:32000:1]/[G722:9:8000:20:64000:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [ISAC:103:16000:30:32000:1]/[PCMU:0:8000:20:64000:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [ISAC:103:16000:30:32000:1]/[PCMA:8:8000:20:64000:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [ISAC:104:32000:30:32000:1]/[opus:116:48000:20:0:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [ISAC:104:32000:30:32000:1]/[G722:9:8000:20:64000:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [ISAC:104:32000:30:32000:1]/[PCMU:0:8000:20:64000:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [ISAC:104:32000:30:32000:1]/[PCMA:8:8000:20:64000:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [G722:9:8000:20:64000:1]/[opus:116:48000:20:0:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [G722:9:8000:20:64000:1]/[G722:9:8000:20:64000:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5647 Audio Codec Compare [G722:9:8000:20:64000:1] ++++ is saved as a match
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [G722:9:8000:20:64000:1]/[PCMU:0:8000:20:64000:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [G722:9:8000:20:64000:1]/[PCMA:8:8000:20:64000:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [PCMU:0:8000:20:64000:1]/[opus:116:48000:20:0:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [PCMU:0:8000:20:64000:1]/[G722:9:8000:20:64000:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [PCMU:0:8000:20:64000:1]/[PCMU:0:8000:20:64000:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5647 Audio Codec Compare [PCMU:0:8000:20:64000:1] ++++ is saved as a match
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [PCMU:0:8000:20:64000:1]/[PCMA:8:8000:20:64000:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [PCMA:8:8000:20:64000:1]/[opus:116:48000:20:0:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [PCMA:8:8000:20:64000:1]/[G722:9:8000:20:64000:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [PCMA:8:8000:20:64000:1]/[PCMU:0:8000:20:64000:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [PCMA:8:8000:20:64000:1]/[PCMA:8:8000:20:64000:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5647 Audio Codec Compare [PCMA:8:8000:20:64000:1] ++++ is saved as a match
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [CN:105:16000:20:0:1]/[opus:116:48000:20:0:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [CN:105:16000:20:0:1]/[G722:9:8000:20:64000:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [CN:105:16000:20:0:1]/[PCMU:0:8000:20:64000:1]
+2022-02-02 17:03:26.129016 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [CN:105:16000:20:0:1]/[PCMA:8:8000:20:64000:1]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [CN:13:8000:20:0:1]/[opus:116:48000:20:0:1]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [CN:13:8000:20:0:1]/[G722:9:8000:20:64000:1]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [CN:13:8000:20:0:1]/[PCMU:0:8000:20:64000:1]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [CN:13:8000:20:0:1]/[PCMA:8:8000:20:64000:1]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:5508 Set telephone-event payload to 110@48000
+2022-02-02 17:03:26.149005 [DEBUG] mod_opus.c:613 Opus encoder: set bitrate to local settings [72000bps]
+2022-02-02 17:03:26.149005 [DEBUG] mod_opus.c:613 Opus encoder: set bitrate to local settings [72000bps]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:3837 Set Codec sofia/internal/webrtcclient@10.176.2.43:5061 opus/48000 20 ms 960 samples 0 bits 1 channels
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_codec.c:111 sofia/internal/webrtcclient@10.176.2.43:5061 Original read codec set to opus:116
+2022-02-02 17:03:26.149005 [WARNING] switch_core_media.c:4252 NO candidate ACL defined, Defaulting to wan.auto
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:4282 Save audio Candidate cid: 1 proto: udp type: host addr: 10.176.2.43:42544
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:4282 Save audio Candidate cid: 2 proto: udp type: host addr: 10.176.2.43:54814
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:4282 Save audio Candidate cid: 1 proto: udp type: srflx addr: 66.194.72.59:45419
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:4282 Save audio Candidate cid: 2 proto: udp type: srflx addr: 66.194.72.59:9194
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:4327 Searching for rtp candidate.
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:4336 Choose rtp candidate, index 1, 66.194.72.59:45419
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:4102 sofia/internal/webrtcclient@10.176.2.43:5061 choosing family v4
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:4347 Choose same candidate, index 2, for rtcp based on rtcp-mux attribute 66.194.72.59:45419
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:4399 setting remote audio ice addr to index 1 66.194.72.59:45419 based on candidate
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:4434 Setting remote rtcp audio addr to 66.194.72.59:45419 based on candidate
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:5851 Set telephone-event payload to 110@48000
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:5909 sofia/internal/webrtcclient@10.176.2.43:5061 Set 2833 dtmf send payload to 110 recv payload to 110
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:6194 Video Codec Compare [VP8:96]/[VP8:99]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:6226 Video Codec Compare [VP8:96] +++ is saved as a match
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:97]/[VP8:99]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:6194 Video Codec Compare [VP9:98]/[VP8:99]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:99]/[VP8:99]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:6194 Video Codec Compare [VP9:100]/[VP8:99]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:101]/[VP8:99]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:6194 Video Codec Compare [H264:102]/[VP8:99]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:121]/[VP8:99]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:6194 Video Codec Compare [H264:127]/[VP8:99]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:120]/[VP8:99]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:6194 Video Codec Compare [H264:125]/[VP8:99]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:107]/[VP8:99]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:6194 Video Codec Compare [H264:108]/[VP8:99]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:109]/[VP8:99]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:6194 Video Codec Compare [H264:124]/[VP8:99]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:119]/[VP8:99]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:6194 Video Codec Compare [H264:123]/[VP8:99]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:118]/[VP8:99]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:6194 Video Codec Compare [AV1:35]/[VP8:99]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:36]/[VP8:99]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:6194 Video Codec Compare [red:114]/[VP8:99]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:115]/[VP8:99]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:6194 Video Codec Compare [ulpfec:116]/[VP8:99]
+2022-02-02 17:03:26.149005 [DEBUG] switch_vpx.c:703 VPX VER:v1.8.1 VPX_IMAGE_ABI_VERSION:4 VPX_CODEC_ABI_VERSION:8
+2022-02-02 17:03:26.149005 [DEBUG] switch_vpx.c:703 VPX VER:v1.8.1 VPX_IMAGE_ABI_VERSION:4 VPX_CODEC_ABI_VERSION:8
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:3647 Set VIDEO Codec sofia/internal/webrtcclient@10.176.2.43:5061 VP8/90000 0 ms
+2022-02-02 17:03:26.149005 [WARNING] switch_core_media.c:4252 NO candidate ACL defined, Defaulting to wan.auto
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:4282 Save video Candidate cid: 1 proto: udp type: host addr: 10.176.2.43:37637
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:4282 Save video Candidate cid: 2 proto: udp type: host addr: 10.176.2.43:60022
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:4282 Save video Candidate cid: 2 proto: udp type: srflx addr: 66.194.72.59:40209
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:4282 Save video Candidate cid: 1 proto: udp type: srflx addr: 66.194.72.59:3253
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:4327 Searching for rtp candidate.
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:4336 Choose rtp candidate, index 1, 66.194.72.59:3253
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:4102 sofia/internal/webrtcclient@10.176.2.43:5061 choosing family v4
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:4347 Choose same candidate, index 2, for rtcp based on rtcp-mux attribute 66.194.72.59:3253
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:4399 setting remote video ice addr to index 1 66.194.72.59:3253 based on candidate
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:4434 Setting remote rtcp video addr to 66.194.72.59:3253 based on candidate
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:8661 AUDIO RTP [sofia/internal/webrtcclient@10.176.2.43:5061] 10.176.2.43 port 29534 -> 66.194.72.59 port 45419 codec: 111 ms: 20
+2022-02-02 17:03:26.149005 [DEBUG] switch_rtp.c:4413 Starting timer [soft] 960 bytes per 20ms
+2022-02-02 17:03:26.149005 [INFO] switch_core_media.c:8843 Activating Audio ICE
+2022-02-02 17:03:26.149005 [NOTICE] switch_rtp.c:4915 Activating RTP audio ICE: cu8t:B7tCBdcngaijWlK2 66.194.72.59:45419
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:8883 Activating RTCP PORT 45419
+2022-02-02 17:03:26.149005 [DEBUG] switch_rtp.c:4811 RTCP send rate is: 1000 and packet rate is: 20000 Remote Port: 45419
+2022-02-02 17:03:26.149005 [INFO] switch_core_media.c:8894 Skipping RTCP ICE (Same as RTP)
+2022-02-02 17:03:26.149005 [INFO] switch_rtp.c:3741 Activate RTP/RTCP audio DTLS client
+2022-02-02 17:03:26.149005 [INFO] switch_rtp.c:3908 Changing audio DTLS state from OFF to HANDSHAKE
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:8975 sofia/internal/webrtcclient@10.176.2.43:5061 Set 2833 dtmf send payload to 110
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:8982 sofia/internal/webrtcclient@10.176.2.43:5061 Set 2833 dtmf receive payload to 110
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:9005 sofia/internal/webrtcclient@10.176.2.43:5061 Set rtp dtmf delay to 40
+2022-02-02 17:03:26.149005 [DEBUG] switch_rtp.c:4428 Starting video timer.
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:9493 VIDEO RTP [sofia/internal/webrtcclient@10.176.2.43:5061] 10.176.2.43:27278->66.194.72.59:3253 codec: 96 ms: 0 [SUCCESS]
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:7628 sofia/internal/webrtcclient@10.176.2.43:5061 Starting Video thread
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:7494 sofia/internal/webrtcclient@10.176.2.43:5061 Video thread started. Echo is off
+2022-02-02 17:03:26.149005 [INFO] switch_core_media.c:9537 Activating Video ICE
+2022-02-02 17:03:26.149005 [NOTICE] switch_rtp.c:4915 Activating RTP video ICE: cu8t:aTBiaICcqRfGhfqf 66.194.72.59:3253
+2022-02-02 17:03:26.149005 [INFO] switch_core_media.c:9574 Activating VIDEO RTCP PORT 3253 interval 1000 mux 1
+2022-02-02 17:03:26.149005 [DEBUG] switch_rtp.c:4811 RTCP send rate is: 1000 and packet rate is: 90000 Remote Port: 3253
+2022-02-02 17:03:26.149005 [INFO] switch_core_media.c:9587 Skipping VIDEO RTCP ICE (Same as VIDEO RTP)
+2022-02-02 17:03:26.149005 [INFO] switch_rtp.c:3741 Activate RTP/RTCP video DTLS client
+2022-02-02 17:03:26.149005 [INFO] switch_rtp.c:3908 Changing video DTLS state from OFF to HANDSHAKE
+2022-02-02 17:03:26.149005 [NOTICE] sofia_media.c:92 Pre-Answer sofia/internal/webrtcclient@10.176.2.43:5061!
+2022-02-02 17:03:26.149005 [DEBUG] switch_channel.c:3565 (sofia/internal/webrtcclient@10.176.2.43:5061) Callstate Change RINGING -> EARLY
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:8643 Audio params are unchanged for sofia/internal/webrtcclient@10.176.2.43:5061.
+2022-02-02 17:03:26.149005 [DEBUG] switch_core_media.c:9357 Video params are unchanged for sofia/internal/webrtcclient@10.176.2.43:5061.
+2022-02-02 17:03:26.149005 [DEBUG] mod_sofia.c:898 Local SDP sofia/internal/webrtcclient@10.176.2.43:5061:
+v=0
+o=FreeSWITCH 1643820672 1643820673 IN IP4 10.176.2.43
+s=FreeSWITCH
+c=IN IP4 10.176.2.43
+t=0 0
+a=msid-semantic: WMS xuhbgYq6iaVtEDtmCSHBbETJWd75cVcA
+m=audio 29534 UDP/TLS/RTP/SAVPF 111 110
+a=rtpmap:111 opus/48000/2
+a=fmtp:111 useinbandfec=1; minptime=10
+a=rtpmap:110 telephone-event/48000
+a=ptime:20
+a=sendrecv
+a=fingerprint:sha-256 EE:81:EE:85:1A:0D:4A:97:FE:12:59:17:00:5F:FB:85:8C:09:EA:16:DA:A1:01:E6:42:A6:5A:E8:76:48:84:27
+a=setup:active
+a=rtcp-mux
+a=rtcp:29534 IN IP4 10.176.2.43
+a=ice-ufrag:B7tCBdcngaijWlK2
+a=ice-pwd:ucgsVqyEnXSNGiF7fZAG2DU9
+a=candidate:6639665864 1 udp 659136 10.176.2.43 29534 typ host generation 0
+a=end-of-candidates
+a=ssrc:3523365366 cname:gjCn7SkfS6znASz2
+a=ssrc:3523365366 msid:xuhbgYq6iaVtEDtmCSHBbETJWd75cVcA a0
+a=ssrc:3523365366 mslabel:xuhbgYq6iaVtEDtmCSHBbETJWd75cVcA
+a=ssrc:3523365366 label:xuhbgYq6iaVtEDtmCSHBbETJWd75cVcAa0
+m=video 27278 UDP/TLS/RTP/SAVPF 96
+b=AS:512000
+a=rtpmap:96 VP8/90000
+a=sendrecv
+a=fingerprint:sha-256 EE:81:EE:85:1A:0D:4A:97:FE:12:59:17:00:5F:FB:85:8C:09:EA:16:DA:A1:01:E6:42:A6:5A:E8:76:48:84:27
+a=setup:active
+a=rtcp-mux
+a=rtcp:27278 IN IP4 10.176.2.43
+a=rtcp-fb:96 ccm fir
+a=rtcp-fb:96 nack
+a=rtcp-fb:96 nack pli
+a=ssrc:2701461647 cname:gjCn7SkfS6znASz2
+a=ssrc:2701461647 msid:xuhbgYq6iaVtEDtmCSHBbETJWd75cVcA v0
+a=ssrc:2701461647 mslabel:xuhbgYq6iaVtEDtmCSHBbETJWd75cVcA
+a=ssrc:2701461647 label:xuhbgYq6iaVtEDtmCSHBbETJWd75cVcAv0
+a=ice-ufrag:aTBiaICcqRfGhfqf
+a=ice-pwd:e5x5RIv5rHm85Qa5zCezaGCr
+a=candidate:8392358835 1 udp 659136 10.176.2.43 27278 typ host generation 0
+a=end-of-candidates
+
+send 2543 bytes to wss/[10.176.2.43]:38560 at 17:03:26.157427:
+------------------------------------------------------------------------
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS 2eiobkc9ka3k.invalid;branch=z9hG4bK7403623;received=10.176.2.43;rport=38560
+From: "webclient" <sip:webrtcclient@10.176.2.43:5061>;tag=9gtms5lh3a
+To: <sip:350000-screen@10.176.2.43:5061>;tag=cgpaX80pBc7Um
+Call-ID: bj4fmoma8lh8o7hlbh28
+CSeq: 1647 INVITE
+Contact: <sip:350000-screen@10.176.2.43:5060;transport=udp>
+User-Agent: FreeSWITCH-mod_sofia/1.10.4-dev+git~20200518T172205Z~91f54340ed~64bit
+Accept: application/sdp
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, presence, as-feature-event, dialog, line-seize, call-info, sla, include-session-description, presence.winfo, message-summary, refer
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 1582
+Remote-Party-ID: "350000-screen" <sip:350000-screen@10.176.2.43>;party=calling;privacy=off;screen=no
+
+v=0
+o=FreeSWITCH 1643820672 1643820673 IN IP4 10.176.2.43
+s=FreeSWITCH
+c=IN IP4 10.176.2.43
+t=0 0
+a=msid-semantic: WMS xuhbgYq6iaVtEDtmCSHBbETJWd75cVcA
+m=audio 29534 UDP/TLS/RTP/SAVPF 111 110
+a=rtpmap:111 opus/48000/2
+a=fmtp:111 useinbandfec=1; minptime=10
+a=rtpmap:110 telephone-event/48000
+a=ptime:20
+a=fingerprint:sha-256 EE:81:EE:85:1A:0D:4A:97:FE:12:59:17:00:5F:FB:85:8C:09:EA:16:DA:A1:01:E6:42:A6:5A:E8:76:48:84:27
+a=setup:active
+a=rtcp-mux
+a=rtcp:29534 IN IP4 10.176.2.43
+a=ice-ufrag:B7tCBdcngaijWlK2
+a=ice-pwd:ucgsVqyEnXSNGiF7fZAG2DU9
+a=candidate:6639665864 1 udp 659136 10.176.2.43 29534 typ host generation 0
+a=end-of-candidates
+a=ssrc:3523365366 cname:gjCn7SkfS6znASz2
+a=ssrc:3523365366 msid:xuhbgYq6iaVtEDtmCSHBbETJWd75cVcA a0
+a=ssrc:3523365366 mslabel:xuhbgYq6iaVtEDtmCSHBbETJWd75cVcA
+a=ssrc:3523365366 label:xuhbgYq6iaVtEDtmCSHBbETJWd75cVcAa0
+m=video 27278 UDP/TLS/RTP/SAVPF 96
+b=AS:512000
+a=rtpmap:96 VP8/90000
+a=fingerprint:sha-256 EE:81:EE:85:1A:0D:4A:97:FE:12:59:17:00:5F:FB:85:8C:09:EA:16:DA:A1:01:E6:42:A6:5A:E8:76:48:84:27
+a=setup:active
+a=rtcp-mux
+a=rtcp:27278 IN IP4 10.176.2.43
+a=rtcp-fb:96 ccm fir
+a=rtcp-fb:96 nack
+a=rtcp-fb:96 nack pli
+a=ssrc:2701461647 cname:gjCn7SkfS6znASz2
+a=ssrc:2701461647 msid:xuhbgYq6iaVtEDtmCSHBbETJWd75cVcA v0
+a=ssrc:2701461647 mslabel:xuhbgYq6iaVtEDtmCSHBbETJWd75cVcA
+a=ssrc:2701461647 label:xuhbgYq6iaVtEDtmCSHBbETJWd75cVcAv0
+a=ice-ufrag:aTBiaICcqRfGhfqf
+a=ice-pwd:e5x5RIv5rHm85Qa5zCezaGCr
+a=candidate:8392358835 1 udp 659136 10.176.2.43 27278 typ host generation 0
+a=end-of-candidates
+2022-02-02 17:03:26.169289 [DEBUG] sofia.c:7325 Channel sofia/internal/webrtcclient@10.176.2.43:5061 entering state [completed][200]
+2022-02-02 17:03:26.209150 [INFO] switch_vpx.c:564 config: vp8
+2022-02-02 17:03:26.209150 [WARNING] switch_vpx.c:595 REQUESTED BITRATE TRUNCATED FROM 512000 TO 43545
+2022-02-02 17:03:26.209150 [NOTICE] switch_vpx.c:599 VPX encoder reset (WxH/BW) from 0x0/0 to 352x288/43545
+recv 456 bytes from wss/[10.176.2.43]:38560 at 17:03:26.249981:
+------------------------------------------------------------------------
+ACK sip:350000-screen@10.176.2.43:5060;transport=udp SIP/2.0
+Via: SIP/2.0/WSS 2eiobkc9ka3k.invalid;branch=z9hG4bK7394100
+Max-Forwards: 69
+To: <sip:350000-screen@10.176.2.43:5061>;tag=cgpaX80pBc7Um
+From: "webclient" <sip:webrtcclient@10.176.2.43:5061>;tag=9gtms5lh3a
+Call-ID: bj4fmoma8lh8o7hlbh28
+CSeq: 1647 ACK
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: outbound
+User-Agent: JsSIP 3.9.0
+Content-Length: 0
+
+2022-02-02 17:03:26.249068 [DEBUG] sofia.c:7325 Channel sofia/internal/webrtcclient@10.176.2.43:5061 entering state [ready][200]
+2022-02-02 17:03:27.349081 [NOTICE] switch_rtp.c:1298 Auto Changing video stun/rtp/dtls port from 66.194.72.59:3253 to 10.176.2.43:37637 idx:0
+2022-02-02 17:03:27.349081 [NOTICE] switch_rtp.c:1298 Auto Changing audio stun/rtp/dtls port from 66.194.72.59:45419 to 10.176.2.43:42544 idx:0
+2022-02-02 17:03:27.349081 [INFO] switch_rtp.c:3278 Changing video DTLS state from HANDSHAKE to SETUP
+2022-02-02 17:03:27.409078 [INFO] switch_rtp.c:3185 video Fingerprint Verified.
+2022-02-02 17:03:27.409078 [INFO] switch_rtp.c:4217 Activating video Secure RTP SEND
+2022-02-02 17:03:27.409078 [DEBUG] switch_core_sqldb.c:2836 Secure Type: srtp:dtls:AES_CM_128_HMAC_SHA1_80
+2022-02-02 17:03:27.409078 [INFO] switch_rtp.c:4195 Activating video Secure RTP RECV
+2022-02-02 17:03:27.409078 [INFO] switch_rtp.c:3227 Changing video DTLS state from SETUP to READY
+2022-02-02 17:03:27.409078 [DEBUG] switch_core_sqldb.c:2836 Secure Type: srtp:dtls:AES_CM_128_HMAC_SHA1_80
+2022-02-02 17:03:27.409078 [DEBUG] switch_rtp.c:1917 rtcp_stats_init: video ssrc[71704643] base_seq[15819]
+2022-02-02 17:03:27.909004 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [180] to [20] to compensate for [8] lost packet(s)
+2022-02-02 17:03:28.109036 [WARNING] mod_local_stream.c:872 Unknown source moh, trying 'default'
+2022-02-02 17:03:28.109036 [ERR] mod_local_stream.c:880 Unknown source default
+2022-02-02 17:03:29.289055 [INFO] switch_rtp.c:3278 Changing audio DTLS state from HANDSHAKE to SETUP
+2022-02-02 17:03:29.289055 [INFO] switch_rtp.c:3185 audio Fingerprint Verified.
+2022-02-02 17:03:29.289055 [INFO] switch_rtp.c:4217 Activating audio Secure RTP SEND
+2022-02-02 17:03:29.289055 [DEBUG] switch_core_sqldb.c:2836 Secure Type: srtp:dtls:AES_CM_128_HMAC_SHA1_80
+2022-02-02 17:03:29.289055 [INFO] switch_rtp.c:4195 Activating audio Secure RTP RECV
+2022-02-02 17:03:29.289055 [INFO] switch_rtp.c:3227 Changing audio DTLS state from SETUP to READY
+2022-02-02 17:03:29.289055 [DEBUG] switch_core_sqldb.c:2836 Secure Type: srtp:dtls:AES_CM_128_HMAC_SHA1_80
+2022-02-02 17:03:29.289055 [NOTICE] mod_dptools.c:1406 Channel [sofia/internal/webrtcclient@10.176.2.43:5061] has been answered
+2022-02-02 17:03:29.289055 [DEBUG] switch_channel.c:3865 (sofia/internal/webrtcclient@10.176.2.43:5061) Callstate Change EARLY -> ACTIVE
+EXECUTE [depth=0] sofia/internal/webrtcclient@10.176.2.43:5061 send_display(FreeSWITCH Conference|3500)
+EXECUTE [depth=0] sofia/internal/webrtcclient@10.176.2.43:5061 set(conference_member_flags=join-vid-floor)
+2022-02-02 17:03:29.289055 [DEBUG] mod_dptools.c:1672 SET sofia/internal/webrtcclient@10.176.2.43:5061 [conference_member_flags]=[join-vid-floor]
+EXECUTE [depth=0] sofia/internal/webrtcclient@10.176.2.43:5061 conference(3500@video-mcu-stereo)
+2022-02-02 17:03:29.289055 [DEBUG] conference_member.c:1764 Raw Codec Activation Success L16@48000hz 1 channel 20ms
+2022-02-02 17:03:29.289055 [DEBUG] conference_member.c:1811 Raw Codec Activation Success L16@48000hz 2 channel 20ms
+2022-02-02 17:03:29.289055 [DEBUG] switch_core_codec.c:223 sofia/internal/webrtcclient@10.176.2.43:5061 Push codec L16:100
+2022-02-02 17:03:29.289055 [ERR] switch_core_video.c:3044 This function is not available, libpng not installed
+2022-02-02 17:03:29.289055 [INFO] switch_vpx.c:564 config: vp8
+2022-02-02 17:03:29.289055 [NOTICE] switch_vpx.c:599 VPX encoder reset (WxH/BW) from 352x288/43545 to 352x288/3072
+2022-02-02 17:03:29.289055 [WARNING] switch_core_file.c:424 File has 1 channels, muxing to 2 channels will occur.
+2022-02-02 17:03:29.289055 [DEBUG] conference_member.c:106 sofia/internal/webrtcclient@10.176.2.43:5061 binding '0' to 'mute'
+2022-02-02 17:03:29.289055 [INFO] switch_ivr_async.c:219 Digit parser mod_conference: Setting realm to 'conf'
+2022-02-02 17:03:29.289055 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 0/conf/0 callback: 0x7f3e66a0698d data: 0x7f3e440c8b18
+2022-02-02 17:03:29.289055 [DEBUG] conference_member.c:106 sofia/internal/webrtcclient@10.176.2.43:5061 binding '*' to 'deaf mute'
+2022-02-02 17:03:29.289055 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding */conf/0 callback: 0x7f3e66a0698d data: 0x7f3e440c8b48
+2022-02-02 17:03:29.289055 [DEBUG] conference_member.c:106 sofia/internal/webrtcclient@10.176.2.43:5061 binding '9' to 'energy up'
+2022-02-02 17:03:29.289055 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 9/conf/0 callback: 0x7f3e66a0698d data: 0x7f3e440c8b78
+2022-02-02 17:03:29.289055 [DEBUG] conference_member.c:106 sofia/internal/webrtcclient@10.176.2.43:5061 binding '8' to 'energy equ'
+2022-02-02 17:03:29.289055 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 8/conf/0 callback: 0x7f3e66a0698d data: 0x7f3e440c8ba8
+2022-02-02 17:03:29.289055 [DEBUG] conference_member.c:106 sofia/internal/webrtcclient@10.176.2.43:5061 binding '7' to 'energy dn'
+2022-02-02 17:03:29.289055 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 7/conf/0 callback: 0x7f3e66a0698d data: 0x7f3e440c8bd8
+2022-02-02 17:03:29.289055 [DEBUG] conference_member.c:106 sofia/internal/webrtcclient@10.176.2.43:5061 binding '3' to 'vol talk up'
+2022-02-02 17:03:29.289055 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 3/conf/0 callback: 0x7f3e66a0698d data: 0x7f3e440c8c08
+2022-02-02 17:03:29.289055 [DEBUG] conference_member.c:106 sofia/internal/webrtcclient@10.176.2.43:5061 binding '2' to 'vol talk zero'
+2022-02-02 17:03:29.289055 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 2/conf/0 callback: 0x7f3e66a0698d data: 0x7f3e440c8c38
+2022-02-02 17:03:29.289055 [DEBUG] conference_member.c:106 sofia/internal/webrtcclient@10.176.2.43:5061 binding '1' to 'vol talk dn'
+2022-02-02 17:03:29.289055 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 1/conf/0 callback: 0x7f3e66a0698d data: 0x7f3e440c8c68
+2022-02-02 17:03:29.289055 [DEBUG] conference_member.c:106 sofia/internal/webrtcclient@10.176.2.43:5061 binding '6' to 'vol listen up'
+2022-02-02 17:03:29.289055 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 6/conf/0 callback: 0x7f3e66a0698d data: 0x7f3e440c8c98
+2022-02-02 17:03:29.289055 [DEBUG] conference_member.c:106 sofia/internal/webrtcclient@10.176.2.43:5061 binding '5' to 'vol listen zero'
+2022-02-02 17:03:29.289055 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 5/conf/0 callback: 0x7f3e66a0698d data: 0x7f3e440c8cc8
+2022-02-02 17:03:29.289055 [DEBUG] conference_member.c:106 sofia/internal/webrtcclient@10.176.2.43:5061 binding '4' to 'vol listen dn'
+2022-02-02 17:03:29.289055 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 4/conf/0 callback: 0x7f3e66a0698d data: 0x7f3e440c8cf8
+2022-02-02 17:03:29.289055 [DEBUG] conference_member.c:106 sofia/internal/webrtcclient@10.176.2.43:5061 binding '#' to 'hangup'
+2022-02-02 17:03:29.289055 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding #/conf/0 callback: 0x7f3e66a0698d data: 0x7f3e440c8d28
+2022-02-02 17:03:29.289055 [INFO] conference_member.c:1066 conference 3500 OK video floor 2 sofia/internal/webrtcclient@10.176.2.43:5061
+2022-02-02 17:03:29.289055 [DEBUG] conference_loop.c:1338 Setup timer soft success interval: 20  samples: 960 from codec opus
+2022-02-02 17:03:29.349011 [DEBUG] switch_rtp.c:1917 rtcp_stats_init: audio ssrc[1675020489] base_seq[5206]
+2022-02-02 17:03:29.409067 [DEBUG] conference_video.c:1695 Canvas position 1 applied layout 2x1
+2022-02-02 17:03:35.169092 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [180] to [20] to compensate for [8] lost packet(s)
+2022-02-02 17:03:48.409006 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 17:04:13.429039 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 17:04:16.869010 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 17:04:21.829006 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 17:04:23.489055 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 17:04:34.149002 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 17:04:41.149003 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 17:04:50.329042 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 17:04:58.329013 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 17:05:13.569017 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 17:05:15.589068 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 17:05:17.409074 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 17:05:35.109004 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 17:05:54.009005 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 17:06:11.469051 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 17:06:20.329005 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 17:06:24.789007 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 17:06:28.889003 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [220] to [20] to compensate for [10] lost packet(s)
+

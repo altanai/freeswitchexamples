@@ -1,0 +1,1475 @@
+2022-02-02 19:17:01.060643 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:17:02.580642 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:02.980672 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:17:03.700585 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:04.840656 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:05.020582 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:17:06.140585 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:06.460584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:06.620604 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:07.240584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+recv 6290 bytes from wss/[10.176.2.43]:56630 at 19:17:07.918818:
+------------------------------------------------------------------------
+INVITE sip:350000-screen@10.176.2.43 SIP/2.0
+Via: SIP/2.0/WSS 10.176.2.43;branch=z9hG4bK3981801
+Max-Forwards: 69
+To: <sip:350000-screen@10.176.2.43>
+From: <sip:altanai@10.176.2.43>;tag=jqb5ot9kkq
+Call-ID: um567husnsg8o9k5mbgt
+CSeq: 3157 INVITE
+Contact: <sip:altanai@10.176.2.43;ob>
+Content-Type: application/sdp
+Session-Expires: 3600
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO
+Supported: timer,ice,replaces,outbound
+User-Agent: JsSIP 3.0.13
+Content-Length: 5792
+
+v=0
+o=- 4719931207126899311 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE 0 1
+a=extmap-allow-mixed
+a=msid-semantic: WMS fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza
+m=audio 59067 UDP/TLS/RTP/SAVPF 111 63 103 104 9 0 8 106 105 13 110 112 113 126
+c=IN IP4 10.176.2.43
+a=rtcp:9 IN IP4 0.0.0.0
+a=candidate:1427356461 1 udp 2122260223 10.176.2.43 59067 typ host generation 0 network-id 1 network-cost 10
+a=candidate:462440413 1 tcp 1518280447 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=ice-ufrag:KT4l
+a=ice-pwd:BrndqhpHB+vcjOKmqXH1lOp+
+a=ice-options:trickle
+a=fingerprint:sha-256 8A:94:23:05:E4:C9:4B:0C:F6:0C:B7:39:AD:EF:F8:7C:1C:65:D5:9F:46:1D:12:36:3C:2E:5F:79:C6:9E:F7:A6
+a=setup:actpass
+a=mid:0
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=sendrecv
+a=msid:fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza 8f369acd-f51b-458f-9185-fbe4a9795d23
+a=rtcp-mux
+a=rtpmap:111 opus/48000/2
+a=rtcp-fb:111 transport-cc
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:63 red/48000/2
+a=fmtp:63 111/111
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+a=ssrc:250528302 cname:HoZfrLdGFX/5XUGH
+a=ssrc:250528302 msid:fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza 8f369acd-f51b-458f-9185-fbe4a9795d23
+a=ssrc:250528302 mslabel:fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza
+a=ssrc:250528302 label:8f369acd-f51b-458f-9185-fbe4a9795d23
+m=video 56386 UDP/TLS/RTP/SAVPF 96 97 98 99 100 101 102 122 127 121 125 107 108 109 35 36 120 119 124
+c=IN IP4 10.176.2.43
+a=rtcp:9 IN IP4 0.0.0.0
+a=candidate:1427356461 1 udp 2122260223 10.176.2.43 56386 typ host generation 0 network-id 1 network-cost 10
+a=candidate:462440413 1 tcp 1518280447 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=ice-ufrag:KT4l
+a=ice-pwd:BrndqhpHB+vcjOKmqXH1lOp+
+a=ice-options:trickle
+a=fingerprint:sha-256 8A:94:23:05:E4:C9:4B:0C:F6:0C:B7:39:AD:EF:F8:7C:1C:65:D5:9F:46:1D:12:36:3C:2E:5F:79:C6:9E:F7:A6
+a=setup:actpass
+a=mid:1
+a=extmap:14 urn:ietf:params:rtp-hdrext:toffset
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:13 urn:3gpp:video-orientation
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay
+a=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type
+a=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing
+a=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+a=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id
+a=sendrecv
+a=msid:fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza 056f6232-7492-4f31-82e4-ee867864aa3a
+a=rtcp-mux
+a=rtcp-rsize
+a=rtpmap:96 VP8/90000
+a=rtcp-fb:96 goog-remb
+a=rtcp-fb:96 transport-cc
+a=rtcp-fb:96 ccm fir
+a=rtcp-fb:96 nack
+a=rtcp-fb:96 nack pli
+a=rtpmap:97 rtx/90000
+a=fmtp:97 apt=96
+a=rtpmap:98 VP9/90000
+a=rtcp-fb:98 goog-remb
+a=rtcp-fb:98 transport-cc
+a=rtcp-fb:98 ccm fir
+a=rtcp-fb:98 nack
+a=rtcp-fb:98 nack pli
+a=fmtp:98 profile-id=0
+a=rtpmap:99 rtx/90000
+a=fmtp:99 apt=98
+a=rtpmap:100 VP9/90000
+a=rtcp-fb:100 goog-remb
+a=rtcp-fb:100 transport-cc
+a=rtcp-fb:100 ccm fir
+a=rtcp-fb:100 nack
+a=rtcp-fb:100 nack pli
+a=fmtp:100 profile-id=2
+a=rtpmap:101 rtx/90000
+a=fmtp:101 apt=100
+a=rtpmap:102 H264/90000
+a=rtcp-fb:102 goog-remb
+a=rtcp-fb:102 transport-cc
+a=rtcp-fb:102 ccm fir
+a=rtcp-fb:102 nack
+a=rtcp-fb:102 nack pli
+a=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f
+a=rtpmap:122 rtx/90000
+a=fmtp:122 apt=102
+a=rtpmap:127 H264/90000
+a=rtcp-fb:127 goog-remb
+a=rtcp-fb:127 transport-cc
+a=rtcp-fb:127 ccm fir
+a=rtcp-fb:127 nack
+a=rtcp-fb:127 nack pli
+a=fmtp:127 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42001f
+a=rtpmap:121 rtx/90000
+a=fmtp:121 apt=127
+a=rtpmap:125 H264/90000
+a=rtcp-fb:125 goog-remb
+a=rtcp-fb:125 transport-cc
+a=rtcp-fb:125 ccm fir
+a=rtcp-fb:125 nack
+a=rtcp-fb:125 nack pli
+a=fmtp:125 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f
+a=rtpmap:107 rtx/90000
+a=fmtp:107 apt=125
+a=rtpmap:108 H264/90000
+a=rtcp-fb:108 goog-remb
+a=rtcp-fb:108 transport-cc
+a=rtcp-fb:108 ccm fir
+a=rtcp-fb:108 nack
+a=rtcp-fb:108 nack pli
+a=fmtp:108 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42e01f
+a=rtpmap:109 rtx/90000
+a=fmtp:109 apt=108
+a=rtpmap:35 AV1/90000
+a=rtcp-fb:35 goog-remb
+a=rtcp-fb:35 transport-cc
+a=rtcp-fb:35 ccm fir
+a=rtcp-fb:35 nack
+a=rtcp-fb:35 nack pli
+a=rtpmap:36 rtx/90000
+a=fmtp:36 apt=35
+a=rtpmap:120 red/90000
+a=rtpmap:119 rtx/90000
+a=fmtp:119 apt=120
+a=rtpmap:124 ulpfec/90000
+a=ssrc-group:FID 4153056935 2755116308
+a=ssrc:4153056935 cname:HoZfrLdGFX/5XUGH
+a=ssrc:4153056935 msid:fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza 056f6232-7492-4f31-82e4-ee867864aa3a
+a=ssrc:4153056935 mslabel:fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza
+a=ssrc:4153056935 label:056f6232-7492-4f31-82e4-ee867864aa3a
+a=ssrc:2755116308 cname:HoZfrLdGFX/5XUGH
+a=ssrc:2755116308 msid:fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza 056f6232-7492-4f31-82e4-ee867864aa3a
+a=ssrc:2755116308 mslabel:fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza
+a=ssrc:2755116308 label:056f6232-7492-4f31-82e4-ee867864aa3a
+2022-02-02 19:17:07.900650 [NOTICE] switch_channel.c:1118 New Channel sofia/internal/altanai@10.176.2.43 [c4de0428-849f-11ec-b378-d7273cb481af]
+2022-02-02 19:17:07.900650 [DEBUG] switch_core_state_machine.c:585 (sofia/internal/altanai@10.176.2.43) Running State Change CS_NEW (Cur 5 Tot 5)
+2022-02-02 19:17:07.900650 [DEBUG] sofia.c:10279 sofia/internal/altanai@10.176.2.43 receiving invite from 10.176.2.43:56630 version: 1.10.4-dev git 91f5434 2020-05-18 17:22:05Z 64bit
+2022-02-02 19:17:07.920586 [DEBUG] sofia.c:11476 Setting NAT mode based on websockets
+2022-02-02 19:17:07.920586 [DEBUG] sofia.c:7325 Channel sofia/internal/altanai@10.176.2.43 entering state [received][100]
+2022-02-02 19:17:07.920586 [DEBUG] sofia.c:7335 Remote SDP:
+v=0
+o=- 4719931207126899311 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE 0 1
+a=extmap-allow-mixed
+a=msid-semantic: WMS fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza
+m=audio 59067 UDP/TLS/RTP/SAVPF 111 63 103 104 9 0 8 106 105 13 110 112 113 126
+c=IN IP4 10.176.2.43
+a=rtpmap:111 opus/48000/2
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:63 red/48000/2
+a=fmtp:63 111/111
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+a=rtcp:9 IN IP4 0.0.0.0
+a=candidate:1427356461 1 udp 2122260223 10.176.2.43 59067 typ host generation 0 network-id 1 network-cost 10
+a=candidate:462440413 1 tcp 1518280447 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=ice-ufrag:KT4l
+a=ice-pwd:BrndqhpHB+vcjOKmqXH1lOp+
+a=ice-options:trickle
+a=fingerprint:sha-256 8A:94:23:05:E4:C9:4B:0C:F6:0C:B7:39:AD:EF:F8:7C:1C:65:D5:9F:46:1D:12:36:3C:2E:5F:79:C6:9E:F7:A6
+a=setup:actpass
+a=mid:0
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=msid:fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza 8f369acd-f51b-458f-9185-fbe4a9795d23
+a=rtcp-mux
+a=rtcp-fb:111 transport-cc
+a=ssrc:250528302 cname:HoZfrLdGFX/5XUGH
+a=ssrc:250528302 msid:fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza 8f369acd-f51b-458f-9185-fbe4a9795d23
+a=ssrc:250528302 mslabel:fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza
+a=ssrc:250528302 label:8f369acd-f51b-458f-9185-fbe4a9795d23
+m=video 56386 UDP/TLS/RTP/SAVPF 96 97 98 99 100 101 102 122 127 121 125 107 108 109 35 36 120 119 124
+c=IN IP4 10.176.2.43
+a=rtpmap:96 VP8/90000
+a=rtpmap:97 rtx/90000
+a=fmtp:97 apt=96
+a=rtpmap:98 VP9/90000
+a=fmtp:98 profile-id=0
+a=rtpmap:99 rtx/90000
+a=fmtp:99 apt=98
+a=rtpmap:100 VP9/90000
+a=fmtp:100 profile-id=2
+a=rtpmap:101 rtx/90000
+a=fmtp:101 apt=100
+a=rtpmap:102 H264/90000
+a=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f
+a=rtpmap:122 rtx/90000
+a=fmtp:122 apt=102
+a=rtpmap:127 H264/90000
+a=fmtp:127 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42001f
+a=rtpmap:121 rtx/90000
+a=fmtp:121 apt=127
+a=rtpmap:125 H264/90000
+a=fmtp:125 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f
+a=rtpmap:107 rtx/90000
+a=fmtp:107 apt=125
+a=rtpmap:108 H264/90000
+a=fmtp:108 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42e01f
+a=rtpmap:109 rtx/90000
+a=fmtp:109 apt=108
+a=rtpmap:35 AV1/90000
+a=rtpmap:36 rtx/90000
+a=fmtp:36 apt=35
+a=rtpmap:120 red/90000
+a=rtpmap:119 rtx/90000
+a=fmtp:119 apt=120
+a=rtpmap:124 ulpfec/90000
+a=rtcp:9 IN IP4 0.0.0.0
+a=candidate:1427356461 1 udp 2122260223 10.176.2.43 56386 typ host generation 0 network-id 1 network-cost 10
+a=candidate:462440413 1 tcp 1518280447 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=ice-ufrag:KT4l
+a=ice-pwd:BrndqhpHB+vcjOKmqXH1lOp+
+a=ice-options:trickle
+a=fingerprint:sha-256 8A:94:23:05:E4:C9:4B:0C:F6:0C:B7:39:AD:EF:F8:7C:1C:65:D5:9F:46:1D:12:36:3C:2E:5F:79:C6:9E:F7:A6
+a=setup:actpass
+a=mid:1
+a=extmap:14 urn:ietf:params:rtp-hdrext:toffset
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:13 urn:3gpp:video-orientation
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay
+a=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type
+a=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing
+a=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+a=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id
+a=msid:fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza 056f6232-7492-4f31-82e4-ee867864aa3a
+a=rtcp-mux
+a=rtcp-rsize
+a=rtcp-fb:96 goog-remb
+a=rtcp-fb:96 transport-cc
+a=rtcp-fb:96 ccm fir
+a=rtcp-fb:96 nack
+a=rtcp-fb:96 nack pli
+a=rtcp-fb:98 goog-remb
+a=rtcp-fb:98 transport-cc
+a=rtcp-fb:98 ccm fir
+a=rtcp-fb:98 nack
+a=rtcp-fb:98 nack pli
+a=rtcp-fb:100 goog-remb
+a=rtcp-fb:100 transport-cc
+a=rtcp-fb:100 ccm fir
+a=rtcp-fb:100 nack
+a=rtcp-fb:100 nack pli
+a=rtcp-fb:102 goog-remb
+a=rtcp-fb:102 transport-cc
+a=rtcp-fb:102 ccm fir
+a=rtcp-fb:102 nack
+a=rtcp-fb:102 nack pli
+a=rtcp-fb:127 goog-remb
+a=rtcp-fb:127 transport-cc
+a=rtcp-fb:127 ccm fir
+a=rtcp-fb:127 nack
+a=rtcp-fb:127 nack pli
+a=rtcp-fb:125 goog-remb
+a=rtcp-fb:125 transport-cc
+a=rtcp-fb:125 ccm fir
+a=rtcp-fb:125 nack
+a=rtcp-fb:125 nack pli
+a=rtcp-fb:108 goog-remb
+a=rtcp-fb:108 transport-cc
+a=rtcp-fb:108 ccm fir
+a=rtcp-fb:108 nack
+a=rtcp-fb:108 nack pli
+a=rtcp-fb:35 goog-remb
+a=rtcp-fb:35 transport-cc
+a=rtcp-fb:35 ccm fir
+a=rtcp-fb:35 nack
+a=rtcp-fb:35 nack pli
+a=ssrc-group:FID 4153056935 2755116308
+a=ssrc:4153056935 cname:HoZfrLdGFX/5XUGH
+a=ssrc:4153056935 msid:fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza 056f6232-7492-4f31-82e4-ee867864aa3a
+a=ssrc:4153056935 mslabel:fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza
+a=ssrc:4153056935 label:056f6232-7492-4f31-82e4-ee867864aa3a
+a=ssrc:2755116308 cname:HoZfrLdGFX/5XUGH
+a=ssrc:2755116308 msid:fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza 056f6232-7492-4f31-82e4-ee867864aa3a
+a=ssrc:2755116308 mslabel:fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza
+a=ssrc:2755116308 label:056f6232-7492-4f31-82e4-ee867864aa3a
+
+2022-02-02 19:17:07.920586 [DEBUG] sofia.c:7738 (sofia/internal/altanai@10.176.2.43) State Change CS_NEW -> CS_INIT
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_state_machine.c:604 (sofia/internal/altanai@10.176.2.43) State NEW
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_state_machine.c:585 (sofia/internal/altanai@10.176.2.43) Running State Change CS_INIT (Cur 5 Tot 5)
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_state_machine.c:628 (sofia/internal/altanai@10.176.2.43) State INIT
+2022-02-02 19:17:07.920586 [DEBUG] mod_sofia.c:93 sofia/internal/altanai@10.176.2.43 SOFIA INIT
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_state_machine.c:40 sofia/internal/altanai@10.176.2.43 Standard INIT
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_state_machine.c:48 (sofia/internal/altanai@10.176.2.43) State Change CS_INIT -> CS_ROUTING
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_state_machine.c:628 (sofia/internal/altanai@10.176.2.43) State INIT going to sleep
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_state_machine.c:585 (sofia/internal/altanai@10.176.2.43) Running State Change CS_ROUTING (Cur 5 Tot 5)
+2022-02-02 19:17:07.920586 [DEBUG] switch_channel.c:2332 (sofia/internal/altanai@10.176.2.43) Callstate Change DOWN -> RINGING
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_state_machine.c:644 (sofia/internal/altanai@10.176.2.43) State ROUTING
+2022-02-02 19:17:07.920586 [DEBUG] mod_sofia.c:154 sofia/internal/altanai@10.176.2.43 SOFIA ROUTING
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_state_machine.c:236 sofia/internal/altanai@10.176.2.43 Standard ROUTING
+2022-02-02 19:17:07.920586 [INFO] mod_dialplan_xml.c:637 Processing altanai <altanai>->350000-screen in context public
+send 323 bytes to wss/[10.176.2.43]:56630 at 19:17:07.921340:
+------------------------------------------------------------------------
+SIP/2.0 100 Trying
+Via: SIP/2.0/WSS 10.176.2.43;branch=z9hG4bK3981801;rport=56630
+From: <sip:altanai@10.176.2.43>;tag=jqb5ot9kkq
+To: <sip:350000-screen@10.176.2.43>
+Call-ID: um567husnsg8o9k5mbgt
+CSeq: 3157 INVITE
+User-Agent: FreeSWITCH-mod_sofia/1.10.4-dev+git~20200518T172205Z~91f54340ed~64bit
+Content-Length: 0
+
+Dialplan: sofia/internal/altanai@10.176.2.43 parsing [public->cdquality_stereo_conferences] continue=false
+Dialplan: sofia/internal/altanai@10.176.2.43 Regex (PASS) [cdquality_stereo_conferences] destination_number(350000-screen) =~ /^(35\d{2}).*?-screen$/ break=on-false
+Dialplan: sofia/internal/altanai@10.176.2.43 Action info() 
+Dialplan: sofia/internal/altanai@10.176.2.43 Action log(PUBLIC INFO *****  Auto answer followed by MCU bridge ***** ) 
+Dialplan: sofia/internal/altanai@10.176.2.43 Action answer() 
+Dialplan: sofia/internal/altanai@10.176.2.43 Action send_display(FreeSWITCH Conference|3500) 
+Dialplan: sofia/internal/altanai@10.176.2.43 Action set(conference_member_flags=join-vid-floor) 
+Dialplan: sofia/internal/altanai@10.176.2.43 Action conference(3500@video-mcu-stereo) 
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_state_machine.c:287 (sofia/internal/altanai@10.176.2.43) State Change CS_ROUTING -> CS_EXECUTE
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_state_machine.c:644 (sofia/internal/altanai@10.176.2.43) State ROUTING going to sleep
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_state_machine.c:585 (sofia/internal/altanai@10.176.2.43) Running State Change CS_EXECUTE (Cur 5 Tot 5)
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_state_machine.c:651 (sofia/internal/altanai@10.176.2.43) State EXECUTE
+2022-02-02 19:17:07.920586 [DEBUG] mod_sofia.c:209 sofia/internal/altanai@10.176.2.43 SOFIA EXECUTE
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_state_machine.c:329 sofia/internal/altanai@10.176.2.43 Standard EXECUTE
+EXECUTE [depth=0] sofia/internal/altanai@10.176.2.43 info()
+2022-02-02 19:17:07.920586 [INFO] mod_dptools.c:1885 CHANNEL_DATA:
+Channel-State: [CS_EXECUTE]
+Channel-Call-State: [RINGING]
+Channel-State-Number: [4]
+Channel-Name: [sofia/internal/altanai@10.176.2.43]
+Unique-ID: [c4de0428-849f-11ec-b378-d7273cb481af]
+Call-Direction: [inbound]
+Presence-Call-Direction: [inbound]
+Channel-HIT-Dialplan: [true]
+Channel-Presence-ID: [altanai@10.176.2.43]
+Channel-Call-UUID: [c4de0428-849f-11ec-b378-d7273cb481af]
+Answer-State: [ringing]
+Caller-Direction: [inbound]
+Caller-Logical-Direction: [inbound]
+Caller-Username: [altanai]
+Caller-Dialplan: [XML]
+Caller-Caller-ID-Name: [altanai]
+Caller-Caller-ID-Number: [altanai]
+Caller-Orig-Caller-ID-Name: [altanai]
+Caller-Orig-Caller-ID-Number: [altanai]
+Caller-Network-Addr: [10.176.2.43]
+Caller-ANI: [altanai]
+Caller-Destination-Number: [350000-screen]
+Caller-Unique-ID: [c4de0428-849f-11ec-b378-d7273cb481af]
+Caller-Source: [mod_sofia]
+Caller-Context: [public]
+Caller-Channel-Name: [sofia/internal/altanai@10.176.2.43]
+Caller-Profile-Index: [1]
+Caller-Profile-Created-Time: [1643858227900650]
+Caller-Channel-Created-Time: [1643858227900650]
+Caller-Channel-Answered-Time: [0]
+Caller-Channel-Progress-Time: [0]
+Caller-Channel-Progress-Media-Time: [0]
+Caller-Channel-Hangup-Time: [0]
+Caller-Channel-Transfer-Time: [0]
+Caller-Channel-Resurrect-Time: [0]
+Caller-Channel-Bridged-Time: [0]
+Caller-Channel-Last-Hold: [0]
+Caller-Channel-Hold-Accum: [0]
+Caller-Screen-Bit: [true]
+Caller-Privacy-Hide-Name: [false]
+Caller-Privacy-Hide-Number: [false]
+variable_direction: [inbound]
+variable_uuid: [c4de0428-849f-11ec-b378-d7273cb481af]
+variable_session_id: [5]
+variable_sip_from_user: [altanai]
+variable_sip_from_uri: [altanai@10.176.2.43]
+variable_sip_from_host: [10.176.2.43]
+variable_video_media_flow: [disabled]
+variable_audio_media_flow: [disabled]
+variable_text_media_flow: [disabled]
+variable_channel_name: [sofia/internal/altanai@10.176.2.43]
+variable_sip_call_id: [um567husnsg8o9k5mbgt]
+variable_sip_local_network_addr: [10.176.2.43]
+variable_sip_network_ip: [10.176.2.43]
+variable_sip_network_port: [56630]
+variable_sip_invite_stamp: [1643858227900650]
+variable_sip_received_ip: [10.176.2.43]
+variable_sip_received_port: [56630]
+variable_sip_via_protocol: [wss]
+variable_sip_from_user_stripped: [altanai]
+variable_sip_from_tag: [jqb5ot9kkq]
+variable_sofia_profile_name: [internal]
+variable_sofia_profile_url: [sip:mod_sofia@10.176.2.43:5060]
+variable_recovery_profile_name: [internal]
+variable_sip_full_via: [SIP/2.0/WSS 10.176.2.43;branch=z9hG4bK3981801;rport=56630]
+variable_sip_full_from: [<sip:altanai@10.176.2.43>;tag=jqb5ot9kkq]
+variable_sip_full_to: [<sip:350000-screen@10.176.2.43>]
+variable_sip_allow: [INVITE, ACK, CANCEL, BYE, UPDATE, MESSAGE, OPTIONS, REFER, INFO]
+variable_sip_req_user: [350000-screen]
+variable_sip_req_uri: [350000-screen@10.176.2.43]
+variable_sip_req_host: [10.176.2.43]
+variable_sip_to_user: [350000-screen]
+variable_sip_to_uri: [350000-screen@10.176.2.43]
+variable_sip_to_host: [10.176.2.43]
+variable_sip_contact_params: [ob]
+variable_sip_contact_user: [altanai]
+variable_sip_contact_uri: [altanai@10.176.2.43]
+variable_sip_contact_host: [10.176.2.43]
+variable_rtp_use_codec_string: [OPUS,G722,PCMU,PCMA,H264,VP8]
+variable_sip_user_agent: [JsSIP 3.0.13]
+variable_sip_via_host: [10.176.2.43]
+variable_sip_via_rport: [56630]
+variable_max_forwards: [69]
+variable_presence_id: [altanai@10.176.2.43]
+variable_sip_nat_detected: [true]
+variable_switch_r_sdp: [v=0
+o=- 4719931207126899311 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE 0 1
+a=extmap-allow-mixed
+a=msid-semantic: WMS fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza
+m=audio 59067 UDP/TLS/RTP/SAVPF 111 63 103 104 9 0 8 106 105 13 110 112 113 126
+c=IN IP4 10.176.2.43
+a=rtpmap:111 opus/48000/2
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:63 red/48000/2
+a=fmtp:63 111/111
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+a=rtcp:9 IN IP4 0.0.0.0
+a=candidate:1427356461 1 udp 2122260223 10.176.2.43 59067 typ host generation 0 network-id 1 network-cost 10
+a=candidate:462440413 1 tcp 1518280447 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=ice-ufrag:KT4l
+a=ice-pwd:BrndqhpHB+vcjOKmqXH1lOp+
+a=ice-options:trickle
+a=fingerprint:sha-256 8A:94:23:05:E4:C9:4B:0C:F6:0C:B7:39:AD:EF:F8:7C:1C:65:D5:9F:46:1D:12:36:3C:2E:5F:79:C6:9E:F7:A6
+a=setup:actpass
+a=mid:0
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=msid:fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza 8f369acd-f51b-458f-9185-fbe4a9795d23
+a=rtcp-mux
+a=rtcp-fb:111 transport-cc
+a=ssrc:250528302 cname:HoZfrLdGFX/5XUGH
+a=ssrc:250528302 msid:fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza 8f369acd-f51b-458f-9185-fbe4a9795d23
+a=ssrc:250528302 mslabel:fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza
+a=ssrc:250528302 label:8f369acd-f51b-458f-9185-fbe4a9795d23
+m=video 56386 UDP/TLS/RTP/SAVPF 96 97 98 99 100 101 102 122 127 121 125 107 108 109 35 36 120 119 124
+c=IN IP4 10.176.2.43
+a=rtpmap:96 VP8/90000
+a=rtpmap:97 rtx/90000
+a=fmtp:97 apt=96
+a=rtpmap:98 VP9/90000
+a=fmtp:98 profile-id=0
+a=rtpmap:99 rtx/90000
+a=fmtp:99 apt=98
+a=rtpmap:100 VP9/90000
+a=fmtp:100 profile-id=2
+a=rtpmap:101 rtx/90000
+a=fmtp:101 apt=100
+a=rtpmap:102 H264/90000
+a=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f
+a=rtpmap:122 rtx/90000
+a=fmtp:122 apt=102
+a=rtpmap:127 H264/90000
+a=fmtp:127 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42001f
+a=rtpmap:121 rtx/90000
+a=fmtp:121 apt=127
+a=rtpmap:125 H264/90000
+a=fmtp:125 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f
+a=rtpmap:107 rtx/90000
+a=fmtp:107 apt=125
+a=rtpmap:108 H264/90000
+a=fmtp:108 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42e01f
+a=rtpmap:109 rtx/90000
+a=fmtp:109 apt=108
+a=rtpmap:35 AV1/90000
+a=rtpmap:36 rtx/90000
+a=fmtp:36 apt=35
+a=rtpmap:120 red/90000
+a=rtpmap:119 rtx/90000
+a=fmtp:119 apt=120
+a=rtpmap:124 ulpfec/90000
+a=rtcp:9 IN IP4 0.0.0.0
+a=candidate:1427356461 1 udp 2122260223 10.176.2.43 56386 typ host generation 0 network-id 1 network-cost 10
+a=candidate:462440413 1 tcp 1518280447 10.176.2.43 9 typ host tcptype active generation 0 network-id 1 network-cost 10
+a=ice-ufrag:KT4l
+a=ice-pwd:BrndqhpHB+vcjOKmqXH1lOp+
+a=ice-options:trickle
+a=fingerprint:sha-256 8A:94:23:05:E4:C9:4B:0C:F6:0C:B7:39:AD:EF:F8:7C:1C:65:D5:9F:46:1D:12:36:3C:2E:5F:79:C6:9E:F7:A6
+a=setup:actpass
+a=mid:1
+a=extmap:14 urn:ietf:params:rtp-hdrext:toffset
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:13 urn:3gpp:video-orientation
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay
+a=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type
+a=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing
+a=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+a=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id
+a=msid:fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza 056f6232-7492-4f31-82e4-ee867864aa3a
+a=rtcp-mux
+a=rtcp-rsize
+a=rtcp-fb:96 goog-remb
+a=rtcp-fb:96 transport-cc
+a=rtcp-fb:96 ccm fir
+a=rtcp-fb:96 nack
+a=rtcp-fb:96 nack pli
+a=rtcp-fb:98 goog-remb
+a=rtcp-fb:98 transport-cc
+a=rtcp-fb:98 ccm fir
+a=rtcp-fb:98 nack
+a=rtcp-fb:98 nack pli
+a=rtcp-fb:100 goog-remb
+a=rtcp-fb:100 transport-cc
+a=rtcp-fb:100 ccm fir
+a=rtcp-fb:100 nack
+a=rtcp-fb:100 nack pli
+a=rtcp-fb:102 goog-remb
+a=rtcp-fb:102 transport-cc
+a=rtcp-fb:102 ccm fir
+a=rtcp-fb:102 nack
+a=rtcp-fb:102 nack pli
+a=rtcp-fb:127 goog-remb
+a=rtcp-fb:127 transport-cc
+a=rtcp-fb:127 ccm fir
+a=rtcp-fb:127 nack
+a=rtcp-fb:127 nack pli
+a=rtcp-fb:125 goog-remb
+a=rtcp-fb:125 transport-cc
+a=rtcp-fb:125 ccm fir
+a=rtcp-fb:125 nack
+a=rtcp-fb:125 nack pli
+a=rtcp-fb:108 goog-remb
+a=rtcp-fb:108 transport-cc
+a=rtcp-fb:108 ccm fir
+a=rtcp-fb:108 nack
+a=rtcp-fb:108 nack pli
+a=rtcp-fb:35 goog-remb
+a=rtcp-fb:35 transport-cc
+a=rtcp-fb:35 ccm fir
+a=rtcp-fb:35 nack
+a=rtcp-fb:35 nack pli
+a=ssrc-group:FID 4153056935 2755116308
+a=ssrc:4153056935 cname:HoZfrLdGFX/5XUGH
+a=ssrc:4153056935 msid:fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza 056f6232-7492-4f31-82e4-ee867864aa3a
+a=ssrc:4153056935 mslabel:fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza
+a=ssrc:4153056935 label:056f6232-7492-4f31-82e4-ee867864aa3a
+a=ssrc:2755116308 cname:HoZfrLdGFX/5XUGH
+a=ssrc:2755116308 msid:fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza 056f6232-7492-4f31-82e4-ee867864aa3a
+a=ssrc:2755116308 mslabel:fi746L2zseCIsE3Q58XaRUsEifkG6bvq0Eza
+a=ssrc:2755116308 label:056f6232-7492-4f31-82e4-ee867864aa3a
+]
+variable_ep_codec_string: [mod_opus.opus@48000h@20i@2c,mod_spandsp.G722@8000h@20i@64000b,CORE_PCM_MODULE.PCMU@8000h@20i@64000b,CORE_PCM_MODULE.PCMA@8000h@20i@64000b,CORE_VPX_MODULE.VP8]
+variable_endpoint_disposition: [DELAYED NEGOTIATION]
+variable_DP_MATCH: [ARRAY::350000-screen|:3500]
+variable_call_uuid: [c4de0428-849f-11ec-b378-d7273cb481af]
+variable_current_application: [info]
+
+
+EXECUTE [depth=0] sofia/internal/altanai@10.176.2.43 log(PUBLIC INFO *****  Auto answer followed by MCU bridge ***** )
+2022-02-02 19:17:07.920586 [DEBUG] mod_dptools.c:1866 INFO *****  Auto answer followed by MCU bridge ***** 
+EXECUTE [depth=0] sofia/internal/altanai@10.176.2.43 answer()
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [opus:111:48000:20:0:1]/[opus:116:48000:20:0:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5647 Audio Codec Compare [opus:116:48000:20:0:1] ++++ is saved as a match
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [opus:111:48000:20:0:1]/[G722:9:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [opus:111:48000:20:0:1]/[PCMU:0:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [opus:111:48000:20:0:1]/[PCMA:8:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [red:63:48000:20:0:2]/[opus:116:48000:20:0:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [red:63:48000:20:0:2]/[G722:9:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [red:63:48000:20:0:2]/[PCMU:0:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [red:63:48000:20:0:2]/[PCMA:8:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [ISAC:103:16000:30:32000:1]/[opus:116:48000:20:0:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [ISAC:103:16000:30:32000:1]/[G722:9:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [ISAC:103:16000:30:32000:1]/[PCMU:0:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [ISAC:103:16000:30:32000:1]/[PCMA:8:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [ISAC:104:32000:30:32000:1]/[opus:116:48000:20:0:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [ISAC:104:32000:30:32000:1]/[G722:9:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [ISAC:104:32000:30:32000:1]/[PCMU:0:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [ISAC:104:32000:30:32000:1]/[PCMA:8:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [G722:9:8000:20:64000:1]/[opus:116:48000:20:0:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [G722:9:8000:20:64000:1]/[G722:9:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5647 Audio Codec Compare [G722:9:8000:20:64000:1] ++++ is saved as a match
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [G722:9:8000:20:64000:1]/[PCMU:0:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [G722:9:8000:20:64000:1]/[PCMA:8:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [PCMU:0:8000:20:64000:1]/[opus:116:48000:20:0:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [PCMU:0:8000:20:64000:1]/[G722:9:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [PCMU:0:8000:20:64000:1]/[PCMU:0:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5647 Audio Codec Compare [PCMU:0:8000:20:64000:1] ++++ is saved as a match
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [PCMU:0:8000:20:64000:1]/[PCMA:8:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [PCMA:8:8000:20:64000:1]/[opus:116:48000:20:0:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [PCMA:8:8000:20:64000:1]/[G722:9:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [PCMA:8:8000:20:64000:1]/[PCMU:0:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [PCMA:8:8000:20:64000:1]/[PCMA:8:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5647 Audio Codec Compare [PCMA:8:8000:20:64000:1] ++++ is saved as a match
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [CN:105:16000:20:0:1]/[opus:116:48000:20:0:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [CN:105:16000:20:0:1]/[G722:9:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [CN:105:16000:20:0:1]/[PCMU:0:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [CN:105:16000:20:0:1]/[PCMA:8:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [CN:13:8000:20:0:1]/[opus:116:48000:20:0:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [CN:13:8000:20:0:1]/[G722:9:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [CN:13:8000:20:0:1]/[PCMU:0:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5592 Audio Codec Compare [CN:13:8000:20:0:1]/[PCMA:8:8000:20:64000:1]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5508 Set telephone-event payload to 110@48000
+2022-02-02 19:17:07.920586 [DEBUG] mod_opus.c:613 Opus encoder: set bitrate to local settings [72000bps]
+2022-02-02 19:17:07.920586 [DEBUG] mod_opus.c:613 Opus encoder: set bitrate to local settings [72000bps]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:3837 Set Codec sofia/internal/altanai@10.176.2.43 opus/48000 20 ms 960 samples 0 bits 1 channels
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_codec.c:111 sofia/internal/altanai@10.176.2.43 Original read codec set to opus:116
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:4282 Save audio Candidate cid: 1 proto: udp type: host addr: 10.176.2.43:59067
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:4327 Searching for rtp candidate.
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:4336 Choose rtp candidate, index 0, 10.176.2.43:59067
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:4102 sofia/internal/altanai@10.176.2.43 choosing family v4
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:4347 Choose same candidate, index 0, for rtcp based on rtcp-mux attribute 10.176.2.43:59067
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:4399 setting remote audio ice addr to index 0 10.176.2.43:59067 based on candidate
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:4434 Setting remote rtcp audio addr to 10.176.2.43:59067 based on candidate
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5851 Set telephone-event payload to 110@48000
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:5909 sofia/internal/altanai@10.176.2.43 Set 2833 dtmf send payload to 110 recv payload to 110
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:6194 Video Codec Compare [VP8:96]/[VP8:99]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:6226 Video Codec Compare [VP8:96] +++ is saved as a match
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:97]/[VP8:99]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:6194 Video Codec Compare [VP9:98]/[VP8:99]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:99]/[VP8:99]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:6194 Video Codec Compare [VP9:100]/[VP8:99]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:101]/[VP8:99]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:6194 Video Codec Compare [H264:102]/[VP8:99]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:122]/[VP8:99]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:6194 Video Codec Compare [H264:127]/[VP8:99]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:121]/[VP8:99]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:6194 Video Codec Compare [H264:125]/[VP8:99]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:107]/[VP8:99]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:6194 Video Codec Compare [H264:108]/[VP8:99]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:109]/[VP8:99]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:6194 Video Codec Compare [AV1:35]/[VP8:99]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:36]/[VP8:99]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:6194 Video Codec Compare [red:120]/[VP8:99]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:6194 Video Codec Compare [rtx:119]/[VP8:99]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:6194 Video Codec Compare [ulpfec:124]/[VP8:99]
+2022-02-02 19:17:07.920586 [DEBUG] switch_vpx.c:703 VPX VER:v1.8.1 VPX_IMAGE_ABI_VERSION:4 VPX_CODEC_ABI_VERSION:8
+2022-02-02 19:17:07.920586 [DEBUG] switch_vpx.c:703 VPX VER:v1.8.1 VPX_IMAGE_ABI_VERSION:4 VPX_CODEC_ABI_VERSION:8
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:3647 Set VIDEO Codec sofia/internal/altanai@10.176.2.43 VP8/90000 0 ms
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:4282 Save video Candidate cid: 1 proto: udp type: host addr: 10.176.2.43:56386
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:4327 Searching for rtp candidate.
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:4336 Choose rtp candidate, index 0, 10.176.2.43:56386
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:4102 sofia/internal/altanai@10.176.2.43 choosing family v4
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:4347 Choose same candidate, index 0, for rtcp based on rtcp-mux attribute 10.176.2.43:56386
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:4399 setting remote video ice addr to index 0 10.176.2.43:56386 based on candidate
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:4434 Setting remote rtcp video addr to 10.176.2.43:56386 based on candidate
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:8661 AUDIO RTP [sofia/internal/altanai@10.176.2.43] 10.176.2.43 port 30858 -> 10.176.2.43 port 59067 codec: 111 ms: 20
+2022-02-02 19:17:07.920586 [DEBUG] switch_rtp.c:4413 Starting timer [soft] 960 bytes per 20ms
+2022-02-02 19:17:07.920586 [INFO] switch_core_media.c:8843 Activating Audio ICE
+2022-02-02 19:17:07.920586 [NOTICE] switch_rtp.c:4915 Activating RTP audio ICE: KT4l:ne6qwKQbDDoSobEY 10.176.2.43:59067
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:8883 Activating RTCP PORT 59067
+2022-02-02 19:17:07.920586 [DEBUG] switch_rtp.c:4811 RTCP send rate is: 1000 and packet rate is: 20000 Remote Port: 59067
+2022-02-02 19:17:07.920586 [INFO] switch_core_media.c:8894 Skipping RTCP ICE (Same as RTP)
+2022-02-02 19:17:07.920586 [INFO] switch_rtp.c:3741 Activate RTP/RTCP audio DTLS client
+2022-02-02 19:17:07.920586 [INFO] switch_rtp.c:3908 Changing audio DTLS state from OFF to HANDSHAKE
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:8975 sofia/internal/altanai@10.176.2.43 Set 2833 dtmf send payload to 110
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:8982 sofia/internal/altanai@10.176.2.43 Set 2833 dtmf receive payload to 110
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:9005 sofia/internal/altanai@10.176.2.43 Set rtp dtmf delay to 40
+2022-02-02 19:17:07.920586 [DEBUG] switch_rtp.c:4428 Starting video timer.
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:9493 VIDEO RTP [sofia/internal/altanai@10.176.2.43] 10.176.2.43:29410->10.176.2.43:56386 codec: 96 ms: 0 [SUCCESS]
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:7628 sofia/internal/altanai@10.176.2.43 Starting Video thread
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:7494 sofia/internal/altanai@10.176.2.43 Video thread started. Echo is off
+2022-02-02 19:17:07.920586 [INFO] switch_core_media.c:9537 Activating Video ICE
+2022-02-02 19:17:07.920586 [NOTICE] switch_rtp.c:4915 Activating RTP video ICE: KT4l:knncZmBITSKa3kzB 10.176.2.43:56386
+2022-02-02 19:17:07.920586 [INFO] switch_core_media.c:9574 Activating VIDEO RTCP PORT 56386 interval 1000 mux 1
+2022-02-02 19:17:07.920586 [DEBUG] switch_rtp.c:4811 RTCP send rate is: 1000 and packet rate is: 90000 Remote Port: 56386
+2022-02-02 19:17:07.920586 [INFO] switch_core_media.c:9587 Skipping VIDEO RTCP ICE (Same as VIDEO RTP)
+2022-02-02 19:17:07.920586 [INFO] switch_rtp.c:3741 Activate RTP/RTCP video DTLS client
+2022-02-02 19:17:07.920586 [INFO] switch_rtp.c:3908 Changing video DTLS state from OFF to HANDSHAKE
+2022-02-02 19:17:07.920586 [NOTICE] sofia_media.c:92 Pre-Answer sofia/internal/altanai@10.176.2.43!
+2022-02-02 19:17:07.920586 [DEBUG] switch_channel.c:3565 (sofia/internal/altanai@10.176.2.43) Callstate Change RINGING -> EARLY
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:8643 Audio params are unchanged for sofia/internal/altanai@10.176.2.43.
+2022-02-02 19:17:07.920586 [DEBUG] switch_core_media.c:9357 Video params are unchanged for sofia/internal/altanai@10.176.2.43.
+2022-02-02 19:17:07.920586 [DEBUG] mod_sofia.c:898 Local SDP sofia/internal/altanai@10.176.2.43:
+v=0
+o=FreeSWITCH 1643827369 1643827370 IN IP4 10.176.2.43
+s=FreeSWITCH
+c=IN IP4 10.176.2.43
+t=0 0
+a=msid-semantic: WMS HZ25ABoBKGpWVdCc0rWudsNzP2XnpUXW
+m=audio 30858 UDP/TLS/RTP/SAVPF 111 110
+a=rtpmap:111 opus/48000/2
+a=fmtp:111 useinbandfec=1; minptime=10
+a=rtpmap:110 telephone-event/48000
+a=ptime:20
+a=sendrecv
+a=fingerprint:sha-256 EE:81:EE:85:1A:0D:4A:97:FE:12:59:17:00:5F:FB:85:8C:09:EA:16:DA:A1:01:E6:42:A6:5A:E8:76:48:84:27
+a=setup:active
+a=rtcp-mux
+a=rtcp:30858 IN IP4 10.176.2.43
+a=ice-ufrag:ne6qwKQbDDoSobEY
+a=ice-pwd:QnYYjqFM891U6ivjmrAI1gKv
+a=candidate:3696310946 1 udp 659136 10.176.2.43 30858 typ host generation 0
+a=end-of-candidates
+a=ssrc:706267259 cname:KPSah6CRCSEoV6rL
+a=ssrc:706267259 msid:HZ25ABoBKGpWVdCc0rWudsNzP2XnpUXW a0
+a=ssrc:706267259 mslabel:HZ25ABoBKGpWVdCc0rWudsNzP2XnpUXW
+a=ssrc:706267259 label:HZ25ABoBKGpWVdCc0rWudsNzP2XnpUXWa0
+m=video 29410 UDP/TLS/RTP/SAVPF 96
+b=AS:512000
+a=rtpmap:96 VP8/90000
+a=sendrecv
+a=fingerprint:sha-256 EE:81:EE:85:1A:0D:4A:97:FE:12:59:17:00:5F:FB:85:8C:09:EA:16:DA:A1:01:E6:42:A6:5A:E8:76:48:84:27
+a=setup:active
+a=rtcp-mux
+a=rtcp:29410 IN IP4 10.176.2.43
+a=rtcp-fb:96 ccm fir
+a=rtcp-fb:96 nack
+a=rtcp-fb:96 nack pli
+a=ssrc:4179326825 cname:KPSah6CRCSEoV6rL
+a=ssrc:4179326825 msid:HZ25ABoBKGpWVdCc0rWudsNzP2XnpUXW v0
+a=ssrc:4179326825 mslabel:HZ25ABoBKGpWVdCc0rWudsNzP2XnpUXW
+a=ssrc:4179326825 label:HZ25ABoBKGpWVdCc0rWudsNzP2XnpUXWv0
+a=ice-ufrag:knncZmBITSKa3kzB
+a=ice-pwd:DaOZT2qVlyIsORsY4F0USssB
+a=candidate:9418059044 1 udp 659136 10.176.2.43 29410 typ host generation 0
+a=end-of-candidates
+
+send 2535 bytes to wss/[10.176.2.43]:56630 at 19:17:07.933112:
+------------------------------------------------------------------------
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS 10.176.2.43;branch=z9hG4bK3981801;rport=56630
+From: <sip:altanai@10.176.2.43>;tag=jqb5ot9kkq
+To: <sip:350000-screen@10.176.2.43>;tag=tNZ6FN6mejayg
+Call-ID: um567husnsg8o9k5mbgt
+CSeq: 3157 INVITE
+Contact: <sip:350000-screen@10.176.2.43:5060;transport=udp>
+User-Agent: FreeSWITCH-mod_sofia/1.10.4-dev+git~20200518T172205Z~91f54340ed~64bit
+Accept: application/sdp
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Require: timer
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, presence, as-feature-event, dialog, line-seize, call-info, sla, include-session-description, presence.winfo, message-summary, refer
+Session-Expires: 3600;refresher=uac
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 1578
+Remote-Party-ID: "350000-screen" <sip:350000-screen@10.176.2.43>;party=calling;privacy=off;screen=no
+
+v=0
+o=FreeSWITCH 1643827369 1643827370 IN IP4 10.176.2.43
+s=FreeSWITCH
+c=IN IP4 10.176.2.43
+t=0 0
+a=msid-semantic: WMS HZ25ABoBKGpWVdCc0rWudsNzP2XnpUXW
+m=audio 30858 UDP/TLS/RTP/SAVPF 111 110
+a=rtpmap:111 opus/48000/2
+a=fmtp:111 useinbandfec=1; minptime=10
+a=rtpmap:110 telephone-event/48000
+a=ptime:20
+a=fingerprint:sha-256 EE:81:EE:85:1A:0D:4A:97:FE:12:59:17:00:5F:FB:85:8C:09:EA:16:DA:A1:01:E6:42:A6:5A:E8:76:48:84:27
+a=setup:active
+a=rtcp-mux
+a=rtcp:30858 IN IP4 10.176.2.43
+a=ice-ufrag:ne6qwKQbDDoSobEY
+a=ice-pwd:QnYYjqFM891U6ivjmrAI1gKv
+a=candidate:3696310946 1 udp 659136 10.176.2.43 30858 typ host generation 0
+a=end-of-candidates
+a=ssrc:706267259 cname:KPSah6CRCSEoV6rL
+a=ssrc:706267259 msid:HZ25ABoBKGpWVdCc0rWudsNzP2XnpUXW a0
+a=ssrc:706267259 mslabel:HZ25ABoBKGpWVdCc0rWudsNzP2XnpUXW
+a=ssrc:706267259 label:HZ25ABoBKGpWVdCc0rWudsNzP2XnpUXWa0
+m=video 29410 UDP/TLS/RTP/SAVPF 96
+b=AS:512000
+a=rtpmap:96 VP8/90000
+a=fingerprint:sha-256 EE:81:EE:85:1A:0D:4A:97:FE:12:59:17:00:5F:FB:85:8C:09:EA:16:DA:A1:01:E6:42:A6:5A:E8:76:48:84:27
+a=setup:active
+a=rtcp-mux
+a=rtcp:29410 IN IP4 10.176.2.43
+a=rtcp-fb:96 ccm fir
+a=rtcp-fb:96 nack
+a=rtcp-fb:96 nack pli
+a=ssrc:4179326825 cname:KPSah6CRCSEoV6rL
+a=ssrc:4179326825 msid:HZ25ABoBKGpWVdCc0rWudsNzP2XnpUXW v0
+a=ssrc:4179326825 mslabel:HZ25ABoBKGpWVdCc0rWudsNzP2XnpUXW
+a=ssrc:4179326825 label:HZ25ABoBKGpWVdCc0rWudsNzP2XnpUXWv0
+a=ice-ufrag:knncZmBITSKa3kzB
+a=ice-pwd:DaOZT2qVlyIsORsY4F0USssB
+a=candidate:9418059044 1 udp 659136 10.176.2.43 29410 typ host generation 0
+a=end-of-candidates
+2022-02-02 19:17:07.940583 [DEBUG] sofia.c:7325 Channel sofia/internal/altanai@10.176.2.43 entering state [completed][200]
+2022-02-02 19:17:08.040587 [INFO] switch_vpx.c:564 config: vp8
+2022-02-02 19:17:08.040587 [WARNING] switch_vpx.c:595 REQUESTED BITRATE TRUNCATED FROM 512000 TO 43545
+2022-02-02 19:17:08.040587 [NOTICE] switch_vpx.c:599 VPX encoder reset (WxH/BW) from 0x0/0 to 352x288/43545
+2022-02-02 19:17:08.100584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+recv 414 bytes from wss/[10.176.2.43]:56630 at 19:17:08.217037:
+------------------------------------------------------------------------
+ACK sip:350000-screen@10.176.2.43:5060;transport=udp SIP/2.0
+Via: SIP/2.0/WSS 10.176.2.43;branch=z9hG4bK8835207
+Max-Forwards: 69
+To: <sip:350000-screen@10.176.2.43>;tag=tNZ6FN6mejayg
+From: <sip:altanai@10.176.2.43>;tag=jqb5ot9kkq
+Call-ID: um567husnsg8o9k5mbgt
+CSeq: 3157 ACK
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO
+Supported: outbound
+User-Agent: JsSIP 3.0.13
+Content-Length: 0
+
+2022-02-02 19:17:08.220583 [DEBUG] sofia.c:7325 Channel sofia/internal/altanai@10.176.2.43 entering state [ready][200]
+2022-02-02 19:17:08.220583 [INFO] switch_rtp.c:3278 Changing audio DTLS state from HANDSHAKE to SETUP
+2022-02-02 19:17:08.220583 [INFO] switch_rtp.c:3185 audio Fingerprint Verified.
+2022-02-02 19:17:08.220583 [INFO] switch_rtp.c:4217 Activating audio Secure RTP SEND
+2022-02-02 19:17:08.220583 [INFO] switch_rtp.c:4195 Activating audio Secure RTP RECV
+2022-02-02 19:17:08.220583 [DEBUG] switch_core_sqldb.c:2836 Secure Type: srtp:dtls:AES_CM_128_HMAC_SHA1_80
+2022-02-02 19:17:08.220583 [INFO] switch_rtp.c:3227 Changing audio DTLS state from SETUP to READY
+2022-02-02 19:17:08.220583 [DEBUG] switch_core_sqldb.c:2836 Secure Type: srtp:dtls:AES_CM_128_HMAC_SHA1_80
+2022-02-02 19:17:08.240649 [NOTICE] mod_dptools.c:1406 Channel [sofia/internal/altanai@10.176.2.43] has been answered
+2022-02-02 19:17:08.240649 [DEBUG] switch_channel.c:3865 (sofia/internal/altanai@10.176.2.43) Callstate Change EARLY -> ACTIVE
+EXECUTE [depth=0] sofia/internal/altanai@10.176.2.43 send_display(FreeSWITCH Conference|3500)
+EXECUTE [depth=0] sofia/internal/altanai@10.176.2.43 set(conference_member_flags=join-vid-floor)
+2022-02-02 19:17:08.240649 [DEBUG] mod_dptools.c:1672 SET sofia/internal/altanai@10.176.2.43 [conference_member_flags]=[join-vid-floor]
+EXECUTE [depth=0] sofia/internal/altanai@10.176.2.43 conference(3500@video-mcu-stereo)
+2022-02-02 19:17:08.240649 [DEBUG] conference_member.c:1764 Raw Codec Activation Success L16@48000hz 1 channel 20ms
+2022-02-02 19:17:08.240649 [DEBUG] conference_member.c:1811 Raw Codec Activation Success L16@48000hz 2 channel 20ms
+2022-02-02 19:17:08.240649 [DEBUG] switch_core_codec.c:223 sofia/internal/altanai@10.176.2.43 Push codec L16:100
+2022-02-02 19:17:08.240649 [ERR] switch_core_video.c:3044 This function is not available, libpng not installed
+2022-02-02 19:17:08.240649 [WARNING] switch_core_file.c:424 File has 1 channels, muxing to 2 channels will occur.
+2022-02-02 19:17:08.240649 [DEBUG] conference_member.c:106 sofia/internal/altanai@10.176.2.43 binding '0' to 'mute'
+2022-02-02 19:17:08.240649 [INFO] switch_ivr_async.c:219 Digit parser mod_conference: Setting realm to 'conf'
+2022-02-02 19:17:08.240649 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 0/conf/0 callback: 0x7fe5bdcae98d data: 0x7fe5ec0a01d8
+2022-02-02 19:17:08.240649 [DEBUG] conference_member.c:106 sofia/internal/altanai@10.176.2.43 binding '*' to 'deaf mute'
+2022-02-02 19:17:08.240649 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding */conf/0 callback: 0x7fe5bdcae98d data: 0x7fe5ec0a0208
+2022-02-02 19:17:08.240649 [DEBUG] conference_member.c:106 sofia/internal/altanai@10.176.2.43 binding '9' to 'energy up'
+2022-02-02 19:17:08.240649 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 9/conf/0 callback: 0x7fe5bdcae98d data: 0x7fe5ec0a0238
+2022-02-02 19:17:08.240649 [DEBUG] conference_member.c:106 sofia/internal/altanai@10.176.2.43 binding '8' to 'energy equ'
+2022-02-02 19:17:08.240649 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 8/conf/0 callback: 0x7fe5bdcae98d data: 0x7fe5ec0a0268
+2022-02-02 19:17:08.240649 [DEBUG] conference_member.c:106 sofia/internal/altanai@10.176.2.43 binding '7' to 'energy dn'
+2022-02-02 19:17:08.240649 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 7/conf/0 callback: 0x7fe5bdcae98d data: 0x7fe5ec0a0298
+2022-02-02 19:17:08.240649 [DEBUG] conference_member.c:106 sofia/internal/altanai@10.176.2.43 binding '3' to 'vol talk up'
+2022-02-02 19:17:08.240649 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 3/conf/0 callback: 0x7fe5bdcae98d data: 0x7fe5ec0a02c8
+2022-02-02 19:17:08.240649 [DEBUG] conference_member.c:106 sofia/internal/altanai@10.176.2.43 binding '2' to 'vol talk zero'
+2022-02-02 19:17:08.240649 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 2/conf/0 callback: 0x7fe5bdcae98d data: 0x7fe5ec0a02f8
+2022-02-02 19:17:08.240649 [DEBUG] conference_member.c:106 sofia/internal/altanai@10.176.2.43 binding '1' to 'vol talk dn'
+2022-02-02 19:17:08.240649 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 1/conf/0 callback: 0x7fe5bdcae98d data: 0x7fe5ec0a0328
+2022-02-02 19:17:08.240649 [DEBUG] conference_member.c:106 sofia/internal/altanai@10.176.2.43 binding '6' to 'vol listen up'
+2022-02-02 19:17:08.240649 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 6/conf/0 callback: 0x7fe5bdcae98d data: 0x7fe5ec0a0358
+2022-02-02 19:17:08.240649 [DEBUG] conference_member.c:106 sofia/internal/altanai@10.176.2.43 binding '5' to 'vol listen zero'
+2022-02-02 19:17:08.240649 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 5/conf/0 callback: 0x7fe5bdcae98d data: 0x7fe5ec0a0388
+2022-02-02 19:17:08.240649 [DEBUG] conference_member.c:106 sofia/internal/altanai@10.176.2.43 binding '4' to 'vol listen dn'
+2022-02-02 19:17:08.240649 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding 4/conf/0 callback: 0x7fe5bdcae98d data: 0x7fe5ec0a03b8
+2022-02-02 19:17:08.240649 [DEBUG] conference_member.c:106 sofia/internal/altanai@10.176.2.43 binding '#' to 'hangup'
+2022-02-02 19:17:08.240649 [DEBUG] switch_ivr_async.c:344 Digit parser mod_conference: binding #/conf/0 callback: 0x7fe5bdcae98d data: 0x7fe5ec0a03e8
+2022-02-02 19:17:08.240649 [INFO] conference_member.c:1066 conference 3500 OK video floor 5 sofia/internal/altanai@10.176.2.43
+2022-02-02 19:17:08.240649 [DEBUG] conference_loop.c:1338 Setup timer soft success interval: 20  samples: 960 from codec opus
+2022-02-02 19:17:08.340589 [DEBUG] conference_video.c:1695 Canvas position 1 applied layout 3x3
+2022-02-02 19:17:08.360589 [INFO] switch_rtp.c:3278 Changing video DTLS state from HANDSHAKE to SETUP
+2022-02-02 19:17:08.460589 [INFO] switch_rtp.c:3185 video Fingerprint Verified.
+2022-02-02 19:17:08.460589 [INFO] switch_rtp.c:4217 Activating video Secure RTP SEND
+2022-02-02 19:17:08.460589 [INFO] switch_rtp.c:4195 Activating video Secure RTP RECV
+2022-02-02 19:17:08.460589 [INFO] switch_rtp.c:3227 Changing video DTLS state from SETUP to READY
+2022-02-02 19:17:08.460589 [DEBUG] switch_core_sqldb.c:2836 Secure Type: srtp:dtls:AES_CM_128_HMAC_SHA1_80
+2022-02-02 19:17:08.460589 [DEBUG] switch_core_sqldb.c:2836 Secure Type: srtp:dtls:AES_CM_128_HMAC_SHA1_80
+2022-02-02 19:17:08.760590 [DEBUG] switch_rtp.c:1917 rtcp_stats_init: audio ssrc[250528302] base_seq[29236]
+2022-02-02 19:17:09.440598 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [60] to [20] to compensate for [2] lost packet(s)
+2022-02-02 19:17:09.680585 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:17:11.760618 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:11.760618 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:12.200642 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:17:12.640585 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:17:12.880723 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:14.260586 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:14.900589 [DEBUG] switch_rtp.c:1917 rtcp_stats_init: video ssrc[4153056935] base_seq[14666]
+2022-02-02 19:17:15.460595 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [340] to [20] to compensate for [16] lost packet(s)
+2022-02-02 19:17:15.820611 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:18.360587 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:18.460590 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:19.300862 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:19.880585 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [60] to [20] to compensate for [2] lost packet(s)
+2022-02-02 19:17:20.500587 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:20.580590 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:21.280585 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:22.120589 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:22.180587 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:23.300822 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:17:24.220583 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:24.860620 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [60] to [20] to compensate for [2] lost packet(s)
+2022-02-02 19:17:25.340584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:26.160668 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:26.380593 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:26.800587 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:27.080585 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:27.820696 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:17:29.640654 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:17:30.440587 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [80] to [20] to compensate for [3] lost packet(s)
+2022-02-02 19:17:31.100589 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:32.400597 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:32.420685 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:32.460666 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:33.400631 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:17:34.540587 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:17:34.660624 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:34.840589 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:35.740708 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:35.840593 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:36.460585 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:17:36.580649 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:36.940587 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:37.620586 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:38.900612 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:39.200586 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:39.880588 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:40.480677 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:17:41.500584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:42.680587 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:17:43.600588 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:44.040587 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:44.100584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:45.400586 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:47.920589 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:48.020618 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:48.320742 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:49.160588 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:50.580720 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:50.860699 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:17:50.920584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:51.880586 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:52.060584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:17:53.660623 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:17:53.820603 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:55.380585 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:56.080584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:56.260641 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:56.280750 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:56.740587 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:57.160588 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:57.900690 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:58.680584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:59.360587 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:17:59.660601 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:18:00.080637 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:01.280654 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:01.680620 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:01.800628 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:01.880583 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:18:02.100587 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:03.120670 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:18:03.920582 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:03.980649 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:04.020586 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:04.580583 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [340] to [20] to compensate for [16] lost packet(s)
+2022-02-02 19:18:04.920588 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [60] to [20] to compensate for [2] lost packet(s)
+2022-02-02 19:18:05.040585 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:05.100591 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:05.520590 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:08.440654 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:18:09.020596 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [60] to [20] to compensate for [2] lost packet(s)
+2022-02-02 19:18:09.060638 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:09.580588 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:10.100599 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:18:10.700699 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:10.740631 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:11.140592 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:11.860588 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:14.000585 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:14.860584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:15.340680 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:16.080584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:17.660586 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:18.380588 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:18.880615 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:18.900590 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:19.340658 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:19.840690 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:20.920596 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:22.500654 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:23.080680 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:23.480638 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:18:23.980596 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:25.000586 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:18:25.040584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:18:25.960678 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:18:26.540685 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:26.960586 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:18:27.760669 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:28.040593 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:18:28.360669 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:18:30.240585 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [1020] to [20] to compensate for [50] lost packet(s)
+2022-02-02 19:18:31.380584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [320] to [20] to compensate for [15] lost packet(s)
+2022-02-02 19:18:32.580588 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:18:32.980598 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:18:37.120599 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+recv 520 bytes from wss/[10.176.2.43]:53590 at 19:18:38.783472:
+------------------------------------------------------------------------
+REGISTER sip:10.176.2.43 SIP/2.0
+Via: SIP/2.0/WSS 10.176.2.43;branch=z9hG4bK6917535
+Max-Forwards: 69
+To: <sip:altanai@10.176.2.43>
+From: <sip:altanai@10.176.2.43>;tag=p6jl2slrdp
+Call-ID: 1n9lgbmqr23033pjb8jb5i
+CSeq: 5 REGISTER
+Contact: <sip:altanai@10.176.2.43>;+sip.ice;reg-id=1;+sip.instance="<urn:uuid:9109fa8b-0a29-4be1-9c36-fb73801fed37>";expires=300
+Expires: 300
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.0.13
+Content-Length: 0
+
+send 605 bytes to wss/[10.176.2.43]:53590 at 19:18:38.784085:
+------------------------------------------------------------------------
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS 10.176.2.43;branch=z9hG4bK6917535;rport=53590
+From: <sip:altanai@10.176.2.43>;tag=p6jl2slrdp
+To: <sip:altanai@10.176.2.43>;tag=UyrZHgQrBU0gc
+Call-ID: 1n9lgbmqr23033pjb8jb5i
+CSeq: 5 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.4-dev+git~20200518T172205Z~91f54340ed~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+WWW-Authenticate: Digest realm="10.176.2.43", nonce="fb06d160-849f-11ec-b381-d7273cb481af", algorithm=MD5, qop="auth"
+Content-Length: 0
+
+2022-02-02 19:18:38.780582 [DEBUG] sofia_reg.c:1790 Send challenge for [altanai@10.176.2.43]
+2022-02-02 19:18:38.780582 [WARNING] sofia_reg.c:1794 SIP auth challenge (REGISTER) on sofia profile 'internal' for [altanai@10.176.2.43] from ip 10.176.2.43
+recv 758 bytes from wss/[10.176.2.43]:53590 at 19:18:38.790416:
+------------------------------------------------------------------------
+REGISTER sip:10.176.2.43 SIP/2.0
+Via: SIP/2.0/WSS 10.176.2.43;branch=z9hG4bK7091300
+Max-Forwards: 69
+To: <sip:altanai@10.176.2.43>
+From: <sip:altanai@10.176.2.43>;tag=p6jl2slrdp
+Call-ID: 1n9lgbmqr23033pjb8jb5i
+CSeq: 6 REGISTER
+Authorization: Digest algorithm=MD5, username="altanai", realm="10.176.2.43", nonce="fb06d160-849f-11ec-b381-d7273cb481af", uri="sip:10.176.2.43", response="3222bca5a6778b8db22afcbd0aa0450b", qop=auth, cnonce="75755jurb5b9", nc=00000001
+Contact: <sip:altanai@10.176.2.43>;+sip.ice;reg-id=1;+sip.instance="<urn:uuid:9109fa8b-0a29-4be1-9c36-fb73801fed37>";expires=300
+Expires: 300
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.0.13
+Content-Length: 0
+
+2022-02-02 19:18:38.780582 [DEBUG] sofia_reg.c:3186 event_add_header -> 'record_stereo' = 'true'
+2022-02-02 19:18:38.780582 [DEBUG] sofia_reg.c:3186 event_add_header -> 'default_gateway' = 'example.com'
+2022-02-02 19:18:38.780582 [DEBUG] sofia_reg.c:3186 event_add_header -> 'default_areacode' = '918'
+2022-02-02 19:18:38.780582 [DEBUG] sofia_reg.c:3186 event_add_header -> 'transfer_fallback_extension' = 'operator'
+2022-02-02 19:18:38.780582 [DEBUG] sofia_reg.c:3186 event_add_header -> 'toll_allow' = 'domestic,international,local'
+2022-02-02 19:18:38.780582 [DEBUG] sofia_reg.c:3186 event_add_header -> 'accountcode' = '987'
+2022-02-02 19:18:38.780582 [DEBUG] sofia_reg.c:3186 event_add_header -> 'user_context' = 'video-mcu-stereo'
+2022-02-02 19:18:38.780582 [DEBUG] sofia_reg.c:3186 event_add_header -> 'effective_caller_id_name' = 'altanai'
+2022-02-02 19:18:38.780582 [DEBUG] sofia_reg.c:3186 event_add_header -> 'outbound_caller_id_name' = 'altanai_outbound'
+2022-02-02 19:18:38.780582 [DEBUG] sofia_reg.c:2036 Register:
+From:    [altanai@10.176.2.43]
+Contact: ["" <sip:altanai@10.176.2.43;fs_nat=yes;fs_path=sip%3Aaltanai%4010.176.2.43%3A53590>]
+Expires: [300]
+send 561 bytes to wss/[10.176.2.43]:53590 at 19:18:38.792553:
+------------------------------------------------------------------------
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS 10.176.2.43;branch=z9hG4bK7091300;rport=53590
+From: <sip:altanai@10.176.2.43>;tag=p6jl2slrdp
+To: <sip:altanai@10.176.2.43>;tag=v7HrKB8U83p3Q
+Call-ID: 1n9lgbmqr23033pjb8jb5i
+CSeq: 6 REGISTER
+Contact: <sip:altanai@10.176.2.43>;expires=300
+Date: Thu, 03 Feb 2022 03:18:38 GMT
+User-Agent: FreeSWITCH-mod_sofia/1.10.4-dev+git~20200518T172205Z~91f54340ed~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+2022-02-02 19:18:45.264293 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:18:52.900641 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:18:55.200658 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [560] to [20] to compensate for [27] lost packet(s)
+2022-02-02 19:18:56.520587 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [1780] to [20] to compensate for [88] lost packet(s)
+2022-02-02 19:18:57.960585 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:18:58.660590 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:19:06.580588 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:08.440588 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:14.600587 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:17.580660 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:19.540586 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:19:20.840599 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:19:21.220629 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:22.080582 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:23.300818 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:23.780641 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:24.280584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:25.340585 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:19:27.340595 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:30.820590 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:19:31.820585 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:31.960668 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:32.220583 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:19:33.560593 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:19:34.280586 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:35.380588 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:38.060584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:38.060584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:38.720658 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+recv 520 bytes from wss/[10.176.2.43]:54588 at 19:19:39.219420:
+------------------------------------------------------------------------
+REGISTER sip:10.176.2.43 SIP/2.0
+Via: SIP/2.0/WSS 10.176.2.43;branch=z9hG4bK4368657
+Max-Forwards: 69
+To: <sip:altanai@10.176.2.43>
+From: <sip:altanai@10.176.2.43>;tag=elr74esfho
+Call-ID: quhtjbk6uu5imsukjhc8sg
+CSeq: 3 REGISTER
+Contact: <sip:altanai@10.176.2.43>;+sip.ice;reg-id=1;+sip.instance="<urn:uuid:05b25713-7964-4104-9859-2573d4d52fa1>";expires=300
+Expires: 300
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.0.13
+Content-Length: 0
+
+2022-02-02 19:19:39.220584 [DEBUG] sofia_reg.c:1790 Send challenge for [altanai@10.176.2.43]
+2022-02-02 19:19:39.220584 [WARNING] sofia_reg.c:1794 SIP auth challenge (REGISTER) on sofia profile 'internal' for [altanai@10.176.2.43] from ip 10.176.2.43
+send 605 bytes to wss/[10.176.2.43]:54588 at 19:19:39.221105:
+------------------------------------------------------------------------
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS 10.176.2.43;branch=z9hG4bK4368657;rport=54588
+From: <sip:altanai@10.176.2.43>;tag=elr74esfho
+To: <sip:altanai@10.176.2.43>;tag=XgBHN6rZ5cDpK
+Call-ID: quhtjbk6uu5imsukjhc8sg
+CSeq: 3 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.4-dev+git~20200518T172205Z~91f54340ed~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+WWW-Authenticate: Digest realm="10.176.2.43", nonce="1f0c9c7a-84a0-11ec-b382-d7273cb481af", algorithm=MD5, qop="auth"
+Content-Length: 0
+
+2022-02-02 19:19:39.220584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:19:40.260618 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [120] to [20] to compensate for [5] lost packet(s)
+recv 758 bytes from wss/[10.176.2.43]:54588 at 19:19:40.386126:
+------------------------------------------------------------------------
+REGISTER sip:10.176.2.43 SIP/2.0
+Via: SIP/2.0/WSS 10.176.2.43;branch=z9hG4bK7051617
+Max-Forwards: 69
+To: <sip:altanai@10.176.2.43>
+From: <sip:altanai@10.176.2.43>;tag=elr74esfho
+Call-ID: quhtjbk6uu5imsukjhc8sg
+CSeq: 4 REGISTER
+Authorization: Digest algorithm=MD5, username="altanai", realm="10.176.2.43", nonce="1f0c9c7a-84a0-11ec-b382-d7273cb481af", uri="sip:10.176.2.43", response="0a2d04e0fa80c73bfe5aa68ffd2d230d", qop=auth, cnonce="r6ae3oqul2eo", nc=00000001
+Contact: <sip:altanai@10.176.2.43>;+sip.ice;reg-id=1;+sip.instance="<urn:uuid:05b25713-7964-4104-9859-2573d4d52fa1>";expires=300
+Expires: 300
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.0.13
+Content-Length: 0
+
+2022-02-02 19:19:40.380581 [DEBUG] sofia_reg.c:3186 event_add_header -> 'record_stereo' = 'true'
+2022-02-02 19:19:40.380581 [DEBUG] sofia_reg.c:3186 event_add_header -> 'default_gateway' = 'example.com'
+2022-02-02 19:19:40.380581 [DEBUG] sofia_reg.c:3186 event_add_header -> 'default_areacode' = '918'
+2022-02-02 19:19:40.380581 [DEBUG] sofia_reg.c:3186 event_add_header -> 'transfer_fallback_extension' = 'operator'
+2022-02-02 19:19:40.380581 [DEBUG] sofia_reg.c:3186 event_add_header -> 'toll_allow' = 'domestic,international,local'
+2022-02-02 19:19:40.380581 [DEBUG] sofia_reg.c:3186 event_add_header -> 'accountcode' = '987'
+2022-02-02 19:19:40.380581 [DEBUG] sofia_reg.c:3186 event_add_header -> 'user_context' = 'video-mcu-stereo'
+2022-02-02 19:19:40.380581 [DEBUG] sofia_reg.c:3186 event_add_header -> 'effective_caller_id_name' = 'altanai'
+2022-02-02 19:19:40.380581 [DEBUG] sofia_reg.c:3186 event_add_header -> 'outbound_caller_id_name' = 'altanai_outbound'
+2022-02-02 19:19:40.380581 [DEBUG] sofia_reg.c:2036 Register:
+From:    [altanai@10.176.2.43]
+Contact: ["" <sip:altanai@10.176.2.43;fs_nat=yes;fs_path=sip%3Aaltanai%4010.176.2.43%3A54588>]
+Expires: [300]
+send 561 bytes to wss/[10.176.2.43]:54588 at 19:19:40.391086:
+------------------------------------------------------------------------
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS 10.176.2.43;branch=z9hG4bK7051617;rport=54588
+From: <sip:altanai@10.176.2.43>;tag=elr74esfho
+To: <sip:altanai@10.176.2.43>;tag=yS49p1922N38e
+Call-ID: quhtjbk6uu5imsukjhc8sg
+CSeq: 4 REGISTER
+Contact: <sip:altanai@10.176.2.43>;expires=300
+Date: Thu, 03 Feb 2022 03:19:40 GMT
+User-Agent: FreeSWITCH-mod_sofia/1.10.4-dev+git~20200518T172205Z~91f54340ed~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+2022-02-02 19:19:40.740904 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:19:41.440659 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:42.200589 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:44.080585 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [320] to [20] to compensate for [15] lost packet(s)
+2022-02-02 19:19:44.100587 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:45.840636 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:49.680611 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:50.020613 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:50.960590 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:51.580583 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:19:52.300586 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:19:52.980606 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:54.120584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [260] to [20] to compensate for [12] lost packet(s)
+2022-02-02 19:19:54.140604 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [120] to [20] to compensate for [5] lost packet(s)
+2022-02-02 19:19:54.880586 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:19:54.960591 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:56.840676 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:56.920606 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:19:56.960683 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:57.020587 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:19:59.360588 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [120] to [20] to compensate for [5] lost packet(s)
+2022-02-02 19:19:59.780601 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:20:00.460652 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:03.220706 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [120] to [20] to compensate for [5] lost packet(s)
+2022-02-02 19:20:03.740585 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:20:03.740585 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [780] to [20] to compensate for [38] lost packet(s)
+2022-02-02 19:20:04.000584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+recv 520 bytes from wss/[10.176.2.43]:55030 at 19:20:05.614188:
+------------------------------------------------------------------------
+REGISTER sip:10.176.2.43 SIP/2.0
+Via: SIP/2.0/WSS 10.176.2.43;branch=z9hG4bK6166331
+Max-Forwards: 69
+To: <sip:altanai@10.176.2.43>
+From: <sip:altanai@10.176.2.43>;tag=no0f39j2kh
+Call-ID: ddh2561s9tp5futo92a94i
+CSeq: 3 REGISTER
+Contact: <sip:altanai@10.176.2.43>;+sip.ice;reg-id=1;+sip.instance="<urn:uuid:df7e2126-0a73-4641-9f8e-c4e3c86bbe77>";expires=300
+Expires: 300
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.0.13
+Content-Length: 0
+
+2022-02-02 19:20:05.600587 [DEBUG] sofia_reg.c:1790 Send challenge for [altanai@10.176.2.43]
+2022-02-02 19:20:05.600587 [WARNING] sofia_reg.c:1794 SIP auth challenge (REGISTER) on sofia profile 'internal' for [altanai@10.176.2.43] from ip 10.176.2.43
+send 605 bytes to wss/[10.176.2.43]:55030 at 19:20:05.614816:
+------------------------------------------------------------------------
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS 10.176.2.43;branch=z9hG4bK6166331;rport=55030
+From: <sip:altanai@10.176.2.43>;tag=no0f39j2kh
+To: <sip:altanai@10.176.2.43>;tag=Z2X2rvt6ZySUa
+Call-ID: ddh2561s9tp5futo92a94i
+CSeq: 3 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.4-dev+git~20200518T172205Z~91f54340ed~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+WWW-Authenticate: Digest realm="10.176.2.43", nonce="2ec82242-84a0-11ec-b383-d7273cb481af", algorithm=MD5, qop="auth"
+Content-Length: 0
+
+recv 758 bytes from wss/[10.176.2.43]:55030 at 19:20:05.722075:
+------------------------------------------------------------------------
+REGISTER sip:10.176.2.43 SIP/2.0
+Via: SIP/2.0/WSS 10.176.2.43;branch=z9hG4bK5355935
+Max-Forwards: 69
+To: <sip:altanai@10.176.2.43>
+From: <sip:altanai@10.176.2.43>;tag=no0f39j2kh
+Call-ID: ddh2561s9tp5futo92a94i
+CSeq: 4 REGISTER
+Authorization: Digest algorithm=MD5, username="altanai", realm="10.176.2.43", nonce="2ec82242-84a0-11ec-b383-d7273cb481af", uri="sip:10.176.2.43", response="0ce46b070d793d36d57a2e68e166a943", qop=auth, cnonce="bt6ggvqlv24k", nc=00000001
+Contact: <sip:altanai@10.176.2.43>;+sip.ice;reg-id=1;+sip.instance="<urn:uuid:df7e2126-0a73-4641-9f8e-c4e3c86bbe77>";expires=300
+Expires: 300
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.0.13
+Content-Length: 0
+
+2022-02-02 19:20:05.720583 [DEBUG] sofia_reg.c:3186 event_add_header -> 'record_stereo' = 'true'
+2022-02-02 19:20:05.720583 [DEBUG] sofia_reg.c:3186 event_add_header -> 'default_gateway' = 'example.com'
+2022-02-02 19:20:05.720583 [DEBUG] sofia_reg.c:3186 event_add_header -> 'default_areacode' = '918'
+2022-02-02 19:20:05.720583 [DEBUG] sofia_reg.c:3186 event_add_header -> 'transfer_fallback_extension' = 'operator'
+2022-02-02 19:20:05.720583 [DEBUG] sofia_reg.c:3186 event_add_header -> 'toll_allow' = 'domestic,international,local'
+2022-02-02 19:20:05.720583 [DEBUG] sofia_reg.c:3186 event_add_header -> 'accountcode' = '987'
+2022-02-02 19:20:05.720583 [DEBUG] sofia_reg.c:3186 event_add_header -> 'user_context' = 'video-mcu-stereo'
+2022-02-02 19:20:05.720583 [DEBUG] sofia_reg.c:3186 event_add_header -> 'effective_caller_id_name' = 'altanai'
+2022-02-02 19:20:05.720583 [DEBUG] sofia_reg.c:3186 event_add_header -> 'outbound_caller_id_name' = 'altanai_outbound'
+2022-02-02 19:20:05.720583 [DEBUG] sofia_reg.c:2036 Register:
+From:    [altanai@10.176.2.43]
+Contact: ["" <sip:altanai@10.176.2.43;fs_nat=yes;fs_path=sip%3Aaltanai%4010.176.2.43%3A55030>]
+Expires: [300]
+send 561 bytes to wss/[10.176.2.43]:55030 at 19:20:05.724510:
+------------------------------------------------------------------------
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS 10.176.2.43;branch=z9hG4bK5355935;rport=55030
+From: <sip:altanai@10.176.2.43>;tag=no0f39j2kh
+To: <sip:altanai@10.176.2.43>;tag=0BQUtQBaX7Fep
+Call-ID: ddh2561s9tp5futo92a94i
+CSeq: 4 REGISTER
+Contact: <sip:altanai@10.176.2.43>;expires=300
+Date: Thu, 03 Feb 2022 03:20:05 GMT
+User-Agent: FreeSWITCH-mod_sofia/1.10.4-dev+git~20200518T172205Z~91f54340ed~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+2022-02-02 19:20:07.440661 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [320] to [20] to compensate for [15] lost packet(s)
+2022-02-02 19:20:09.180585 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:20:11.980586 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:13.520585 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [120] to [20] to compensate for [5] lost packet(s)
+2022-02-02 19:20:13.620587 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:20:14.360586 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:20:14.360586 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:20:15.160584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:15.240585 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [1260] to [20] to compensate for [62] lost packet(s)
+2022-02-02 19:20:15.880582 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:17.160584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:18.400588 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [120] to [20] to compensate for [5] lost packet(s)
+2022-02-02 19:20:18.920586 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:20:19.760650 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:20.380659 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:20.520642 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:20:20.660693 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:21.180588 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:22.880622 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:23.880623 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:24.300854 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:24.300854 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:25.040587 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:20:26.080589 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [500] to [20] to compensate for [24] lost packet(s)
+2022-02-02 19:20:26.360590 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:20:27.400659 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:27.400659 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+recv 520 bytes from wss/[10.176.2.43]:55410 at 19:20:30.535500:
+------------------------------------------------------------------------
+REGISTER sip:10.176.2.43 SIP/2.0
+Via: SIP/2.0/WSS 10.176.2.43;branch=z9hG4bK9168242
+Max-Forwards: 69
+To: <sip:altanai@10.176.2.43>
+From: <sip:altanai@10.176.2.43>;tag=4137ot5t8n
+Call-ID: 3728l5u3deot09pvnpqabr
+CSeq: 3 REGISTER
+Contact: <sip:altanai@10.176.2.43>;+sip.ice;reg-id=1;+sip.instance="<urn:uuid:a332d10c-5d1e-48c9-bb33-eb24be902923>";expires=300
+Expires: 300
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.0.13
+Content-Length: 0
+
+2022-02-02 19:20:30.520678 [DEBUG] sofia_reg.c:1790 Send challenge for [altanai@10.176.2.43]
+2022-02-02 19:20:30.520678 [WARNING] sofia_reg.c:1794 SIP auth challenge (REGISTER) on sofia profile 'internal' for [altanai@10.176.2.43] from ip 10.176.2.43
+send 605 bytes to wss/[10.176.2.43]:55410 at 19:20:30.536146:
+------------------------------------------------------------------------
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS 10.176.2.43;branch=z9hG4bK9168242;rport=55410
+From: <sip:altanai@10.176.2.43>;tag=4137ot5t8n
+To: <sip:altanai@10.176.2.43>;tag=1mgmvjvDtg60H
+Call-ID: 3728l5u3deot09pvnpqabr
+CSeq: 3 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.4-dev+git~20200518T172205Z~91f54340ed~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+WWW-Authenticate: Digest realm="10.176.2.43", nonce="3da2d262-84a0-11ec-b384-d7273cb481af", algorithm=MD5, qop="auth"
+Content-Length: 0
+
+recv 757 bytes from wss/[10.176.2.43]:55410 at 19:20:30.598244:
+------------------------------------------------------------------------
+REGISTER sip:10.176.2.43 SIP/2.0
+Via: SIP/2.0/WSS 10.176.2.43;branch=z9hG4bK330533
+Max-Forwards: 69
+To: <sip:altanai@10.176.2.43>
+From: <sip:altanai@10.176.2.43>;tag=4137ot5t8n
+Call-ID: 3728l5u3deot09pvnpqabr
+CSeq: 4 REGISTER
+Authorization: Digest algorithm=MD5, username="altanai", realm="10.176.2.43", nonce="3da2d262-84a0-11ec-b384-d7273cb481af", uri="sip:10.176.2.43", response="64d321bd7a2330a247d0f442e01e8d48", qop=auth, cnonce="16mcbavdu0pc", nc=00000001
+Contact: <sip:altanai@10.176.2.43>;+sip.ice;reg-id=1;+sip.instance="<urn:uuid:a332d10c-5d1e-48c9-bb33-eb24be902923>";expires=300
+Expires: 300
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.0.13
+Content-Length: 0
+
+2022-02-02 19:20:30.580591 [DEBUG] sofia_reg.c:3186 event_add_header -> 'record_stereo' = 'true'
+2022-02-02 19:20:30.580591 [DEBUG] sofia_reg.c:3186 event_add_header -> 'default_gateway' = 'example.com'
+2022-02-02 19:20:30.580591 [DEBUG] sofia_reg.c:3186 event_add_header -> 'default_areacode' = '918'
+2022-02-02 19:20:30.580591 [DEBUG] sofia_reg.c:3186 event_add_header -> 'transfer_fallback_extension' = 'operator'
+2022-02-02 19:20:30.580591 [DEBUG] sofia_reg.c:3186 event_add_header -> 'toll_allow' = 'domestic,international,local'
+2022-02-02 19:20:30.580591 [DEBUG] sofia_reg.c:3186 event_add_header -> 'accountcode' = '987'
+2022-02-02 19:20:30.580591 [DEBUG] sofia_reg.c:3186 event_add_header -> 'user_context' = 'video-mcu-stereo'
+2022-02-02 19:20:30.580591 [DEBUG] sofia_reg.c:3186 event_add_header -> 'effective_caller_id_name' = 'altanai'
+2022-02-02 19:20:30.580591 [DEBUG] sofia_reg.c:3186 event_add_header -> 'outbound_caller_id_name' = 'altanai_outbound'
+2022-02-02 19:20:30.580591 [DEBUG] sofia_reg.c:2036 Register:
+From:    [altanai@10.176.2.43]
+Contact: ["" <sip:altanai@10.176.2.43;fs_nat=yes;fs_path=sip%3Aaltanai%4010.176.2.43%3A55410>]
+Expires: [300]
+send 560 bytes to wss/[10.176.2.43]:55410 at 19:20:30.600543:
+------------------------------------------------------------------------
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS 10.176.2.43;branch=z9hG4bK330533;rport=55410
+From: <sip:altanai@10.176.2.43>;tag=4137ot5t8n
+To: <sip:altanai@10.176.2.43>;tag=2X9cyDDHQSvKD
+Call-ID: 3728l5u3deot09pvnpqabr
+CSeq: 4 REGISTER
+Contact: <sip:altanai@10.176.2.43>;expires=300
+Date: Thu, 03 Feb 2022 03:20:30 GMT
+User-Agent: FreeSWITCH-mod_sofia/1.10.4-dev+git~20200518T172205Z~91f54340ed~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+2022-02-02 19:20:31.520586 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [200] to [20] to compensate for [9] lost packet(s)
+2022-02-02 19:20:31.640662 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [380] to [20] to compensate for [18] lost packet(s)
+2022-02-02 19:20:31.660585 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [320] to [20] to compensate for [15] lost packet(s)
+2022-02-02 19:20:31.840590 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:20:31.840590 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:32.080588 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:20:32.080588 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [1100] to [20] to compensate for [54] lost packet(s)
+2022-02-02 19:20:32.940584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [2140] to [20] to compensate for [106] lost packet(s)
+2022-02-02 19:20:33.300581 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:36.040689 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:37.100601 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:38.460584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:39.360588 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [120] to [20] to compensate for [5] lost packet(s)
+2022-02-02 19:20:40.240584 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:41.220583 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:20:41.420587 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:41.740583 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [300] to [20] to compensate for [14] lost packet(s)
+2022-02-02 19:20:43.080620 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:44.400590 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:46.940586 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:47.160586 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:48.240613 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [580] to [20] to compensate for [28] lost packet(s)
+2022-02-02 19:20:49.440586 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:49.520587 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:51.240585 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:52.240591 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:52.900585 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:53.660586 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:54.200586 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)
+2022-02-02 19:20:54.680653 [DEBUG] switch_core_media.c:3224 [VBR]: Correcting calculated ptime value from [40] to [20] to compensate for [1] lost packet(s)

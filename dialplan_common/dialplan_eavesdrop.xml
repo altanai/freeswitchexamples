@@ -1,4 +1,4 @@
-
+<!-- Eaves Drop -->
 <extension name="eavesdrop">
   <condition field="destination_number" expression="^88(\d{4})$|^\*0(.*)$">
     <action application="answer"/>

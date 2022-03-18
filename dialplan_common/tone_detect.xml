@@ -1,0 +1,9 @@
+<extension name="5555555">
+  <condition field="destination_number" expression="^(5555555)$"/>
+    <action application="tone_detect" data="fax 1100 r +5000 transfer 'fax XML default' 1"/>
+    <action application="answer"/>
+    <action application="sleep" data="1000"/>
+    <action application="ivr" data="main"/>
+    <action application="hangup"/>
+  </condition>
+</extension>

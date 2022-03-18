@@ -1,7 +1,0 @@
-<domain name="telco1.com">
-    <user id="alt">
-        <params>
-            <param name="password" value="1234"/>
-        </params>
-    </user>
-</domain>
